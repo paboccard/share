@@ -1,0 +1,2 @@
+---- Modifier le chemin d'accès à l'index ----
+Dans la base de données -> table "ps_shop_url" -> modifier les champs correspondant 
