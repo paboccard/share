@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <!-- MODULE Block cart -->
-{if isset($blockcart_top) && $blockcart_top}
+<!--{if isset($blockcart_top) && $blockcart_top}
 <div class="col-sm-4 clearfix{if $PS_CATALOG_MODE} header_user_catalog{/if}">
 {/if}
 	<div class="shopping_cart">
@@ -52,7 +52,7 @@
 		{if !$PS_CATALOG_MODE}
 			<div class="cart_block block exclusive">
 				<div class="block_content">
-					<!-- block list of products -->
+					<!-- block list of products --
 					<div class="cart_block_list{if isset($blockcart_top) && !$blockcart_top}{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded' || !$ajax_allowed || !isset($colapseExpandStatus)} expanded{else} collapsed unvisible{/if}{/if}">
 						{if $products}
 							<dl class="products">
@@ -90,7 +90,7 @@
 									{if isset($product.attributes_small)}
 										<dd data-id="cart_block_combination_of_{$product.id_product|intval}{if $product.id_product_attribute}_{$product.id_product_attribute|intval}{/if}_{$product.id_address_delivery|intval}" class="{if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if}">
 									{/if}
-									<!-- Customizable datas -->
+									<!-- Customizable datas --
 									{if isset($customizedDatas.$productId.$productAttributeId[$product.id_address_delivery])}
 										{if !isset($product.attributes_small)}
 											<dd data-id="cart_block_combination_of_{$product.id_product|intval}_{if $product.id_product_attribute}{$product.id_product_attribute|intval}{else}0{/if}_{if $product.id_address_delivery}{$product.id_address_delivery|intval}{else}0{/if}" class="{if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if}">
@@ -198,9 +198,9 @@
 						</p>
 					</div>
 				</div>
-			</div><!-- .cart_block -->
+			</div><!-- .cart_block --
 		{/if}
-	</div>
+	</div>-->
 {if isset($blockcart_top) && $blockcart_top}
 </div>
 {/if}

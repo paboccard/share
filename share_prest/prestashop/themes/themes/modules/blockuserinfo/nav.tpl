@@ -1,7 +1,8 @@
 <!-- Block user information module NAV  -->
 {if $is_logged}
-	<div class="header_user_info block_cart_collapse">
-		<a href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow"><i class="fa fa-shopping-cart"></i></a>
+	<div class="header_user_info">
+		<a href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow"><i class="fa fa-shopping-cart"></i>
+		<span class="ajax_cart_quantity{if $cart_qties == 0} unvisible{/if}">{$cart_qties}</span></a>
 	</div>
 {/if}
 {if $is_logged}
