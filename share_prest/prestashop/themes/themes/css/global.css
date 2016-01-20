@@ -8569,8 +8569,8 @@ div.star.star_hover:after {
   cursor: pointer; }
 
 .background-image-fixed-2 {
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: fixed !important;
+    background-size: cover !important;
 }
 .background-image-fixed-2 {
     height: 600px;
