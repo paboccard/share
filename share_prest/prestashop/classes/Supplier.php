@@ -57,6 +57,9 @@ class SupplierCore extends ObjectModel
 
     /** @var bool active */
     public $active;
+    
+    public $association_discount;
+    public $association_gain;
 
     /**
      * @see ObjectModel::$definition
@@ -91,11 +94,30 @@ class SupplierCore extends ObjectModel
 
         $this->link_rewrite = $this->getLink();
         $this->image_dir = _PS_SUPP_IMG_DIR_;
+        
+        //  Association stuffs
+        $association_results = $this->getSupplierForAssociationInformation();
+        $this->association_discount = $association_results[0]['discount'];
+        $this->association_gain = $association_results[0]['gain'];;
     }
 
     public function getLink()
     {
         return Tools::link_rewrite($this->name);
+    }
+    /**
+     * Get association discount average for supplier
+     * @return type
+     */
+    public function getSupplierForAssociationInformation() {
+        $sql = 'SELECT AVG(asso_product.discount) as discount , SUM(cart_gain.gain_price) as gain
+                        FROM my_product_association_discount asso_product
+                        LEFT JOIN '._DB_PREFIX_.'product ps ON asso_product.id_product = ps.id_product 
+                        LEFT JOIN my_cart_product_association cart_gain ON cart_gain.id_product = ps.id_product
+			WHERE ps.id_supplier = '.(int)$this->id_supplier;
+        
+        $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+        return $result;
     }
 
     /**
@@ -208,6 +230,8 @@ class SupplierCore extends ObjectModel
         return false;
     }
 
+    
+    
     public static function getProducts($id_supplier, $id_lang, $p, $n,
         $order_by = null, $order_way = null, $get_total = false, $active = true, $active_category = true)
     {

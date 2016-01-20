@@ -8568,4 +8568,32 @@ div.star.star_hover:after {
 .pointer-box {
   cursor: pointer; }
 
+.background-image-fixed-2 {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+.background-image-fixed-2 {
+    height: 600px;
+}
+.bar {
+    position: relative;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.no-mb {
+    margin-bottom: 0;
+}
+
+.box-simple.box-blue {
+    padding: 20px;
+    border: dotted 1px #999999;
+    background: #F47E46;
+    color: #fff;
+    opacity: 0.5;
+}
+.box-simple {
+    text-align: center;
+    margin-bottom: 40px;
+}
 /*# sourceMappingURL=global.css.map */

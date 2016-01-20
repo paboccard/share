@@ -96,9 +96,9 @@ class SupplierControllerCore extends FrontController
             $nbProducts = $this->supplier->getProducts($this->supplier->id, null, null, null, $this->orderBy, $this->orderWay, true);
             $this->pagination((int)$nbProducts);
 
-            $products = $this->supplier->getProducts($this->supplier->id, $this->context->cookie->id_lang, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
-            $this->addColorsToProductList($products);
-
+            //$products = $this->supplier->getProducts($this->supplier->id, $this->context->cookie->id_lang, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
+            //$this->addColorsToProductList($products);
+            $products = array();
             $this->context->smarty->assign(
                 array(
                     'nb_products' => $nbProducts,
