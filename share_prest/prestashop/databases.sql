@@ -40,6 +40,17 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (1, 30);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (2, 14);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (3, 2.5);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (4, 28);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (5, 15);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (6, 20);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (7, 14);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (8, 12);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (9, 7);
+REPLACE INTO `share`.`my_product_association_discount` (`id_product`, `discount`) VALUES (10, 30);
+
 --  Add discount to associations on orders table
 DROP TABLE IF EXISTS my_order_association_gain;
 CREATE TABLE `my_order_association_gain` (
@@ -67,6 +78,10 @@ CREATE TABLE `my_cart_product_association` (
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
+
+REPLACE INTO `share`.`my_cart_product_association` (`id_cart`, `id_product`, `id_address_delivery`, `id_product_attribute`, `id_association`, `gain_price`, `date_add`) VALUES (1, 1, 1, 1, 1, 50, '2016-01-20 22:58:40');
+REPLACE INTO `share`.`my_cart_product_association` (`id_cart`, `id_product`, `id_address_delivery`, `id_product_attribute`, `id_association`, `gain_price`, `date_add`) VALUES (1, 8, 1, 1, 1, 27, '2016-01-20 22:58:40');
+REPLACE INTO `share`.`my_cart_product_association` (`id_cart`, `id_product`, `id_address_delivery`, `id_product_attribute`, `id_association`, `gain_price`, `date_add`) VALUES (1, 9, 1, 1, 1, 12, '2016-01-20 22:58:40');
 
 --  Add tables for BI purpose 
 --  gain by supplier, association and timeline

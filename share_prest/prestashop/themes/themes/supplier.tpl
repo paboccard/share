@@ -110,8 +110,8 @@
                                     <h1 class="page-heading product-listing">
                                         {$supplier->name|escape:'html':'UTF-8'}
                                     </h1>
-                                    <h3>Pourcentage moyen : 20%</h3>
-                                    <h3>272€ récoltés</h3>
+                                    <h3>Pourcentage moyen : {$supplier->association_discount|string_format:"%.2f"}%</h3>
+                                    <h3>{$supplier->association_gain|string_format:"%.2f"} € récoltés</h3>
                                 </div>
                             </div>
                         </div>
