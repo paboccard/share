@@ -128,7 +128,11 @@ class SupplierControllerCore extends FrontController
             $this->pagination($nbProducts);
 
             $suppliers = Supplier::getSuppliers(true, $this->context->language->id, true, $this->p, $this->n);
+            $allSuppliers = Supplier::getSuppliers(true, $this->context->language->id, true, $this->p);
             foreach ($suppliers as &$row) {
+                $row['image'] = (!file_exists(_PS_SUPP_IMG_DIR_.'/'.$row['id_supplier'].'-'.ImageType::getFormatedName('medium').'.jpg')) ? $this->context->language->iso_code.'-default' : $row['id_supplier'];
+            }
+            foreach ($allSuppliers as &$row) {
                 $row['image'] = (!file_exists(_PS_SUPP_IMG_DIR_.'/'.$row['id_supplier'].'-'.ImageType::getFormatedName('medium').'.jpg')) ? $this->context->language->iso_code.'-default' : $row['id_supplier'];
             }
 
@@ -137,6 +141,7 @@ class SupplierControllerCore extends FrontController
                 'nbSuppliers' => $nbProducts,
                 'mediumSize' => Image::getSize(ImageType::getFormatedName('medium')),
                 'suppliers_list' => $suppliers,
+                'allSuppliers_list' => $allSuppliers,
                 'add_prod_display' => Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY'),
             ));
         } else {
