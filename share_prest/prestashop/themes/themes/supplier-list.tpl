@@ -23,6 +23,53 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
+
+    {assign var='nbItemsPerLine' value=3}
+    {assign var='nbItemsPerLineTablet' value=2}
+    {assign var='nbLi' value=$suppliers_list|@count}
+    {math equation="nbLi/nbItemsPerLine" nbLi=$nbLi nbItemsPerLine=$nbItemsPerLine assign=nbLines}
+    {math equation="nbLi/nbItemsPerLineTablet" nbLi=$nbLi nbItemsPerLineTablet=$nbItemsPerLineTablet assign=nbLinesTablet}
+
+
+    <div id="content">
+    	<div class="container">
+
+    		<div class="row">
+    			<div class="col-sm-offset-1 col-sm-10">
+
+    				<div class="row portfolio">
+    					{foreach from=$allSuppliers_list item=supplier}
+    					<div class="col-sm-6">
+    						<div class="box-image">
+    							<div class="image">
+    								<img src="{$img_sup_dir}{$supplier.image|escape:'html':'UTF-8'}-medium_default.jpg" alt="" class="img-responsive">
+    							</div>
+    							<div class="bg"></div>
+    							<div class="name">
+    								<h3><a href="portfolio-detail.html">{$supplier.name}</a></h3> 
+    							</div>
+    							<div class="text">
+    								<p class="hidden-sm">73 Associations aidées</p>
+    								<p class="hidden-sm">234.45€ donnés</p>                                    
+    								<p class="buttons">
+    									<a href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}" class="btn btn-template-transparent-primary">Voir les ventes</a>
+    								</p>
+    							</div>
+    						</div>
+    						<!-- /.box-image -->
+    						<div class="ribbon pourcent">
+    							<div class="theribbon">20%</div>
+    							<div class="ribbon-background"></div>
+    						</div>
+    						<!-- /.ribbon -->
+    					</div>
+    					{/foreach}
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
 {capture name=path}{l s='Suppliers:'}{/capture}
 
 <h1 class="page-heading product-listing">{l s='Suppliers:'}
@@ -77,6 +124,7 @@
     {math equation="nbLi/nbItemsPerLine" nbLi=$nbLi nbItemsPerLine=$nbItemsPerLine assign=nbLines}
     {math equation="nbLi/nbItemsPerLineTablet" nbLi=$nbLi nbItemsPerLineTablet=$nbItemsPerLineTablet assign=nbLinesTablet}
 
+    
 	<ul id="suppliers_list" class="list row">
 		{foreach from=$suppliers_list item=supplier name=supplier}
 	    	{math equation="(total%perLine)" total=$smarty.foreach.supplier.total perLine=$nbItemsPerLine assign=totModulo}
