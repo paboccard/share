@@ -69,7 +69,7 @@
     		</div>
     	</div>
     </div>
-
+{*
 {capture name=path}{l s='Suppliers:'}{/capture}
 
 <h1 class="page-heading product-listing">{l s='Suppliers:'}
@@ -190,3 +190,4 @@
     </div>
 {/if}
 {/if}
+*}
