@@ -8819,5 +8819,108 @@ a.bg-primary:hover {
 .bg .buttons{
   border: 1px solid black;
 }
+
+/***************** BANNER NUMBER *****************/
+.bar {
+  position: relative;
+  background: #fff;
+  /*border : 1px solid #38a7bb;
+  border-left-color: white;
+  border-right-color: white;*/
+  padding: 20px 0;
+}
+.bar.background-pentagon {
+  background: url('../img/texture-bw.png') center center repeat;
+  border-top: solid 1px #999999;
+  border-bottom: solid 1px #999999;
+}
+.bar.background-gray {
+  background: #eeeeee;
+}
+.bar.background-gray-dark {
+  background: #555555;
+}
+.bar.background-white {
+  background: #fff;
+}
+.bar.background-image-fixed-1 {
+  background: url('../img/fixed-background-1.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bar.background-image-fixed-2 {
+  background: url('../img/fixe-background-fnac.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bar.color-white h1,
+.bar.color-white h2,
+.bar.color-white h3,
+.bar.color-white h4,
+.bar.color-white h5,
+.bar.color-white h6,
+.bar.color-white p {
+  color: #fff;
+}
+.bar.padding-big {
+  padding: 50px 0;
+}
+.bar.padding-horizontal {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.bar.margin-vertical {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bar .dark-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.bar.background-chiffre{
+  background: url('../../../img/background/background_banner.jpg') center center repeat;
+}
+
+.showcase .item {
+  text-align: center;
+}
+.showcase .item .icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: #203775;
+  line-height: 50px;
+  border-radius: 25px;
+  border: solid 1px #203775;
+}
+.showcase .item h4 {
+  color: #203775;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.showcase .item h4 span {
+  font-weight: bold;
+  font-size: 26px;
+}
+.showcase .item .icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: #203775;
+  line-height: 50px;
+  border-radius: 25px;
+  border: solid 1px #203775;
+}
+
+
+
 /******************************/
 
