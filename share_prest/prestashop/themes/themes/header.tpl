@@ -107,7 +107,9 @@
 					</div>
 				</header>
 			</div>
-			{include file="./banner_number.tpl"}
+			{if $page_name =='index'}
+				{include file="./banner_number.tpl"}
+			{/if}
 			<div class="columns-container">
 				<div id="columns" class="container">
 					{* {if $page_name !='index' && $page_name !='pagenotfound'}
