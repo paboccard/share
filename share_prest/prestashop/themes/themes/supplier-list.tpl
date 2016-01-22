@@ -43,6 +43,9 @@
     						<div class="box-image">
     							<div class="image">
     								<img src="{$img_sup_dir}{$supplier.image|escape:'html':'UTF-8'}-medium_default.jpg" alt="" class="img-responsive">
+    								<span class="new-box">
+										<span class="new-label">{$supplier->association_discount|string_format:"%.2f"}%</span>
+									</span>
     							</div>
     							<div class="bg"></div>
     							<div class="name">
@@ -50,13 +53,13 @@
     							</div>
     							<div class="text">
     								<p class="hidden-sm">73 Associations aidées</p>
-    								<p class="hidden-sm">234.45€ donnés</p>                                    
+    								<p class="hidden-sm">{$supplier->association_gain|string_format:"%.2f"}€ donnés</p>                                    
     								<p class="buttons">
     									<a href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}" class="btn btn-template-transparent-primary">Voir les ventes</a>
     								</p>
     							</div>
     						</div>
-    						<!-- /.box-image -->
+    						<!-- /.box-image --
     						<div class="ribbon pourcent">
     							<div class="theribbon">20%</div>
     							<div class="ribbon-background"></div>
