@@ -98,7 +98,7 @@ class SupplierCore extends ObjectModel
         //  Association stuffs
         $association_results = $this->getSupplierForAssociationInformation();
         $this->association_discount = $association_results[0]['discount'];
-        $this->association_gain = $association_results[0]['gain'];;
+        $this->association_gain = $association_results[0]['gain'];
     }
 
     public function getLink()
@@ -147,6 +147,13 @@ class SupplierCore extends ObjectModel
         $query->groupBy('s.id_supplier');
 
         $suppliers = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+        foreach ($suppliers as &$supplier) {
+            $sup = new Supplier($supplier['id_supplier'], $id_lang);
+            $association_results = $sup->getSupplierForAssociationInformation();
+            $supplier['association_discount'] = $association_results[0]['discount'];
+            $supplier['association_gain'] = $association_results[0]['gain'];
+        }
+        
         if ($suppliers === false) {
             return false;
         }
@@ -180,9 +187,8 @@ class SupplierCore extends ObjectModel
             foreach ($results as $result) {
                 $counts[(int)$result['id_supplier']] = (int)$result['nb_products'];
             }
-
             if (count($counts) && is_array($suppliers)) {
-                foreach ($suppliers as $key => $supplier) {
+                foreach ($suppliers as $key => &$supplier) {
                     if (isset($counts[(int)$supplier['id_supplier']])) {
                         $suppliers[$key]['nb_products'] = $counts[(int)$supplier['id_supplier']];
                     } else {
@@ -197,6 +203,7 @@ class SupplierCore extends ObjectModel
         for ($i = 0; $i < $nb_suppliers; $i++) {
             $suppliers[$i]['link_rewrite'] = ($rewrite_settings ? Tools::link_rewrite($suppliers[$i]['name']) : 0);
         }
+
         return $suppliers;
     }
 
