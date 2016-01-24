@@ -59,6 +59,8 @@ class ProductSupplierCore extends ObjectModel
      * */
     public $product_supplier_price_te;
 
+    public $pourcentatge;
+
     /**
      * @see ObjectModel::$definition
      */

@@ -109,18 +109,33 @@
 			{/if}
 		{/if}
 	</td>
-
-	{if !isset($noDeleteButton) || !$noDeleteButton}
-		<td class="cart_delete text-center" data-title="{l s='Delete'}">
-		{if (!isset($customizedDatas.$productId.$productAttributeId) OR $quantityDisplayed > 0) && empty($product.gift)}
-			<div>
-				<a rel="nofollow" title="{l s='Delete'}" class="cart_quantity_delete" id="{$product.id_product}_{$product.id_product_attribute}_{if $quantityDisplayed > 0}nocustom{else}0{/if}_{$product.id_address_delivery|intval}" href="{$link->getPageLink('cart', true, NULL, "delete=1&amp;id_product={$product.id_product|intval}&amp;ipa={$product.id_product_attribute|intval}&amp;id_address_delivery={$product.id_address_delivery|intval}&amp;token={$token_cart}")|escape:'html':'UTF-8'}"><i class="icon-trash"></i></a>
-			</div>
-		{else}
-
-		{/if}
-		</td>
-	{/if}
+	<!-- Association Liste -->
+	<td class="association" width="10%" data-title="{l s='Association'}">
+			<select name="{$groupName}" id="" class="form-control attribute_select no-print cart_select">
+				{foreach from=$product['associations'] item=association}				
+					<option value="{$association['name']}"> {$association['name']|escape:'html':'UTF-8'}</option>
+				{/foreach}
+			</select>
+	</td>
+	<!-- DON -->
+	<td class="pourcentage price" data-title="{l s='Don'}">
+		
+			{if !empty($product.gift)}
+				<span class="gift-icon">{l s='Gift!'}</span>
+			{else}
+					{$product['pourcentage']|string_format:"%.2f"} %
+			{/if}
+			</br>
+			<span class="price" id="total_product_pourcentage_{$product.id_product}_{$product.id_product_attribute}{if $quantityDisplayed > 0}_nocustom{/if}_{$product.id_address_delivery|intval}{if !empty($product.gift)}_gift{/if}">
+			{if $quantityDisplayed == 0 AND isset($customizedDatas.$productId.$productAttributeId)}
+				{if !$priceDisplay}{(($product['pourcentage']/100)*$product.total_customization_wt)|string_format:"%.2f"}€{else}{(($product['pourcentage']/100)*$product.total_customization)|string_format:"%.2f"}€{/if}
+			{else}
+				{if !$priceDisplay}{(($product['pourcentage']/100)*$product.total_wt)|string_format:"%.2f"}€{else}{(($product['pourcentage']/100)*$product.total)|string_format:"%.2f"}€{/if}
+			{/if}
+			
+			
+		</span>
+	</td>
 	<td class="cart_total" data-title="{l s='Total'}">
 		<span class="price" id="total_product_price_{$product.id_product}_{$product.id_product_attribute}{if $quantityDisplayed > 0}_nocustom{/if}_{$product.id_address_delivery|intval}{if !empty($product.gift)}_gift{/if}">
 			{if !empty($product.gift)}
@@ -134,5 +149,16 @@
 			{/if}
 		</span>
 	</td>
+	{if !isset($noDeleteButton) || !$noDeleteButton}
+		<td class="cart_delete text-center" data-title="{l s='Delete'}">
+		{if (!isset($customizedDatas.$productId.$productAttributeId) OR $quantityDisplayed > 0) && empty($product.gift)}
+			<div>
+				<a rel="nofollow" title="{l s='Delete'}" class="cart_quantity_delete" id="{$product.id_product}_{$product.id_product_attribute}_{if $quantityDisplayed > 0}nocustom{else}0{/if}_{$product.id_address_delivery|intval}" href="{$link->getPageLink('cart', true, NULL, "delete=1&amp;id_product={$product.id_product|intval}&amp;ipa={$product.id_product_attribute|intval}&amp;id_address_delivery={$product.id_address_delivery|intval}&amp;token={$token_cart}")|escape:'html':'UTF-8'}"><i class="icon-trash"></i></a>
+			</div>
+		{else}
+
+		{/if}
+		</td>
+	{/if}
 
 </tr>

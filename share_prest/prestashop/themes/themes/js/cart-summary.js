@@ -350,7 +350,7 @@ function updateAddressId(id_product, id_product_attribute, old_id_address_delive
 		});
 	});
 
-	line.attr('id', line.attr('id').replace(/_\d+$/, '_' + id_address_delivery)).removeClass('address_' + old_id_address_delivery).addClass('address_' + id_address_delivery).find('span[id^=cart_quantity_custom_], span[id^=total_product_price_], input[name^=quantity_], .cart_quantity_down, .cart_quantity_up, .cart_quantity_delete').each(function(){
+	line.attr('id', line.attr('id').replace(/_\d+$/, '_' + id_address_delivery)).removeClass('address_' + old_id_address_delivery).addClass('address_' + id_address_delivery).find('span[id^=cart_quantity_custom_], span[id^=total_product_price_], span[id^=total_product_pourcentage_], input[name^=quantity_], .cart_quantity_down, .cart_quantity_up, .cart_quantity_delete').each(function(){
 
 		if (typeof($(this).attr('name')) != 'undefined')
 			$(this).attr('name', $(this).attr('name').replace(/_\d+(_hidden|)$/, '_' + id_address_delivery));
@@ -511,6 +511,9 @@ function deleteProductFromSummary(id)
 										$(this).attr('id', $(this).attr('id').replace(/nocustom/, '0'));
 								});
 								line.find('span[id^=total_product_price_]').each(function(){
+									$(this).attr('id', $(this).attr('id').replace(/_nocustom/, ''));
+								});
+								line.find('span[id^=total_product_pourcentage_]').each(function(){
 									$(this).attr('id', $(this).attr('id').replace(/_nocustom/, ''));
 								});
 								line.attr('id', line.attr('id').replace(/nocustom/, '0'));
@@ -789,7 +792,7 @@ function updateCartSummary(json)
 	var nbrProducts = 0;
 	var product_list = new Array();
 
-	if (typeof json == 'undefined')
+		if (typeof json == 'undefined')
 		return;
 
 	$('div.alert-danger').fadeOut();
@@ -824,17 +827,21 @@ function updateCartSummary(json)
 		var product_total = '';
 		var product_customization_total = '';
 
+		var pourcentage_total = '';
+
 		if (priceDisplayMethod !== 0)
 		{
 			current_price = formatCurrency(product_list[i].price, currencyFormat, currencySign, currencyBlank);
 			product_total = product_list[i].total;
 			product_customization_total = product_list[i].total_customization;
+			pourcentage_total = product_total*(product_list[i].pourcentage/100);
 		}
 		else
 		{
 			current_price = formatCurrency(product_list[i].price_wt, currencyFormat, currencySign, currencyBlank);
 			product_total = product_list[i].total_wt;
 			product_customization_total = product_list[i].total_customization_wt;
+			pourcentage_total = product_total*(product_list[i].pourcentage/100);
 		}
 
 		var current_price_class ='price';
@@ -872,6 +879,13 @@ function updateCartSummary(json)
 			$('#total_product_price_' + key_for_blockcart).html(formatCurrency(product_total, currencyFormat, currencySign, currencyBlank));
 		if (product_list[i].quantity_without_customization != product_list[i].quantity)
 			$('#total_product_price_' + key_for_blockcart_nocustom).html(formatCurrency(product_total, currencyFormat, currencySign, currencyBlank));
+
+		if (typeof(product_list[i].customizationQuantityTotal) !== 'undefined' && product_list[i].customizationQuantityTotal > 0)
+			$('#total_product_pourcentage_' + key_for_blockcart).html(formatCurrency(product_customization_total, currencyFormat, currencySign, currencyBlank));
+		else
+			$('#total_product_pourcentage_' + key_for_blockcart).html(formatCurrency(pourcentage_total, currencyFormat, currencySign, currencyBlank));
+		/*if (product_list[i].quantity_without_customization != product_list[i].quantity)
+			$('#total_product_pourcentage_' + key_for_blockcart_nocustom).html(formatCurrency(pourcentage_total, currencyFormat, currencySign, currencyBlank));*/
 
 		$('input[name=quantity_' + key_for_blockcart_nocustom + ']').val(product_list[i].id_customization? product_list[i].quantity_without_customization : product_list[i].cart_quantity);
 		$('input[name=quantity_' + key_for_blockcart_nocustom + '_hidden]').val(product_list[i].id_customization? product_list[i].quantity_without_customization : product_list[i].cart_quantity);
@@ -961,12 +975,17 @@ function updateCartSummary(json)
 
 	// Cart summary
 	$('#summary_products_quantity').html(nbrProducts + ' ' + (nbrProducts > 1 ? txtProducts : txtProduct));
-	if (priceDisplayMethod !== 0)
+	if (priceDisplayMethod !== 0){
 		$('#total_product').html(formatCurrency(json.total_products, currencyFormat, currencySign, currencyBlank));
-	else
+		$('#total_product_pourcentage').html(formatCurrency(json.total_pourcentage, currencyFormat, currencySign, currencyBlank));
+	}else{
 		$('#total_product').html(formatCurrency(json.total_products_wt, currencyFormat, currencySign, currencyBlank));
+		$('#total_product_pourcentage').html(formatCurrency(json.total_pourcentage_wt, currencyFormat, currencySign, currencyBlank));
+	}
 	$('#total_price').html(formatCurrency(json.total_price, currencyFormat, currencySign, currencyBlank));
 	$('#total_price_without_tax').html(formatCurrency(json.total_price_without_tax, currencyFormat, currencySign, currencyBlank));
+	$('#total_pourcentage').html(formatCurrency(json.total_pourcentage_wt, currencyFormat, currencySign, currencyBlank));
+	$('#total_pourcentage_without_tax').html(formatCurrency(json.total_pourcentage, currencyFormat, currencySign, currencyBlank));
 	$('#total_tax').html(formatCurrency(json.total_tax, currencyFormat, currencySign, currencyBlank));
 
 	$('.cart_total_delivery').show();

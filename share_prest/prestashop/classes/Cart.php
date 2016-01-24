@@ -25,7 +25,10 @@
 */
 
 class CartCore extends ObjectModel
-{
+{   
+    public $total_pourcentage_wt;
+    public $total_pourcentage;
+
     public $id;
 
     public $id_shop_group;
@@ -340,8 +343,8 @@ class CartCore extends ObjectModel
      */
     public function getAverageProductsTaxRate(&$cart_amount_te = null, &$cart_amount_ti = null)
     {
-        $cart_amount_ti = $this->getOrderTotal(true, Cart::ONLY_PRODUCTS);
-        $cart_amount_te = $this->getOrderTotal(false, Cart::ONLY_PRODUCTS);
+        $cart_amount_ti = $this->getOrderTotal(true, Cart::ONLY_PRODUCTS)[0];
+        $cart_amount_te = $this->getOrderTotal(false, Cart::ONLY_PRODUCTS)[0];
 
         $cart_vat_amount = $cart_amount_ti - $cart_amount_te;
 
@@ -586,6 +589,9 @@ class CartCore extends ObjectModel
         $pa_ids = array();
         if ($result) {
             foreach ($result as $key => $row) {
+                $row['pourcentage'] = Product::getPourcentageById($row['id_product']);
+                $row['associations'] = $this->getAssociations();
+                
                 $products_ids[] = $row['id_product'];
                 $pa_ids[] = $row['id_product_attribute'];
                 $specific_price = SpecificPrice::getSpecificPrice($row['id_product'], $this->id_shop, $this->id_currency, $id_country, $this->id_shop_group, $row['cart_quantity'], $row['id_product_attribute'], $this->id_customer, $this->id);
@@ -742,6 +748,14 @@ class CartCore extends ObjectModel
         }
 
         return $this->_products;
+    }
+
+    public static function getAssociations(){
+        $sql = 'SELECT name 
+                FROM my_associations';
+        
+        $res = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+        return $res;
     }
 
     public static function cacheSomeAttributesLists($ipa_list, $id_lang)
@@ -1389,7 +1403,7 @@ class CartCore extends ObjectModel
         }
 
         $with_taxes = $use_tax_display ? $cart->_taxCalculationMethod != PS_TAX_EXC : true;
-        return Tools::displayPrice($cart->getOrderTotal($with_taxes, $type), Currency::getCurrencyInstance((int)$cart->id_currency), false);
+        return Tools::displayPrice($cart->getOrderTotal($with_taxes, $type)[0], Currency::getCurrencyInstance((int)$cart->id_currency), false);
     }
 
 
@@ -1511,6 +1525,7 @@ class CartCore extends ObjectModel
         $products_total = array();
         $ecotax_total = 0;
 
+        $total_pourcentage_tmp = 0;
         foreach ($products as $product) {
             // products refer to the cart details
 
@@ -1583,7 +1598,9 @@ class CartCore extends ObjectModel
                     $products_total[$id_tax_rules_group] += Tools::ps_round($product_price, $compute_precision) * (int)$product['cart_quantity'];
                     break;
             }
+            $total_pourcentage_tmp += $product_price * ($product['pourcentage']/100);
         }
+        $total_pourcentage = $total_pourcentage_tmp;
 
         foreach ($products_total as $key => $price) {
             $order_total += $price;
@@ -1684,7 +1701,8 @@ class CartCore extends ObjectModel
             return $order_total_discount;
         }
 
-        return Tools::ps_round((float)$order_total, $compute_precision);
+        $result = [Tools::ps_round((float)$order_total, $compute_precision),$total_pourcentage];
+        return $result;
     }
 
     /**
@@ -2257,8 +2275,8 @@ class CartCore extends ObjectModel
             }
         }
 
-        $total_products_wt = $this->getOrderTotal(true, Cart::ONLY_PRODUCTS);
-        $total_products = $this->getOrderTotal(false, Cart::ONLY_PRODUCTS);
+        $total_products_wt = $this->getOrderTotal(true, Cart::ONLY_PRODUCTS)[0];
+        $total_products = $this->getOrderTotal(false, Cart::ONLY_PRODUCTS)[0];
 
         $free_carriers_rules = array();
 
@@ -2781,7 +2799,7 @@ class CartCore extends ObjectModel
         }
 
         // Order total in default currency without fees
-        $order_total = $this->getOrderTotal(true, Cart::ONLY_PHYSICAL_PRODUCTS_WITHOUT_SHIPPING, $product_list);
+        $order_total = $this->getOrderTotal(true, Cart::ONLY_PHYSICAL_PRODUCTS_WITHOUT_SHIPPING, $product_list)[0];
 
         // Start with shipping cost at 0
         $shipping_cost = 0;
@@ -2816,7 +2834,7 @@ class CartCore extends ObjectModel
             $id_carrier = (int)Configuration::get('PS_CARRIER_DEFAULT');
         }
 
-        $total_package_without_shipping_tax_inc = $this->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING, $product_list);
+        $total_package_without_shipping_tax_inc = $this->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING, $product_list)[0];
         if (empty($id_carrier)) {
             if ((int)$this->id_customer) {
                 $customer = new Customer((int)$this->id_customer);
@@ -2932,7 +2950,7 @@ class CartCore extends ObjectModel
         if (isset($configuration['PS_SHIPPING_FREE_PRICE'])) {
             $free_fees_price = Tools::convertPrice((float)$configuration['PS_SHIPPING_FREE_PRICE'], Currency::getCurrencyInstance((int)$this->id_currency));
         }
-        $orderTotalwithDiscounts = $this->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING, null, null, false);
+        $orderTotalwithDiscounts = $this->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING, null, null, false)[0];
         if ($orderTotalwithDiscounts >= (float)($free_fees_price) && (float)($free_fees_price) > 0) {
             Cache::store($cache_id, $shipping_cost);
             return $shipping_cost;
@@ -3120,8 +3138,8 @@ class CartCore extends ObjectModel
             'invoice' => AddressFormat::getFormattedLayoutData($invoice)
         );
 
-        $base_total_tax_inc = $this->getOrderTotal(true);
-        $base_total_tax_exc = $this->getOrderTotal(false);
+        $base_total_tax_inc = $this->getOrderTotal(true)[0];
+        $base_total_tax_exc = $this->getOrderTotal(false)[0];
 
         $total_tax = $base_total_tax_inc - $base_total_tax_exc;
 
@@ -3150,14 +3168,17 @@ class CartCore extends ObjectModel
             }
         }
 
+        
         $gift_products = array();
         $cart_rules = $this->getCartRules();
         $total_shipping = $this->getTotalShippingCost();
         $total_shipping_tax_exc = $this->getTotalShippingCost(null, false);
-        $total_products_wt = $this->getOrderTotal(true, Cart::ONLY_PRODUCTS);
-        $total_products = $this->getOrderTotal(false, Cart::ONLY_PRODUCTS);
-        $total_discounts = $this->getOrderTotal(true, Cart::ONLY_DISCOUNTS);
-        $total_discounts_tax_exc = $this->getOrderTotal(false, Cart::ONLY_DISCOUNTS);
+        $total_products_wt = $this->getOrderTotal(true, Cart::ONLY_PRODUCTS)[0];
+        $total_products = $this->getOrderTotal(false, Cart::ONLY_PRODUCTS)[0];
+        $total_discounts = $this->getOrderTotal(true, Cart::ONLY_DISCOUNTS)[0];
+        $total_discounts_tax_exc = $this->getOrderTotal(false, Cart::ONLY_DISCOUNTS)[0];
+        $total_pourcentage_wt = $this->getOrderTotal(true, Cart::ONLY_PRODUCTS)[1];
+        $total_pourcentage = $this->getOrderTotal(false, Cart::ONLY_PRODUCTS)[1];
 
         // The cart content is altered for display
         foreach ($cart_rules as &$cart_rule) {
@@ -3227,6 +3248,7 @@ class CartCore extends ObjectModel
         }
 
         $summary = array(
+
             'delivery' => $delivery,
             'delivery_state' => State::getNameById($delivery->id_state),
             'invoice' => $invoice,
@@ -3238,8 +3260,8 @@ class CartCore extends ObjectModel
             'is_virtual_cart' => (int)$this->isVirtualCart(),
             'total_discounts' => $total_discounts,
             'total_discounts_tax_exc' => $total_discounts_tax_exc,
-            'total_wrapping' => $this->getOrderTotal(true, Cart::ONLY_WRAPPING),
-            'total_wrapping_tax_exc' => $this->getOrderTotal(false, Cart::ONLY_WRAPPING),
+            'total_wrapping' => $this->getOrderTotal(true, Cart::ONLY_WRAPPING)[0],
+            'total_wrapping_tax_exc' => $this->getOrderTotal(false, Cart::ONLY_WRAPPING)[0],
             'total_shipping' => $total_shipping,
             'total_shipping_tax_exc' => $total_shipping_tax_exc,
             'total_products_wt' => $total_products_wt,
@@ -3247,6 +3269,8 @@ class CartCore extends ObjectModel
             'total_price' => $base_total_tax_inc,
             'total_tax' => $total_tax,
             'total_price_without_tax' => $base_total_tax_exc,
+            'total_pourcentage' => $total_pourcentage,
+            'total_pourcentage_wt' => $total_pourcentage_wt,
             'is_multi_address_delivery' => $this->isMultiAddressDelivery() || ((int)Tools::getValue('multi-shipping') == 1),
             'free_ship' =>!$total_shipping && !count($this->getDeliveryAddressesWithoutCarriers(true, $errors)),
             'carrier' => new Carrier($this->id_carrier, $id_lang),

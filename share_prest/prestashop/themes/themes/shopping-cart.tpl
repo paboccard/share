@@ -85,15 +85,18 @@
 					<th class="cart_product first_item">{l s='Product'}</th>
 					<th class="cart_description item">{l s='Description'}</th>
 					{if $PS_STOCK_MANAGEMENT}
-						{assign var='col_span_subtotal' value='3'}
+						{assign var='col_span_subtotal' value='2'}
 						<th class="cart_avail item text-center">{l s='Availability'}</th>
 					{else}
-						{assign var='col_span_subtotal' value='2'}
+						{assign var='col_span_subtotal' value='1'}
 					{/if}
 					<th class="cart_unit item text-right">{l s='Unit price'}</th>
 					<th class="cart_quantity item text-center">{l s='Qty'}</th>
-					<th class="cart_delete last_item">&nbsp;</th>
+					
+					<th class="cart_total item text-right">{l s='Association'}</th>
+					<th class="cart_total item text-right">{l s='Don'}</th>
 					<th class="cart_total item text-right">{l s='Total'}</th>
+					<th class="cart_delete last_item">&nbsp;</th>
 				</tr>
 			</thead>
 			<tfoot>
@@ -124,7 +127,7 @@
 				{if $use_taxes}
 					{if $priceDisplay}
 						<tr class="cart_total_price">
-							<td rowspan="{$rowspan_total}" colspan="3" id="cart_voucher" class="cart_voucher">
+							<td rowspan="{$rowspan_total}" colspan="5" id="cart_voucher" class="cart_voucher">
 								{if $voucherAllowed}
 									<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
 										<fieldset>
@@ -145,11 +148,12 @@
 								{/if}
 							</td>
 							<td colspan="{$col_span_subtotal}" class="text-right">{if $display_tax_label}{l s='Total products (tax excl.)'}{else}{l s='Total products'}{/if}</td>
-							<td colspan="2" class="price" id="total_product">{displayPrice price=$total_products}</td>
+							<td class="price" id="total_product_pourcentage">{displayPrice price=$total_pourcentage}</td>
+							<td class="price" id="total_product">{displayPrice price=$total_products}</td>
 						</tr>
 					{else}
 						<tr class="cart_total_price">
-							<td rowspan="{$rowspan_total}" colspan="2" id="cart_voucher" class="cart_voucher">
+							<td rowspan="{$rowspan_total}" colspan="4" id="cart_voucher" class="cart_voucher">
 								{if $voucherAllowed}
 									<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
 										<fieldset>
@@ -170,7 +174,8 @@
 								{/if}
 							</td>
 							<td colspan="{$col_span_subtotal}" class="text-right">{if $display_tax_label}{l s='Total products (tax incl.)'}{else}{l s='Total products'}{/if}</td>
-							<td colspan="2" class="price" id="total_product">{displayPrice price=$total_products_wt}</td>
+							<td colspan="1" class="price" id="total_product_pourcentage">{displayPrice price=$total_pourcentage_wt}</td>
+							<td colspan="1" class="price" id="total_product">{displayPrice price=$total_products_wt}</td>
 						</tr>
 					{/if}
 				{else}
@@ -198,7 +203,8 @@
 							{/if}
 						</td>
 						<td colspan="{$col_span_subtotal}" class="text-right">{l s='Total products'}</td>
-						<td colspan="2" class="price" id="total_product">{displayPrice price=$total_products}</td>
+						<td colspan="1" class="price" id="total_product_pourcentage">{displayPrice price=$total_pourcentage}</td>
+						<td colspan="1" class="price" id="total_product">{displayPrice price=$total_products}</td>
 					</tr>
 				{/if}
 				<tr{if $total_wrapping == 0} style="display: none;"{/if}>
@@ -271,7 +277,8 @@
 					{if $priceDisplay != 0}
 					<tr class="cart_total_price">
 						<td colspan="{$col_span_subtotal}" class="text-right">{if $display_tax_label}{l s='Total (tax excl.)'}{else}{l s='Total'}{/if}</td>
-						<td colspan="2" class="price" id="total_price_without_tax">{displayPrice price=$total_price_without_tax}</td>
+						<td colspan="1" class="price" id="total_pourcentage_without_tax">{displayPrice price=$total_pourcentage}</td>
+						<td colspan="1" class="price" id="total_price_without_tax">{displayPrice price=$total_price_without_tax}</td>
 					</tr>
 					{/if}
 					<tr class="cart_total_tax">
@@ -287,11 +294,17 @@
                         </div>
 					</td>
 					{if $use_taxes}
-						<td colspan="2" class="price" id="total_price_container">
+						<td colspan="1" class="price" id="total_price_container">
+							<span id="total_pourcentage">{displayPrice price=$total_pourcentage_wt}</span>
+						</td>
+						<td colspan="1" class="price" id="total_price_container">
 							<span id="total_price">{displayPrice price=$total_price}</span>
 						</td>
 					{else}
-						<td colspan="2" class="price" id="total_price_container">
+						<td colspan="1" class="price" id="total_price_container">
+							<span id="total_pourcentage">{displayPrice price=$total_pourcentage}</span>
+						</td>
+						<td colspan="1" class="price" id="total_price_container">
 							<span id="total_price">{displayPrice price=$total_price_without_tax}</span>
 						</td>
 					{/if}

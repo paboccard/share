@@ -510,6 +510,16 @@ class ProductCore extends ObjectModel
         }
     }
 
+    public static function getPourcentageById($id){
+        $sql = 'SELECT discount 
+                FROM my_product_association_discount ad 
+                LEFT JOIN '._DB_PREFIX_.'product p ON ad.id_product=p.id_product
+                WHERE ad.id_product = '.(int)$id;
+        
+        $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+        return $result[0]['discount'];
+    }
+
     /**
      * @see ObjectModel::getFieldsShop()
      * @return array
@@ -4557,8 +4567,10 @@ class ProductCore extends ObjectModel
                 $price = isset($product_update['price']) ? $product_update['price'] : $product_update['product_price'];
                 if (isset($product_update['price_wt']) && $product_update['price_wt']) {
                     $price_wt = $product_update['price_wt'];
+                    $total_pourcentage_wt = $product_update['price_wt'];
                 } else {
                     $price_wt = $price * (1 + ((isset($product_update['tax_rate']) ? $product_update['tax_rate'] : $product_update['rate']) * 0.01));
+                    $total_pourcentage_wt = $price * (1 + ((isset($product_update['tax_rate']) ? $product_update['tax_rate'] : $product_update['rate']) * 0.01));
                 }
 
                 if (!isset($customized_datas[$product_id][$product_attribute_id][$id_address_delivery])) {
@@ -4581,6 +4593,8 @@ class ProductCore extends ObjectModel
                     $product_update['total_customization_wt'] = $price_wt * $customization_quantity;
                     $product_update['total'] = $price * ($product_quantity - $customization_quantity);
                     $product_update['total_customization'] = $price * $customization_quantity;
+                    $product_update['total_pourcentage_wt'] = $price_wt * ($product_quantity - $customization_quantity);
+
                 }
             }
         }
