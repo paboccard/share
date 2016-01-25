@@ -510,16 +510,6 @@ class ProductCore extends ObjectModel
         }
     }
 
-    public static function getPourcentageById($id){
-        $sql = 'SELECT discount 
-                FROM my_product_association_discount ad 
-                LEFT JOIN '._DB_PREFIX_.'product p ON ad.id_product=p.id_product
-                WHERE ad.id_product = '.(int)$id;
-        
-        $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
-        return $result[0]['discount'];
-    }
-
     /**
      * @see ObjectModel::getFieldsShop()
      * @return array
@@ -6157,5 +6147,19 @@ class ProductCore extends ObjectModel
     {
         return Db::getInstance()->execute('UPDATE '._DB_PREFIX_.'product p
 		'.Shop::addSqlAssociation('product', 'p').' SET product_shop.pack_stock_type = '.(int)$pack_stock_type.' WHERE p.`id_product` = '.(int)$id_product);
+    }
+
+    public function getPourcentage(){
+        return Product::getPourcentageById($this->id);
+    }
+
+    public static function getPourcentageById($id){
+        $sql = 'SELECT discount 
+                FROM my_product_association_discount ad 
+                LEFT JOIN '._DB_PREFIX_.'product p ON ad.id_product=p.id_product
+                WHERE ad.id_product = '.(int)$id;
+        
+        $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+        return $result[0]['discount'];
     }
 }

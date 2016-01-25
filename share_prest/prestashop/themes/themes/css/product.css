@@ -333,7 +333,7 @@ span.view_scroll_spacer {
     margin-top: 10px; }
     .pb-center-column #buy_block label {
       display: inline-block;
-      width: 125px;
+      /*width: 125px;*/
       font-weight: 700;
       font-size: 12px;
       text-align: right; }
