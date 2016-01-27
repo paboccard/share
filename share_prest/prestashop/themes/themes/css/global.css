@@ -5752,13 +5752,13 @@ header {
     header .row > .container {
       position: relative; }
     header .row #header_logo {
-      padding-top: 15px; }
+      padding-top: 0px; }
       @media (max-width: 992px) {
         header .row #header_logo {
-          padding-top: 40px; } }
+          padding-top: 0px; } }
       @media (max-width: 767px) {
         header .row #header_logo {
-          padding-top: 15px; }
+          padding-top: 0px; }
           header .row #header_logo img {
             margin: 0 auto; } }
   @media (min-width: 767px) {
@@ -8850,7 +8850,7 @@ a.bg-primary:hover {
 }
 .bar.background-image-fixed-2 {
   background: url('../img/fixe-background-fnac.jpg') center top no-repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-size: cover;
 }
 .bar.color-white h1,
@@ -9070,3 +9070,42 @@ a, button {
 }
 /******************************/
 
+/*********** HEADER NAV BAR **************/
+.navbar-fixed-top .navbar-collapse,
+.navbar-affixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: 340px;
+}
+@media (max-width: 480px) and (orientation: landscape) {
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-affixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px;
+  }
+}
+.navbar-affixed-top {
+  top: -32px;
+}
+.navbar-affixed-top.affix-top {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.navbar-affixed-top.affix {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  -webkit-box-shadow: 0 0 5px #cccccc;
+  box-shadow: 0 0 5px #cccccc;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+body.boxed .navbar-affixed-top.affix {
+  position: static;
+}
+.navbar_background{
+  background-color: #fff;
+  margin-bottom: 0px;
+}
