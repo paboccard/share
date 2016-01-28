@@ -31,6 +31,8 @@ class SupplierControllerCore extends FrontController
     /** @var Supplier */
     protected $supplier;
 
+    protected $allSuppliers;
+
     public function setMedia()
     {
         parent::setMedia();
@@ -136,6 +138,12 @@ class SupplierControllerCore extends FrontController
                 $row['image'] = (!file_exists(_PS_SUPP_IMG_DIR_.'/'.$row['id_supplier'].'-'.ImageType::getFormatedName('medium').'.jpg')) ? $this->context->language->iso_code.'-default' : $row['id_supplier'];
             }
 
+            usort($allSuppliers, function($a, $b) {
+                $b1 = floatval($b['association_discount']);
+                $a1 = floatval($a['association_discount']);
+                return $b1 - $a1;
+            });
+            //var_dump($allSuppliers);
             $this->context->smarty->assign(array(
                 'pages_nb' => ceil($nbProducts / (int)$this->n),
                 'nbSuppliers' => $nbProducts,
@@ -156,4 +164,5 @@ class SupplierControllerCore extends FrontController
     {
         return $this->supplier;
     }
+    
 }
