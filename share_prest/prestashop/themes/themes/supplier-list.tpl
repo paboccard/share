@@ -55,7 +55,13 @@
 										<a href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}" class="btn btn-template-transparent-primary">Voir les ventes</a>
 									</figcaption>
 								</figure>
+								<div class="ribbon pourcent">
+                                	<div class="theribbon">Don : {$supplier['association_discount']|string_format:"%.2f"}%</div>
+                                	<div class="ribbon-background"></div>
+                            	</div>
+                            <!-- /.ribbon -->
 							</li>
+
 						
     					<!--<div class="col-sm-6">
     						<div class="box-image">
