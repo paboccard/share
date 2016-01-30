@@ -38,8 +38,26 @@
     			<div class="col-sm-offset-1 col-sm-10">
 
     				<div class="row portfolio">
+    					<ul class="grid cs-style-6">
     					{foreach from=$allSuppliers_list item=supplier}
-    					<div class="col-sm-6">
+    					
+							<li class="col-sm-12 col-md-6 ">
+								<figure>
+									<div><img src="{$img_sup_dir}{$supplier.image|escape:'html':'UTF-8'}-medium_default.jpg" alt="" class="img-responsive">
+									</div>
+									<figcaption>
+										<h3>{$supplier.name}</h3>
+									</br>
+										<div class="text">
+		    								<span class="hidden-sm">73 Associations aidées</span>
+		    								<span class="hidden-sm">{$supplier['association_gain']|string_format:"%.2f"}€ donnés</span>
+		    							</div>
+										<a href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}" class="btn btn-template-transparent-primary">Voir les ventes</a>
+									</figcaption>
+								</figure>
+							</li>
+						
+    					<!--<div class="col-sm-6">
     						<div class="box-image">
     							<div class="image">
     								<img src="{$img_sup_dir}{$supplier.image|escape:'html':'UTF-8'}-medium_default.jpg" alt="" class="img-responsive">
@@ -64,9 +82,10 @@
     							<div class="theribbon">20%</div>
     							<div class="ribbon-background"></div>
     						</div>
-    						<!-- /.ribbon -->
-    					</div>
+    						<!-- /.ribbon --
+    					</div>-->
     					{/foreach}
+    					</ul>
     				</div>
     			</div>
     		</div>
@@ -194,3 +213,5 @@
 {/if}
 {/if}
 *}
+<script src="themes/themes/js/modernizr.custom.js"></script>
+<script src="themes/themes/js/toucheffects.js"></script>
