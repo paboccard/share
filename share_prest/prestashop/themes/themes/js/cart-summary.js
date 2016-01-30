@@ -584,7 +584,6 @@ function refreshOddRow()
 
 function upQuantity(id, qty)
 {
-	alert(id);
 	if (typeof(qty) == 'undefined' || !qty)
 		qty = 1;
 	var customizationId = 0;
