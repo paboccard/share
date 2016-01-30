@@ -279,6 +279,7 @@ var ajaxCart = {
 	updateFancyBox : function (){},
 	// add a product in the cart via ajax
 	add : function(idProduct, idCombination, addedFromProductPage, callerElement, quantity, whishlist, association){
+		alert("ADD function");
 		
 		if (addedFromProductPage && !checkCustomizations())
 		{
@@ -888,3 +889,12 @@ function crossselling_serialScroll()
 			pager: false
 		});
 }
+
+/*$(function(){
+	$(document).on('change', '.attribute_select_association_cart', function(e){
+		var url = $('.attribute_select_association').val(); // get selected value
+	      if (url) { // require a URL
+	          window.location = url; // redirect
+	      }
+	});
+});*/

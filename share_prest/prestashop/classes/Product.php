@@ -6162,4 +6162,16 @@ class ProductCore extends ObjectModel
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
         return $result[0]['discount'];
     }
+
+    public static function getAssociationByCartAndIdProduct($id_cart, $id_product, $id_product_attribute){
+        $sql = 'SELECT id_association 
+                FROM my_cart_product_association
+                WHERE id_cart = ' .(int)$id_cart.' 
+                        AND id_product = '.(int)$id_product.'
+                        AND id_product_attribute = '.(int)$id_product_attribute;
+        
+        $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+
+        return $result[0]['id_association'];
+    }
 }

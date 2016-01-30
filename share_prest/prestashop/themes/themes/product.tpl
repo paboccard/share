@@ -186,12 +186,12 @@
 			<!-- add to cart form-->
 			<form id="buy_block"{if $PS_CATALOG_MODE && !isset($groups) && $product->quantity > 0} class="hidden"{/if} action="{$link->getPageLink('cart')|escape:'html':'UTF-8'}" method="post">
 				<!-- hidden datas -->
-				<p class="">
-					<input type="" name="token" value="{$static_token}" />
-					<input type="" name="id_product" value="{$product->id|intval}" id="product_page_product_id" />
-					<input type="" name="add" value="1" />
-					<input type="" name="id_product_attribute" id="idCombination" value="" />
-					<input type="" name="id_association" id="idAssociation" value="" />
+				<p class="hidden">
+					<input type="hidden" name="token" value="{$static_token}" />
+					<input type="hidden" name="id_product" value="{$product->id|intval}" id="product_page_product_id" />
+					<input type="hidden" name="add" value="1" />
+					<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
+					<input type="hidden" name="id_association" id="idAssociation" value="" />
 				</p>
 				<div class="">
 					<div class="content_prices clearfix">

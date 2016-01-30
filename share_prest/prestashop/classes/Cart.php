@@ -591,6 +591,7 @@ class CartCore extends ObjectModel
             foreach ($result as $key => $row) {
                 $row['pourcentage'] = Product::getPourcentageById($row['id_product']);
                 $row['associations'] = $this->getAssociations();
+                $row['asso_selected'] = Product::getAssociationByCartAndIdProduct((int)$this->id, (int)$row['id_product'], (int)$row['id_product_attribute']);
                 
                 $products_ids[] = $row['id_product'];
                 $pa_ids[] = $row['id_product_attribute'];
@@ -1020,12 +1021,25 @@ class CartCore extends ObjectModel
                     if ($new_qty < $minimal_quantity && $minimal_quantity > 1) {
                         return -1;
                     }
+                } else if ($operator == "changeAsso"){
                 } else {
                     return false;
                 }
 
+                if ($operator == "changeAsso"){
+                    if ((int)$id_association > 0){
+                        Db::getInstance()->execute('
+                            UPDATE `my_cart_product_association`
+                            SET `id_association` = '.$id_association.', `date_add` = NOW()
+                            WHERE `id_product` = '.(int)$id_product.
+                            (!empty($id_product_attribute) ? ' AND `id_product_attribute` = '.(int)$id_product_attribute : '').'
+                            AND `id_cart` = '.(int)$this->id.(Configuration::get('PS_ALLOW_MULTISHIPPING') && $this->isMultiAddressDelivery() ? ' AND `id_address_delivery` = '.(int)$id_address_delivery : '').'
+                            LIMIT 1'
+                        );
+                    }
+                }
                 /* Delete product from cart */
-                if ($new_qty <= 0) {
+                else if ($new_qty <= 0) {
                     return $this->deleteProduct((int)$id_product, (int)$id_product_attribute, (int)$id_customization);
                 } elseif ($new_qty < $minimal_quantity) {
                     return -1;
@@ -1038,14 +1052,16 @@ class CartCore extends ObjectModel
 						AND `id_cart` = '.(int)$this->id.(Configuration::get('PS_ALLOW_MULTISHIPPING') && $this->isMultiAddressDelivery() ? ' AND `id_address_delivery` = '.(int)$id_address_delivery : '').'
 						LIMIT 1'
                     );
-                    Db::getInstance()->execute('
-                        UPDATE `my_cart_product_association`
-                        SET `id_association` = '.$id_association.', `date_add` = NOW()
-                        WHERE `id_product` = '.(int)$id_product.
-                        (!empty($id_product_attribute) ? ' AND `id_product_attribute` = '.(int)$id_product_attribute : '').'
-                        AND `id_cart` = '.(int)$this->id.(Configuration::get('PS_ALLOW_MULTISHIPPING') && $this->isMultiAddressDelivery() ? ' AND `id_address_delivery` = '.(int)$id_address_delivery : '').'
-                        LIMIT 1'
-                    );
+                    if ((int)$id_association > 0){
+                        Db::getInstance()->execute('
+                            UPDATE `my_cart_product_association`
+                            SET `id_association` = '.$id_association.', `date_add` = NOW()
+                            WHERE `id_product` = '.(int)$id_product.
+                            (!empty($id_product_attribute) ? ' AND `id_product_attribute` = '.(int)$id_product_attribute : '').'
+                            AND `id_cart` = '.(int)$this->id.(Configuration::get('PS_ALLOW_MULTISHIPPING') && $this->isMultiAddressDelivery() ? ' AND `id_address_delivery` = '.(int)$id_address_delivery : '').'
+                            LIMIT 1'
+                        );
+                    }
                 }
             }
             /* Add product to the cart */
@@ -1082,15 +1098,17 @@ class CartCore extends ObjectModel
                     'date_add' =>                date('Y-m-d H:i:s')
                 ));
 
-                $result_add_association = Db::getInstance()->insert('my_cart_product_association', array(
-                    'id_cart' =>                (int)$this->id,
-                    'id_product' =>            (int)$id_product,
-                    'id_address_delivery' =>    (int)$id_address_delivery,
-                    'id_product_attribute' =>    (int)$id_product_attribute,
-                    'id_association' =>         (int)$id_association,
-                    'date_add' =>                date('Y-m-d H:i:s')
-                ), false, true, Db::INSERT, false);
-
+                $result_add_association = 0;
+                if ((int)$id_association > 0){
+                    $result_add_association = Db::getInstance()->insert('my_cart_product_association', array(
+                        'id_cart' =>                (int)$this->id,
+                        'id_product' =>            (int)$id_product,
+                        'id_address_delivery' =>    (int)$id_address_delivery,
+                        'id_product_attribute' =>    (int)$id_product_attribute,
+                        'id_association' =>         (int)$id_association,
+                        'date_add' =>                date('Y-m-d H:i:s')
+                    ), false, true, Db::INSERT, false);
+                }
                 if (!$result_add && !$result_add_association) {
                     return false;
                 }

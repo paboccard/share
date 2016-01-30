@@ -33,6 +33,10 @@ $(document).ready(function(){
 		e.preventDefault();
 		downQuantity($(this).attr('id').replace('cart_quantity_down_', ''));
 	});
+	$('.attribute_select_association_cart').on('change', function(e){
+		e.preventDefault();
+		changeAssociation($(this).attr('id').replace('cart_select_association_', ''),$(this).val());
+	});
 	$('.cart_quantity_delete' ).off('click').on('click', function(e){
 		e.preventDefault();
 		deleteProductFromSummary($(this).attr('id'));
@@ -580,6 +584,7 @@ function refreshOddRow()
 
 function upQuantity(id, qty)
 {
+	alert(id);
 	if (typeof(qty) == 'undefined' || !qty)
 		qty = 1;
 	var customizationId = 0;
@@ -784,6 +789,106 @@ function downQuantity(id, qty)
 	{
 		deleteProductFromSummary(id);
 	}
+}
+
+function changeAssociation(id, id_asso)
+{
+	var customizationId = 0;
+	var productId = 0;
+	var productAttributeId = 0;
+	var id_address_delivery = 0;
+	var ids = 0;
+	ids = id.split('_');
+	productId = parseInt(ids[0]);
+	if (typeof(ids[1]) !== 'undefined')
+		productAttributeId = parseInt(ids[1]);
+	if (typeof(ids[2]) !== 'undefined' && ids[2] !== 'nocustom')
+		customizationId = parseInt(ids[2]);
+	if (typeof(ids[3]) !== 'undefined')
+		id_address_delivery = parseInt(ids[3]);
+
+	$.ajax({
+		type: 'POST',
+		headers: { "cache-control": "no-cache" },
+		url: baseUri + '?rand=' + new Date().getTime(),
+		async: true,
+		cache: false,
+		dataType: 'json',
+		data: 'controller=cart'
+			+ '&ajax=true'
+			+ '&add=true'
+			+ '&getproductprice=true'
+			+ '&summary=true'
+			+ '&id_product=' + productId
+			+ '&ipa=' + productAttributeId
+			+ '&id_address_delivery=' + id_address_delivery
+			+ '&op=changeAsso'
+			+ ((customizationId !== 0) ? '&id_customization=' + customizationId : '')
+			+ '&qty=' + 1
+			+ '&token=' + static_token
+			+ '&id_association=' + id_asso
+			+ '&allow_refresh=1',
+		success: function(jsonData)
+		{
+			if (jsonData.hasError)
+			{
+				var errors = '';
+				for(var error in jsonData.errors)
+					//IE6 bug fix
+					if(error !== 'indexOf')
+						errors += $('<div />').html(jsonData.errors[error]).text() + "\n";
+				if (!!$.prototype.fancybox)
+				    $.fancybox.open([
+			        {
+			            type: 'inline',
+			            autoScale: true,
+			            minHeight: 30,
+			            content: '<p class="fancybox-error">' + errors + '</p>'
+			        }],
+					{
+				        padding: 0
+				    });
+				else
+				    alert(errors);
+				$('input[name=quantity_'+ id +']').val($('input[name=quantity_'+ id +'_hidden]').val());
+			}
+			else
+			{
+				if (jsonData.refresh)
+					window.location.href = window.location.href;
+				updateCartSummary(jsonData.summary);
+				if (window.ajaxCart != undefined)
+					ajaxCart.updateCart(jsonData);
+				if (customizationId !== 0)
+					updateCustomizedDatas(jsonData.customizedDatas);
+				updateHookShoppingCart(jsonData.HOOK_SHOPPING_CART);
+				updateHookShoppingCartExtra(jsonData.HOOK_SHOPPING_CART_EXTRA);
+				if (typeof(getCarrierListAndUpdate) !== 'undefined')
+					getCarrierListAndUpdate();
+				if (typeof(updatePaymentMethodsDisplay) !== 'undefined')
+					updatePaymentMethodsDisplay();
+			}
+		},
+		error: function(XMLHttpRequest, textStatus, errorThrown) {
+			if (textStatus !== 'abort')
+			{
+				error = "TECHNICAL ERROR: unable to save update quantity \n\nDetails:\nError thrown: " + XMLHttpRequest + "\n" + 'Text status: ' + textStatus;
+				if (!!$.prototype.fancybox)
+				    $.fancybox.open([
+			        {
+			            type: 'inline',
+			            autoScale: true,
+			            minHeight: 30,
+			            content: '<p class="fancybox-error">' + error + '</p>'
+			        }],
+					{
+				        padding: 0
+				    });
+				else
+				    alert(error);
+			}
+		}
+	});
 }
 
 function updateCartSummary(json)
