@@ -33,6 +33,7 @@ class CartControllerCore extends FrontController
     protected $id_address_delivery;
     protected $customization_id;
     protected $qty;
+    protected $id_association;
     public $ssl = true;
 
     protected $ajax_refresh = false;
@@ -63,6 +64,7 @@ class CartControllerCore extends FrontController
         $this->customization_id = (int)Tools::getValue('id_customization');
         $this->qty = abs(Tools::getValue('qty', 1));
         $this->id_address_delivery = (int)Tools::getValue('id_address_delivery');
+        $this->id_association = (int)Tools::getValue('id_association');
     }
 
     public function postProcess()
@@ -290,7 +292,15 @@ class CartControllerCore extends FrontController
             if (!$this->errors) {
                 $cart_rules = $this->context->cart->getCartRules();
                 $available_cart_rules = CartRule::getCustomerCartRules($this->context->language->id, (isset($this->context->customer->id) ? $this->context->customer->id : 0), true, true, true, $this->context->cart, false, true);
-                $update_quantity = $this->context->cart->updateQty($this->qty, $this->id_product, $this->id_product_attribute, $this->customization_id, Tools::getValue('op', 'up'), $this->id_address_delivery);
+                $update_quantity = $this->context->cart->updateQty($this->qty, 
+                                                    $this->id_product, 
+                                                    $this->id_product_attribute, 
+                                                    $this->customization_id, 
+                                                    Tools::getValue('op', 'up'), 
+                                                    $this->id_address_delivery,
+                                                    null, 
+                                                    true, 
+                                                    $this->id_association);
                 if ($update_quantity < 0) {
                     // If product has attribute, minimal quantity is set with minimal quantity of attribute
                     $minimal_quantity = ($this->id_product_attribute) ? Attribute::getAttributeMinimalQty($this->id_product_attribute) : $product->minimal_quantity;
