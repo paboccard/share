@@ -213,6 +213,9 @@ $(document).ready(function()
 		if (url.indexOf('#') != -1)
 			getProductAttribute();
 	}
+
+	var select = $('.attribute_select_association').val();
+	$('#idAssociation').val(select);
 });
 
 //find a specific price rule, based on pre calculated dom display array
@@ -306,6 +309,11 @@ $(document).on('change', '.attribute_select', function(e){
 });
 
 $(document).on('click', '.attribute_radio', function(e){
+	e.preventDefault();
+	getProductAttribute();
+});
+
+$(document).on('change', '.attribute_select_association', function(e){
 	e.preventDefault();
 	getProductAttribute();
 });
@@ -410,7 +418,7 @@ function oosHookJsCode()
 }
 
 //add a combination of attributes in the global JS sytem
-function addCombination(idCombination, arrayOfIdAttributes, quantity, price, ecotax, id_image, reference, unit_price, minimal_quantity, available_date, combination_specific_price)
+function addCombination(idCombination, arrayOfIdAttributes, quantity, price, ecotax, id_image, reference, unit_price, minimal_quantity, available_date, combination_specific_price, association)
 {
 	globalQuantity += quantity;
 
@@ -428,6 +436,7 @@ function addCombination(idCombination, arrayOfIdAttributes, quantity, price, eco
 	combination['available_date'] = available_date;
 	combination['specific_price'] = [];
 	combination['specific_price'] = combination_specific_price;
+	combination['association'] = association;
 	combinations.push(combination);
 }
 
@@ -1093,6 +1102,12 @@ function getProductAttribute()
 			if (attributesCombinations[i]['id_attribute'] === tab_attributes[a])
 				request += '/' + attributesCombinations[i]['id_attribute'] + '-' + attributesCombinations[i]['group'] + attribute_anchor_separator + attributesCombinations[i]['attribute'];
 	request = request.replace(request.substring(0, 1), '#/');
+
+	//value of id association
+	var select = $('.attribute_select_association').val();
+	$('#idAssociation').val(select);
+	request += '/' + select;
+
 	var url = window.location + '';
 
 	// redirection
@@ -1149,7 +1164,7 @@ function checkUrl()
 						$('#color_' + attributesCombinations[a]['id_attribute']).addClass('selected').parent().addClass('selected');
 						$('input:radio[value=' + attributesCombinations[a]['id_attribute'] + ']').prop('checked', true);
 						$('input[type=hidden][name=group_' + attributesCombinations[a]['id_attribute_group'] + ']').val(attributesCombinations[a]['id_attribute']);
-						$('select[name=group_' + attributesCombinations[a]['id_attribute_group'] + ']').val(attributesCombinations[a]['id_attribute']);
+						$('#attributes select[name=group_' + attributesCombinations[a]['id_attribute_group'] + ']').val(attributesCombinations[a]['id_attribute']);
 						if (!!$.prototype.uniform)
 							$.uniform.update('input[name=group_' + attributesCombinations[a]['id_attribute_group'] + '], select[name=group_' + attributesCombinations[a]['id_attribute_group'] + ']');
 

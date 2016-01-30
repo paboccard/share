@@ -186,11 +186,12 @@
 			<!-- add to cart form-->
 			<form id="buy_block"{if $PS_CATALOG_MODE && !isset($groups) && $product->quantity > 0} class="hidden"{/if} action="{$link->getPageLink('cart')|escape:'html':'UTF-8'}" method="post">
 				<!-- hidden datas -->
-				<p class="hidden">
-					<input type="hidden" name="token" value="{$static_token}" />
-					<input type="hidden" name="id_product" value="{$product->id|intval}" id="product_page_product_id" />
-					<input type="hidden" name="add" value="1" />
-					<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
+				<p class="">
+					<input type="" name="token" value="{$static_token}" />
+					<input type="" name="id_product" value="{$product->id|intval}" id="product_page_product_id" />
+					<input type="" name="add" value="1" />
+					<input type="" name="id_product_attribute" id="idCombination" value="" />
+					<input type="" name="id_association" id="idAssociation" value="" />
 				</p>
 				<div class="">
 					<div class="content_prices clearfix">
@@ -234,7 +235,7 @@
 									{/strip}</span>
 								{/if}
 
-                                <span class="don">Don réalisé : <span class="nb_price">{($product->getPourcentage()/100)*$productPrice|string_format:"%.2f"}€</span></span>
+                                <p class="don">Don unitaire : <span class="nb_price">{(($product->getPourcentage()/100)*$productPrice)|string_format:"%.2f"}€</span></p>
 
 							</div> <!-- end prices -->
 							{if $packItems|@count && $productPrice < $product->getNoPackPrice()}
@@ -257,7 +258,7 @@
                         {hook h="displayProductPriceBlock" product=$product type="after_price"}
 						<div class="clear"></div>
 					</div> <!-- end content_prices -->
-					<div class="box">
+					<div class="box col-md-6">
 						<!-- quantity wanted -->
 						{if !$PS_CATALOG_MODE}
 						<label for="quantity_wanted">{l s='Quantity'}</label>
@@ -328,10 +329,10 @@
 						{/if}
 						<div>
 							<label class="attribute_label">Choisissez une association</label>
-							<select name="{$groupName}" id="group_{$id_attribute_group|intval}" class="form-control attribute_select no-print">
+							<select width="125" name="{$groupName}" id="group_{$id_attribute_group|intval}" class="form-control attribute_select_association no-print">
 								{assign var='associations' value=Cart::getAssociations()}
 								{foreach from=$associations item=association}			
-									<option value="{$association['name']}"> {$association['name']|escape:'html':'UTF-8'}</option>
+									<option value="{$association['id_association']}"> {$association['name']|escape:'html':'UTF-8'}</option>
 								{/foreach}
 							</select>
 						</div>
@@ -339,9 +340,12 @@
 					<div class="">
 						<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
 							<p id="add_to_cart" class="buttons_bottom_block no-print">
-								<button type="submit" name="Submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> <span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span></button>
-		                            <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart-o"></i>
-		                         </button>
+								<button type="submit" name="Submit" class="btn btn-template-main">
+									<i class="fa fa-shopping-cart"></i> 
+									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span>
+								</button>
+		                        <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart-o"></i>
+		                        </button>
 							</p>
 						</div>
 						{*{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}*}
@@ -356,7 +360,7 @@
 
 	</div> <!-- end primary_block -->
 	{if !$content_only}
-{if (isset($quantity_discounts) && count($quantity_discounts) > 0)}
+		{if (isset($quantity_discounts) && count($quantity_discounts) > 0)}
 			<!-- quantity discount -->
 			<section class="page-product-box">
 				<h3 class="page-product-heading">{l s='Volume discounts'}</h3>

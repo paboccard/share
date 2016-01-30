@@ -458,10 +458,11 @@ class ToolsCore
 
         $ret = (isset($_POST[$key]) ? $_POST[$key] : (isset($_GET[$key]) ? $_GET[$key] : $default_value));
 
+
         if (is_string($ret)) {
             return stripslashes(urldecode(preg_replace('/((\%5C0+)|(\%00+))/i', '', urlencode($ret))));
         }
-
+        
         return $ret;
     }
 

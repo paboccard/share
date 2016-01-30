@@ -1,3 +1,12 @@
+
+--  20160130
+-- ------------------------------------------------
+ALTER TABLE my_cart_product_association 
+	ADD COLUMN validate TINYINT(1) 
+	NOT NULL DEFAULT '0' 
+	AFTER date_add;
+
+
 --  20160119
 -- ------------------------------------------------
 

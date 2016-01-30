@@ -142,7 +142,7 @@ var ajaxCart = {
 		if ($('.cart_block').length) {
 			$(document).off('click', '#add_to_cart button').on('click', '#add_to_cart button', function(e){
 				e.preventDefault();
-				ajaxCart.add($('#product_page_product_id').val(), $('#idCombination').val(), true, null, $('#quantity_wanted').val(), null);
+				ajaxCart.add($('#product_page_product_id').val(), $('#idCombination').val(), true, null, $('#quantity_wanted').val(), null, $('#idAssociation').val());
 			});
 		}
 
@@ -278,8 +278,8 @@ var ajaxCart = {
 	// close fancybox
 	updateFancyBox : function (){},
 	// add a product in the cart via ajax
-	add : function(idProduct, idCombination, addedFromProductPage, callerElement, quantity, whishlist){
-
+	add : function(idProduct, idCombination, addedFromProductPage, callerElement, quantity, whishlist, association){
+		
 		if (addedFromProductPage && !checkCustomizations())
 		{
 			if (contentOnly)
@@ -325,7 +325,7 @@ var ajaxCart = {
 			async: true,
 			cache: false,
 			dataType : "json",
-			data: 'controller=cart&add=1&ajax=true&qty=' + ((quantity && quantity != null) ? quantity : '1') + '&id_product=' + idProduct + '&token=' + static_token + ( (parseInt(idCombination) && idCombination != null) ? '&ipa=' + parseInt(idCombination): '' + '&id_customization=' + ((typeof customizationId !== 'undefined') ? customizationId : 0)),
+			data: 'controller=cart&add=1&ajax=true&qty=' + ((quantity && quantity != null) ? quantity : '1') + '&id_product=' + idProduct + '&token=' + static_token + ( (parseInt(idCombination) && idCombination != null) ? '&ipa=' + parseInt(idCombination): '' + '&id_customization=' + ((typeof customizationId !== 'undefined') ? customizationId : 0) + '&id_association=' + association),
 			success: function(jsonData,textStatus,jqXHR)
 			{
 				// add appliance to whishlist module
