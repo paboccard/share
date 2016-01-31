@@ -9588,6 +9588,7 @@ div.panel.panel-default.sidebar-menu{
   text-shadow: 0px 1px 2px #bbb;
 }
 
+<<<<<<< HEAD
 .h1_product_detail{
   margin-top: 0px !important;
   padding: 0px !important;
@@ -9597,3 +9598,17 @@ div.panel.panel-default.sidebar-menu{
   padding-left: 0px !important;
 }
 
+=======
+#accordionOne {
+  border :0 !important;
+}
+
+#accordionOne div{
+  border :0 !important;
+  box-shadow: 0 !important;
+}
+
+#accordionOne .panel {
+  border-radius: 0 !important;
+}
+>>>>>>> da7ee978c6c5b9c6a6ec64105193a9d9228bab7b

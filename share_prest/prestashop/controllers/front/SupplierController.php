@@ -31,8 +31,6 @@ class SupplierControllerCore extends FrontController
     /** @var Supplier */
     protected $supplier;
 
-    protected $allSuppliers;
-
     public function setMedia()
     {
         parent::setMedia();
@@ -101,10 +99,14 @@ class SupplierControllerCore extends FrontController
             //$products = $this->supplier->getProducts($this->supplier->id, $this->context->cookie->id_lang, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
             //$this->addColorsToProductList($products);
             $products = array();
+            
+            $a_categories = $this->supplier->getCategories();
+            
             $this->context->smarty->assign(
                 array(
                     'nb_products' => $nbProducts,
                     'products' => $products,
+                    'categories' => $a_categories,
                     'path' => ($this->supplier->active ? Tools::safeOutput($this->supplier->name) : ''),
                     'supplier' => $this->supplier,
                     'comparator_max_item' => Configuration::get('PS_COMPARATOR_MAX_ITEM'),
@@ -138,12 +140,6 @@ class SupplierControllerCore extends FrontController
                 $row['image'] = (!file_exists(_PS_SUPP_IMG_DIR_.'/'.$row['id_supplier'].'-'.ImageType::getFormatedName('medium').'.jpg')) ? $this->context->language->iso_code.'-default' : $row['id_supplier'];
             }
 
-            usort($allSuppliers, function($a, $b) {
-                $b1 = floatval($b['association_discount']);
-                $a1 = floatval($a['association_discount']);
-                return $b1 - $a1;
-            });
-            //var_dump($allSuppliers);
             $this->context->smarty->assign(array(
                 'pages_nb' => ceil($nbProducts / (int)$this->n),
                 'nbSuppliers' => $nbProducts,
@@ -164,5 +160,4 @@ class SupplierControllerCore extends FrontController
     {
         return $this->supplier;
     }
-    
 }
