@@ -85,7 +85,7 @@
 					<th class="cart_product first_item">{l s='Product'}</th>
 					<th class="cart_description item">{l s='Description'}</th>
 					{if $PS_STOCK_MANAGEMENT}
-						{assign var='col_span_subtotal' value='2'}
+						{assign var='col_span_subtotal' value='3'}
 						<th class="cart_avail item text-center">{l s='Availability'}</th>
 					{else}
 						{assign var='col_span_subtotal' value='1'}
@@ -127,7 +127,7 @@
 				{if $use_taxes}
 					{if $priceDisplay}
 						<tr class="cart_total_price">
-							<td rowspan="{$rowspan_total}" colspan="5" id="cart_voucher" class="cart_voucher">
+							<td rowspan="{$rowspan_total}" colspan="4" id="cart_voucher" class="cart_voucher">
 								{if $voucherAllowed}
 									<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
 										<fieldset>
@@ -153,7 +153,7 @@
 						</tr>
 					{else}
 						<tr class="cart_total_price">
-							<td rowspan="{$rowspan_total}" colspan="4" id="cart_voucher" class="cart_voucher">
+							<td rowspan="{$rowspan_total}" colspan="3" id="cart_voucher" class="cart_voucher">
 								{if $voucherAllowed}
 									<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
 										<fieldset>
