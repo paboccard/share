@@ -45,7 +45,7 @@
 {/function}
 
 {function menu level=2}
-        <div class="panel panel-default sub-panel" id='categ{$level}}'>
+        <div class="panel panel-default sub-panel" id='categ{$level}'>
             {foreach $data[$level] as $key => $entry}
                 {showMenu level=$level}
                 {if !empty($data[$key])}
