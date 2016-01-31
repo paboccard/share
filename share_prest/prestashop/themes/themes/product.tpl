@@ -65,9 +65,10 @@
 		<div class="pb-left-column col-xs-12 col-sm-4 col-md-5">
 			<!-- product img-->
 			<div id="image-block" class="clearfix">
-					<span class="new-box">
-						<span class="new-label">{$product->getPourcentage()|string_format:"%.2f"}%</span>
-					</span>
+					<!--<span class="new-box">
+						<span class="new-label">{*{$product->getPourcentage()|string_format:"%.2f"}*}%</span>
+					</span>-->
+					
 				{if $product->on_sale}
 					<span class="sale-box no-print">
 						<span class="sale-label">{l s='Sale!'}</span>
@@ -99,6 +100,10 @@
 					</span>
 				{/if}
 			</div> <!-- end image-block -->
+			<div class="ribbon pourcent">
+                <div class="theribbon">Don : {$product->getPourcentage()|string_format:"%.2f"}%</div>
+                <div class="ribbon-background"></div>
+            </div>
 			{if isset($images) && count($images) > 0}
 				<!-- thumbnails -->
 				<div id="views_block" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
@@ -153,7 +158,7 @@
 			{if $product->online_only}
 				<p class="online_only">{l s='Online only'}</p>
 			{/if}
-			<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
+			<h1 class="h1_product_detail" itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
 				{if $product->description_short || $packItems|@count > 0}
 					<div id="short_description_block">
 						{if $product->description_short}
@@ -258,10 +263,12 @@
                         {hook h="displayProductPriceBlock" product=$product type="after_price"}
 						<div class="clear"></div>
 					</div> <!-- end content_prices -->
-					<div class="box col-md-6">
+					<div class="box col-md-12 box_attribute_product">
 						<!-- quantity wanted -->
 						{if !$PS_CATALOG_MODE}
+						<div class="col-lg-4 col-md-12 col-xs-12">
 						<label for="quantity_wanted">{l s='Quantity'}</label>
+						
 						<p id="quantity_wanted_p"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
 							<input type="number" min="1" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
 							<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
@@ -272,6 +279,7 @@
 							</a>
 							<span class="clearfix"></span>
 						</p>
+						</div>
 						{/if}
 						<!-- minimal quantity wanted -->
 						<p id="minimal_quantity_wanted_p"{if $product->minimal_quantity <= 1 || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
@@ -279,11 +287,12 @@
 						</p>
 						{if isset($groups)}
 							<!-- attributes -->
+							<div class="col-lg-8 col-md-12 col-xs-12">
 							<div id="attributes">
 								<div class="clearfix"></div>
 								{foreach from=$groups key=id_attribute_group item=group}
 									{if $group.attributes|@count}
-										<fieldset class="attribute_fieldset">
+										<fieldset class="attribute_fieldset col-lg-6 col-md-12 col-xs-12">
 											<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'}&nbsp;</label>
 											{assign var="groupName" value="group_$id_attribute_group"}
 											<div class="attribute_list">
@@ -326,10 +335,11 @@
 									{/if}
 								{/foreach}
 							</div> <!-- end attributes -->
+						</div>
 						{/if}
-						<div>
+						<div class="div_select_association">
 							<label class="attribute_label">Choisissez une association</label>
-							<select width="125" name="{$groupName}" id="group_{$id_attribute_group|intval}" class="form-control attribute_select_association no-print">
+							<select name="{$groupName}" id="group_{$id_attribute_group|intval}" class="form-control attribute_select_association no-print">
 								{assign var='associations' value=Cart::getAssociations()}
 								{foreach from=$associations item=association}			
 									<option value="{$association['id_association']}"> {$association['name']|escape:'html':'UTF-8'}</option>
@@ -339,7 +349,7 @@
 					</div> <!-- end product_attributes -->
 					<div class="">
 						<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
-							<p id="add_to_cart" class="buttons_bottom_block no-print">
+							<p id="add_to_cart" class="buttons_bottom_block no-print btn_add_cart">
 								<button type="submit" name="Submit" class="btn btn-template-main">
 									<i class="fa fa-shopping-cart"></i> 
 									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span>

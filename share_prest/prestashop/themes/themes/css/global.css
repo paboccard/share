@@ -6438,6 +6438,10 @@ table.table_block td {
 .page-product-box {
   padding-bottom: 10px; }
 
+.box_attribute_product{
+  padding-left: 0px !important;
+}
+
 .product-box {
   width: 178px;
   float: left;
@@ -9582,5 +9586,14 @@ div.panel.panel-default.sidebar-menu{
   /*width: 110px;*/
   background-color: #ed4e6e;
   text-shadow: 0px 1px 2px #bbb;
+}
+
+.h1_product_detail{
+  margin-top: 0px !important;
+  padding: 0px !important;
+}
+.btn_add_cart{
+  padding-top: 0px !important;
+  padding-left: 0px !important;
 }
 
