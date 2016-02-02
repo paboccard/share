@@ -61,6 +61,7 @@
     {/function}
 
     {if !isset($errors) OR !sizeof($errors)} 
+        {if !$isProductList}
         <section class="bar background-image-fixed-2 no-mb" style="background: url('{$img_sup_dir}{$supplier->id}.jpg') center top no-repeat;">
             {if !empty($supplier->description)}
                 <div class="description_box rte">
@@ -101,44 +102,35 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="col-md-8">
-                            <div class="text-center">
-                                <div class="icon icon-lg"><i class="fa fa-file-code-o"></i>
-                                </div>
-                                <h3>Pourcentage moyen : 20%</h3>
-                                <h3>272€ récoltés</h3></br></br>
-                            </div>
-                        </div>-->
-                        <!--<p class="text-center">
-                            <a href="#" class="btn btn-template-transparent-black btn-lg">Voir les produits</a>
-                        </p>-->
 
                     </div>
 
                 </div>
             </div>
         </section>
-
-
-        {if $products}
-            <div class="content_sortPagiBar">
-                <div class="sortPagiBar clearfix">
-                    {include file="./product-sort.tpl"}
-                    {include file="./nbr-product-page.tpl"}
+        {else}
+            {if $products}
+                <div class="content_sortPagiBar">
+                    <div class="sortPagiBar clearfix">
+                        {include file="./product-sort.tpl"}
+                        {include file="./nbr-product-page.tpl"}
+                    </div>
+                    <div class="top-pagination-content clearfix">
+                        {include file="./product-compare.tpl"}
+                        {include file="$tpl_dir./pagination.tpl" no_follow=1}
+                    </div>
                 </div>
-                <div class="top-pagination-content clearfix">
-                    {include file="./product-compare.tpl"}
-                    {include file="$tpl_dir./pagination.tpl" no_follow=1}
-                </div>
-            </div>
 
-            {include file="./product-list.tpl" products=$products}
+                {include file="./product-list.tpl" products=$products}
 
-            <div class="content_sortPagiBar">
-                <div class="bottom-pagination-content clearfix">
-                    {include file="./product-compare.tpl"}
-                    {include file="./pagination.tpl" paginationId='bottom' no_follow=1}
+                <div class="content_sortPagiBar">
+                    <div class="bottom-pagination-content clearfix">
+                        {include file="./product-compare.tpl"}
+                        {include file="./pagination.tpl" paginationId='bottom' no_follow=1}
+                    </div>
                 </div>
-            </div>
+            {else}
+            NO PRODUCT
+            {/if}
         {/if}
     {/if}

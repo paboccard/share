@@ -31,6 +31,9 @@ class SupplierControllerCore extends FrontController
     /** @var Supplier */
     protected $supplier;
 
+    /** @var Supplier */
+    protected $category;
+
     public function setMedia()
     {
         parent::setMedia();
@@ -66,6 +69,18 @@ class SupplierControllerCore extends FrontController
                 $this->canonicalRedirection();
             }
         }
+
+        if($id_category = (int)Tools::getValue('id_category')) {
+            $this->category = new Category($id_category, $this->context->language->id);
+
+            if (!Validate::isLoadedObject($this->category) || !$this->category->active) {
+                header('HTTP/1.1 404 Not Found');
+                header('Status: 404 Not Found');
+                $this->errors[] = Tools::displayError('The chosen category does not exist.');
+            } else {
+                $this->canonicalRedirection();
+            }   
+        }
     }
 
     /**
@@ -77,12 +92,52 @@ class SupplierControllerCore extends FrontController
         parent::initContent();
 
         if (Validate::isLoadedObject($this->supplier) && $this->supplier->active && $this->supplier->isAssociatedToShop()) {
-            $this->productSort(); // productSort must be called before assignOne
-            $this->assignOne();
-            $this->setTemplate(_PS_THEME_DIR_.'supplier.tpl');
+            if (Validate::isLoadedObject($this->category) && $this->category->active && $this->category->isAssociatedToShop()) {
+                $this->productSort(); // productSort must be called before assignOne
+                $this->assignOneCategory();
+                $this->setTemplate(_PS_THEME_DIR_.'supplier.tpl');
+            } else {
+                $this->productSort(); // productSort must be called before assignOne
+                $this->assignOne();
+                $this->setTemplate(_PS_THEME_DIR_.'supplier.tpl');
+            }
         } else {
             $this->assignAll();
             $this->setTemplate(_PS_THEME_DIR_.'supplier-list.tpl');
+        }
+    }
+
+    /**
+     * Assign template vars if displaying one supplier
+     */
+    protected function assignOneCategory()
+    {
+        if (Configuration::get('PS_DISPLAY_SUPPLIERS')) {
+            $this->supplier->description = Tools::nl2br(trim($this->supplier->description));
+            $nbProducts = $this->supplier->getProducts($this->supplier->id, null, null, null, $this->orderBy, $this->orderWay, true);
+            $this->pagination((int)$nbProducts);
+
+            $products = $this->supplier->getProducts($this->supplier->id, $this->context->cookie->id_lang, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
+            $this->addColorsToProductList($products);
+            
+            
+            $this->context->smarty->assign(
+                array(
+                    'nb_products' => $nbProducts,
+                    'isProductList' => true,
+                    'products' => $products,
+                    'path' => ($this->supplier->active ? Tools::safeOutput($this->supplier->name) : ''),
+                    'supplier' => $this->supplier,
+                    'category' => $this->category,
+                    'comparator_max_item' => Configuration::get('PS_COMPARATOR_MAX_ITEM'),
+                    'body_classes' => array(
+                        $this->php_self.'-'.$this->supplier->id,
+                        $this->php_self.'-'.$this->supplier->link_rewrite
+                    )
+                )
+            );
+        } else {
+            Tools::redirect('index.php?controller=404');
         }
     }
 
@@ -93,7 +148,6 @@ class SupplierControllerCore extends FrontController
     {
         if (Configuration::get('PS_DISPLAY_SUPPLIERS')) {
             $this->supplier->description = Tools::nl2br(trim($this->supplier->description));
-            $nbProducts = $this->supplier->getProducts($this->supplier->id, null, null, null, $this->orderBy, $this->orderWay, true);
             $this->pagination((int)$nbProducts);
 
             //$products = $this->supplier->getProducts($this->supplier->id, $this->context->cookie->id_lang, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
@@ -104,7 +158,6 @@ class SupplierControllerCore extends FrontController
             
             $this->context->smarty->assign(
                 array(
-                    'nb_products' => $nbProducts,
                     'products' => $products,
                     'categories' => $a_categories,
                     'path' => ($this->supplier->active ? Tools::safeOutput($this->supplier->name) : ''),
