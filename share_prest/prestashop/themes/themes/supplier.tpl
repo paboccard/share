@@ -39,7 +39,7 @@
         </div>
     {else}
         <ul>
-            <li><a class="li_hover" href="listProduitParMarque.php">{$entry->name[1]}</a></li>
+            <li><a class="li_hover" href="{$link->getSupplierProductLinkByCategory($supplier->id, $entry->id)|escape:'html':'UTF-8'}">{$entry->name[1]}</a></li>
         </ul>
     {/if}
 {/function}
