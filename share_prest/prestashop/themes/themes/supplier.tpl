@@ -39,7 +39,14 @@
         </div>
     {else}
         <ul>
-            <li><a class="li_hover" href="{$link->getSupplierProductLinkByCategory($supplier->id, $entry->id)|escape:'html':'UTF-8'}">{$entry->name[1]}</a></li>
+            <li>
+                {if $isFinalMenu}
+                <a class="li_hover" href="{$link->getSupplierProductLinkByCategory($supplier->id, $entry->id)|escape:'html':'UTF-8'}">{$entry->name[1]}</a>
+
+                {else}
+                    {$entry->name[1]}
+                {/if}
+            </li>
         </ul>
     {/if}
 {/function}
@@ -47,7 +54,7 @@
 {function menu level=2}
         <div class="panel panel-default sub-panel" id='categ{$level}'>
             {foreach $data[$level] as $key => $entry}
-                {showMenu level=$level}
+                {showMenu level=$level isFinalMenu = empty($data[$key]) }
                 {if !empty($data[$key])}
                     
                     <div id="collapse{$key}" class="panel-collapse">

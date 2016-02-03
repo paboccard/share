@@ -114,10 +114,10 @@ class SupplierControllerCore extends FrontController
     {
         if (Configuration::get('PS_DISPLAY_SUPPLIERS')) {
             $this->supplier->description = Tools::nl2br(trim($this->supplier->description));
-            $nbProducts = $this->supplier->getProducts($this->supplier->id, null, null, null, $this->orderBy, $this->orderWay, true);
+            $nbProducts = $this->supplier->getProductsByCategory($this->category->id, null, null, null, $this->orderBy, $this->orderWay, true);
             $this->pagination((int)$nbProducts);
 
-            $products = $this->supplier->getProducts($this->supplier->id, $this->context->cookie->id_lang, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
+            $products = $this->supplier->getProductsByCategory($this->category->id, $this->context->cookie->id_lang, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
             $this->addColorsToProductList($products);
             
             
