@@ -158,6 +158,18 @@ class OrderDetailCore extends ObjectModel
     /** @var float */
     public $original_wholesale_price;
 
+    /** Association **/
+    public $id_cart;
+    public $id_product;
+    public $id_address_delivery;
+    public $id_product_attribute;
+    public $id_association;
+    public $discount;
+    public $gain_price_product;
+    public $date_add;
+    public $validate;
+    public $pourcentage;
+
     /**
      * @see ObjectModel::$definition
      */
@@ -649,6 +661,24 @@ class OrderDetailCore extends ObjectModel
         // Set shop id
         $this->id_shop = (int)$product['id_shop'];
 
+        // Association
+        $this->id_cart = (int)$order->id_cart;
+        $this->id_product = (int)$product['id_product'];
+        $this->id_address_delivery = (int)$product['id_address_delivery'];
+        $this->id_product_attribute = (int)$product['id_product_attribute'];
+        $this->id_association = (int)$product['asso_selected'];
+        $this->pourcentage = (float)$product['pourcentage'];
+        $this->gain_price_product = ($this->pourcentage/100)*$this->unit_price_tax_incl*(int)$product['cart_quantity'];
+        $this->date_add = date('Y-m-d H:i:s');
+        $this->validate = 1;
+        $this->discount = 0;
+        $this->gain_price = 0;
+
+        foreach ($order->product_list as $key => $value) {
+            $this->discount += (float)$value['total_wt']*($value['pourcentage']/100);
+            $this->gain_price += (float)$value['total_wt'];
+        }
+
         // Add new entry to the table
         $this->save();
 
@@ -798,6 +828,13 @@ class OrderDetailCore extends ObjectModel
         }
 
         $this->original_wholesale_price = $this->getWholeSalePrice();
+
+        $data_my_cart_product_association = ['gain_price' => (float)$this->gain_price_product, 'date_add' => $this->date_add, 'validate' => (int)$this->validate];
+        $where_my_cart_product_association = 'id_cart = '.(int)$this->id_cart.' AND id_product = '.(int)$this->id_product.' AND id_address_delivery = '.(int)$this->id_address_delivery.' AND id_product_attribute = '.(int)$this->id_product_attribute.' AND id_association = '.(int)$this->id_association;
+        Db::getInstance()->update('my_cart_product_association', $data_my_cart_product_association, $where_my_cart_product_association, $limit = 0, $null_values = false, $use_cache = true, $add_prefix = false);
+
+        $date_my_order_association_gain = ['id_order' => $this->id_order, 'discount' => $this->discount, 'gain_price' => $this->gain_price];
+        Db::getInstance()->insert('my_order_association_gain', $date_my_order_association_gain, $null_values = false, $use_cache = true, $type = Db::INSERT, $add_prefix = false);
 
         return parent::add($autodate = true, $null_values = false);
     }

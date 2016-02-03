@@ -484,7 +484,7 @@ class LinkCore
             }
             parse_str($request, $request);
         }
-
+        
         $uri_path = Dispatcher::getInstance()->createUrl($controller, $id_lang, $request, false, '', $id_shop);
 
         return $this->getBaseLink($id_shop, $ssl, $relative_protocol).$this->getLangLink($id_lang, null, $id_shop).ltrim($uri_path, '/');
