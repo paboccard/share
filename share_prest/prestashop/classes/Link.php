@@ -318,6 +318,18 @@ class LinkCore
     }
 
     /**
+     * Create a link to a supplier's product list by cateogry.
+     *
+     * @param mixed $supplier Supplier object (can be an ID supplier, but deprecated)
+     * @param string $alias
+     * @param int $id_lang
+     * @return string
+     */
+    public function getSupplierProductLinkByCategory($supplier, $id_category,$alias = null, $id_lang = null, $id_shop = null, $relative_protocol = false) {
+        return $this->getSupplierLink($supplier,$alias, $id_lang, $id_shop, $relative_protocol)."&id_category=".$id_category;
+    }
+
+    /**
      * Create a link to a manufacturer
      *
      * @param mixed $manufacturer Manufacturer object (can be an ID supplier, but deprecated)
