@@ -471,18 +471,6 @@ abstract class PaymentModuleCore extends Module
                             'customization' => array()
                         );
 
-                        ob_start(); 
-                    //debug_backtrace();
-                    echo "$product_var_tpl  : "; var_dump($product_var_tpl); echo "\n";
-
-                    $tab_debug=ob_get_contents(); 
-                    ob_end_clean();
-
-                    $fichier=fopen('test.txt','a+'); 
-                    fwrite($fichier,$tab_debug); 
-                    fwrite($fichier, "\n-----------------validateOrder PaymentModule.PHP-------------------\n");
-                    fclose($fichier);
-
                         $customized_datas = Product::getAllCustomizedDatas((int)$order->id_cart);
                         if (isset($customized_datas[$product['id_product']][$product['id_product_attribute']])) {
                             $product_var_tpl['customization'] = array();
