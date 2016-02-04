@@ -465,8 +465,23 @@ abstract class PaymentModuleCore extends Module
                             'unit_price' => Tools::displayPrice($product_price, $this->context->currency, false),
                             'price' => Tools::displayPrice($product_price * $product['quantity'], $this->context->currency, false),
                             'quantity' => $product['quantity'],
+                            'asso_selected' => (Product::getNameAssociationById((int)$product['asso_selected'])),
+                            'price_asso' => (($product['pourcentage']/100)*$product_price * $product['quantity']),
+                            'pourcentage' => $product['pourcentage'],
                             'customization' => array()
                         );
+
+                        ob_start(); 
+                    //debug_backtrace();
+                    echo "$product_var_tpl  : "; var_dump($product_var_tpl); echo "\n";
+
+                    $tab_debug=ob_get_contents(); 
+                    ob_end_clean();
+
+                    $fichier=fopen('test.txt','a+'); 
+                    fwrite($fichier,$tab_debug); 
+                    fwrite($fichier, "\n-----------------validateOrder PaymentModule.PHP-------------------\n");
+                    fclose($fichier);
 
                         $customized_datas = Product::getAllCustomizedDatas((int)$order->id_cart);
                         if (isset($customized_datas[$product['id_product']][$product['id_product_attribute']])) {
