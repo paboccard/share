@@ -43,6 +43,7 @@
     					
 							<li class="col-sm-12 col-md-6 ">
 								<figure>
+									
 									<div><img src="{$img_sup_dir}{$supplier.image|escape:'html':'UTF-8'}-medium_default.jpg" alt="" class="img-responsive">
 									</div>
 									<figcaption>
@@ -55,10 +56,16 @@
 										<a href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}" class="btn btn-template-transparent-primary">Voir les ventes</a>
 									</figcaption>
 								</figure>
-								<div class="ribbon pourcent">
+								<div class="badge_rond">
+									<div class="rond_pourcentage">
+											<div class="div_don"> Don moyen: </div> 
+											<div class="div_pourcent">{$supplier['association_discount']|string_format:"%.2f"}%</div>
+									</div>
+								</div>
+								<!--<div class="ribbon pourcent">
                                 	<div class="theribbon">Don : {$supplier['association_discount']|string_format:"%.2f"}%</div>
                                 	<div class="ribbon-background"></div>
-                            	</div>
+                            	</div>-->
                             <!-- /.ribbon -->
 							</li>
 
