@@ -58,7 +58,7 @@
 								</figure>
 								<div class="badge_rond">
 									<div class="rond_pourcentage">
-											<div class="div_don"> Don moyen: </div> 
+											<div class="div_don"> Don moyen </div> 
 											<div class="div_pourcent">{$supplier['association_discount']|string_format:"%.2f"}%</div>
 									</div>
 								</div>

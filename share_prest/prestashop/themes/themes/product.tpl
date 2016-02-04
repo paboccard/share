@@ -106,7 +106,7 @@
             </div>-->
             <div class="badge_rond">
 				<div class="rond_pourcentage">
-					<div class="div_don"> Don : </div> 
+					<div class="div_don"> Don </div> 
 					<div class="div_pourcent">{$product->getPourcentage()|string_format:"%.2f"}%</div>
 				</div>
 			</div>
