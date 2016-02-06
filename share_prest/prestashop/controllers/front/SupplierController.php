@@ -46,7 +46,11 @@ class SupplierControllerCore extends FrontController
             return;
         }
         if (Validate::isLoadedObject($this->supplier)) {
-            parent::canonicalRedirection($this->context->link->getSupplierLink($this->supplier));
+            if (Validate::isLoadedObject($this->category)) {
+                parent::canonicalRedirection($this->context->link->getSupplierProductLinkByCategory($this->supplier->id,$this->category->id));
+            } else {
+                parent::canonicalRedirection($this->context->link->getSupplierLink($this->supplier));
+            }
         }
     }
 
@@ -120,12 +124,14 @@ class SupplierControllerCore extends FrontController
             $products = $this->supplier->getProductsByCategory($this->category->id, $this->context->cookie->id_lang, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
             $this->addColorsToProductList($products);
             
+            $a_categories = $this->supplier->getCategories();
             
             $this->context->smarty->assign(
                 array(
                     'nb_products' => $nbProducts,
                     'isProductList' => true,
                     'products' => $products,
+                    'categories' => $a_categories,
                     'path' => ($this->supplier->active ? Tools::safeOutput($this->supplier->name) : ''),
                     'supplier' => $this->supplier,
                     'category' => $this->category,

@@ -534,7 +534,8 @@ class SupplierCore extends ObjectModel
                     il.`legend`,
                     s.`name` AS supplier_name,
                     DATEDIFF(p.`date_add`, DATE_SUB("'.date('Y-m-d').' 00:00:00", INTERVAL '.($nb_days_new_product).' DAY)) > 0 AS new,
-                    m.`name` AS manufacturer_name'.(Combination::isFeatureActive() ? ', product_attribute_shop.minimal_quantity AS product_attribute_minimal_quantity, IFNULL(product_attribute_shop.id_product_attribute,0) id_product_attribute' : '').'
+                    m.`name` AS manufacturer_name'.(Combination::isFeatureActive() ? ', product_attribute_shop.minimal_quantity AS product_attribute_minimal_quantity, IFNULL(product_attribute_shop.id_product_attribute,0) id_product_attribute' : '').',
+                    pdis.discount as gain
                  FROM `'._DB_PREFIX_.'product` p
                 '.Shop::addSqlAssociation('product', 'p').'
                 JOIN `'._DB_PREFIX_.'product_supplier` ps ON (ps.id_product = p.id_product
@@ -549,6 +550,7 @@ class SupplierCore extends ObjectModel
                     AND il.`id_lang` = '.(int)$id_lang.')
                 LEFT JOIN `'._DB_PREFIX_.'supplier` s ON s.`id_supplier` = p.`id_supplier`
                 LEFT JOIN `'._DB_PREFIX_.'manufacturer` m ON m.`id_manufacturer` = p.`id_manufacturer`
+                LEFT JOIN my_product_association_discount pdis ON pdis.id_product = p.id_product
                 '.Product::sqlStock('p', 0);
 
         if (Group::isFeatureActive() || $active_category) {
@@ -571,7 +573,6 @@ class SupplierCore extends ObjectModel
                 ORDER BY '.$alias.pSQL($order_by).' '.pSQL($order_way).'
                 LIMIT '.(((int)$p - 1) * (int)$n).','.(int)$n;
 
-        
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql, true, false);
 
         if (!$result) {

@@ -9607,3 +9607,11 @@ div.panel.panel-default.sidebar-menu{
 #accordionOne .panel {
   border-radius: 0 !important;
 }
+
+.bordered {
+    border : 1px solid #d6d4d4;
+}
+
+.theProduct:hover {
+    border : 1px solid #ed4e6e;
+}
