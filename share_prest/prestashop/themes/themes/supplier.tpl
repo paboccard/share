@@ -82,12 +82,22 @@
             {if $products}
 
                 <div class="content_sortPagiBar">
-                    <div class="sortPagiBar clearfix">
-                        {include file="./product-sort.tpl"}
-                        {include file="./nbr-product-page.tpl"}
-                    </div>
-                    <div class="top-pagination-content clearfix">
-                        {include file="$tpl_dir./pagination.tpl" no_follow=1}
+                   <div class="top-pagination-content clearfix">
+                        <div class="breadCrumbContainer">
+                            <div class="nbrArticle">
+                                <em>{$nb_products} articles</em>
+                            </div>
+                            <div class="breadCrumb">
+                                <div>
+                                        <span>
+                                                <strong>{$supplier->name} | </strong>
+                                        </span>
+
+                                        <span style="color:#333">{$category->name}</span>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -95,7 +105,6 @@
 
                 <div class="content_sortPagiBar">
                     <div class="bottom-pagination-content clearfix">
-                        {include file="./pagination.tpl" paginationId='bottom' no_follow=1}
                     </div>
                 </div>
             {else}

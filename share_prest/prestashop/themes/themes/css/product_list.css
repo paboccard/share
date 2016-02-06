@@ -447,3 +447,29 @@ Product list(Index page) Styles
     min-height: 24px;
     border-top: 1px solid #EDEDED;
 }
+
+.breadCrumbContainer {
+    margin: 0 30px;
+    min-width: 683px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.nbrArticle {
+    float: right;
+    padding: 0 10px;
+    max-width: 80px;
+    font-size: .92em;
+    line-height: 1.9em;
+    overflow: hidden;
+    color:#ed4e6e;
+    border-left: #aaaaaa !important;
+}
+
+ .breadCrumb {
+    padding: 0 0 0 5px;
+    font-size: .92em;
+    line-height: 1.9em;
+    color:#ed4e6e;
+}

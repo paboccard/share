@@ -570,8 +570,8 @@ class SupplierCore extends ObjectModel
                     '.($front ? ' AND product_shop.`visibility` IN ("both", "catalog")' : '').'
 
                 GROUP BY ps.id_product
-                ORDER BY '.$alias.pSQL($order_by).' '.pSQL($order_way).'
-                LIMIT '.(((int)$p - 1) * (int)$n).','.(int)$n;
+                ORDER BY '.$alias.pSQL($order_by).' '.pSQL($order_way).'';  
+                //LIMIT '.(((int)$p - 1) * (int)$n).','.(int)$n;
 
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql, true, false);
 
