@@ -40,6 +40,7 @@ class AddressesControllerCore extends FrontController
         $this->addCSS(_THEME_CSS_DIR_.'addresses.css');
         $this->addJS(_THEME_JS_DIR_.'tools.js'); // retro compat themes 1.5
         $this->addJS(_THEME_JS_DIR_.'addresses.js');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     /**

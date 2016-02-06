@@ -47,6 +47,7 @@ class AddressControllerCore extends FrontController
         $this->addJS(array(
             _THEME_JS_DIR_.'tools/vatManagement.js',
             _THEME_JS_DIR_.'tools/statesManagement.js',
+            _THEME_JS_DIR_.'tools/header.js',
             _PS_JS_DIR_.'validate.js'
         ));
     }

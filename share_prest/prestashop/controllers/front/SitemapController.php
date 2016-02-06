@@ -33,6 +33,7 @@ class SitemapControllerCore extends FrontController
         parent::setMedia();
         $this->addCSS(_THEME_CSS_DIR_.'sitemap.css');
         $this->addJS(_THEME_JS_DIR_.'tools/treeManagement.js');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     /**

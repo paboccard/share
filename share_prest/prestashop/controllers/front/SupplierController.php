@@ -34,10 +34,13 @@ class SupplierControllerCore extends FrontController
     /** @var Supplier */
     protected $category;
 
+    protected $allSuppliers = [];
+
     public function setMedia()
     {
         parent::setMedia();
         $this->addCSS(_THEME_CSS_DIR_.'product_list.css');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     public function canonicalRedirection($canonicalURL = '')
@@ -89,6 +92,9 @@ class SupplierControllerCore extends FrontController
      */
     public function initContent()
     {
+        if (Tools::getValue('ajax')) {
+            return;
+        }
         parent::initContent();
 
         if (Validate::isLoadedObject($this->supplier) && $this->supplier->active && $this->supplier->isAssociatedToShop()) {

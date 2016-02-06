@@ -61,6 +61,7 @@ class BestSalesControllerCore extends FrontController
     public function setMedia()
     {
         parent::setMedia();
+        $this->addJS(_THEME_JS_DIR_.'header.js');
         $this->addCSS(_THEME_CSS_DIR_.'product_list.css');
     }
 }

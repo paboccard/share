@@ -158,6 +158,7 @@ class ParentOrderControllerCore extends FrontController
             $this->addJqueryPlugin('typewatch');
             $this->addJS(_THEME_JS_DIR_.'cart-summary.js');
         }
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     /**

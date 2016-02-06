@@ -61,6 +61,7 @@ class ProductControllerCore extends FrontController
         if (Configuration::get('PS_DISPLAY_JQZOOM') == 1) {
             $this->addJqueryPlugin('jqzoom');
         }
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     public function canonicalRedirection($canonical_url = '')

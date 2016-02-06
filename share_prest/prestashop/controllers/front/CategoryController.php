@@ -64,6 +64,7 @@ class CategoryControllerCore extends FrontController
         }
 
         $this->addJS(_THEME_JS_DIR_.'category.js');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     /**

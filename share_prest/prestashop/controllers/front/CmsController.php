@@ -93,6 +93,7 @@ class CmsControllerCore extends FrontController
         }
 
         $this->addCSS(_THEME_CSS_DIR_.'cms.css');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     /**

@@ -164,5 +164,6 @@ class SearchControllerCore extends FrontController
         if (!$this->instant_search && !$this->ajax_search) {
             $this->addCSS(_THEME_CSS_DIR_.'product_list.css');
         }
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 }

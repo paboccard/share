@@ -342,6 +342,7 @@ class OrderOpcControllerCore extends ParentOrderController
             _THEME_JS_DIR_.'order-carrier.js',
             _PS_JS_DIR_.'validate.js'
         ));
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     /**

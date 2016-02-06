@@ -36,6 +36,10 @@ class IndexControllerCore extends FrontController
     {
         parent::initContent();
         $this->addJS(_THEME_JS_DIR_.'index.js');
+        $this->addJS(_THEME_JS_DIR_.'modernizr.custom.js');
+        $this->addJS(_THEME_JS_DIR_.'toucheffects.js');
+        $this->addJS(_THEME_JS_DIR_.'supplier_list.js');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
         
         $supplier=new SupplierControllerCore();
         $supplier->initContent();

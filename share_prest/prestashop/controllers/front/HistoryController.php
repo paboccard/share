@@ -43,6 +43,7 @@ class HistoryControllerCore extends FrontController
             _THEME_JS_DIR_.'tools.js' // retro compat themes 1.5
         ));
         $this->addJqueryPlugin(array('scrollTo', 'footable', 'footable-sort'));
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     /**

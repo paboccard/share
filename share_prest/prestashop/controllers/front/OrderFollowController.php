@@ -128,5 +128,6 @@ class OrderFollowControllerCore extends FrontController
         );
         $this->addjqueryPlugin('footable');
         $this->addJqueryPlugin('footable-sort');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 }

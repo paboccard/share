@@ -191,6 +191,7 @@ class GuestTrackingControllerCore extends FrontController
 
         $this->addCSS(_THEME_CSS_DIR_.'history.css');
         $this->addCSS(_THEME_CSS_DIR_.'addresses.css');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     protected function processAddressFormat(Address $delivery, Address $invoice)

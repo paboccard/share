@@ -32,6 +32,7 @@ class CompareControllerCore extends FrontController
     {
         parent::setMedia();
         $this->addCSS(_THEME_CSS_DIR_.'comparator.css');
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 
     /**

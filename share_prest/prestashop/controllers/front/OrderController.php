@@ -475,5 +475,6 @@ class OrderControllerCore extends ParentOrderController
         if ($this->step == 2) {
             $this->addJS(_THEME_JS_DIR_.'order-carrier.js');
         }
+        $this->addJS(_THEME_JS_DIR_.'header.js');
     }
 }
