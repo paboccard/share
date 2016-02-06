@@ -24,42 +24,6 @@
 *}
 
 {include file="$tpl_dir./errors.tpl"}
-
-
-{function showMenu}
-    {if $level == 2}
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordionOne" href="#collapse{$entry->id}">
-                    {$entry->name[1]}
-                    <i class="fa fa-chevron-down pull-right"></i>
-                </a>
-
-            </h4>
-        </div>
-    {else}
-        <ul>
-            <li><a class="li_hover" href="{$link->getSupplierProductLinkByCategory($supplier->id, $entry->id)|escape:'html':'UTF-8'}">{$entry->name[1]}</a></li>
-        </ul>
-    {/if}
-{/function}
-
-{function menu level=2}
-        <div class="panel panel-default sub-panel" id='categ{$level}'>
-            {foreach $data[$level] as $key => $entry}
-                {showMenu level=$level}
-                {if !empty($data[$key])}
-                    
-                    <div id="collapse{$key}" class="panel-collapse">
-                        <div class="panel-body">
-                            {menu data=$data level=$key}
-                        </div>
-                    </div>
-                {/if}
-            {/foreach}
-        </div>
-    {/function}
-
     {if !isset($errors) OR !sizeof($errors)} 
         {if !$isProductList}
         <section class="bar background-image-fixed-2 no-mb" style="background: url('{$img_sup_dir}{$supplier->id}.jpg') center top no-repeat;">
@@ -75,7 +39,7 @@
                     <div class="item catEntreprise">
                         <div class="col-md-3">
                             <div class="panel-group accordion" id="accordionOne">
-                                {menu data=$categories}
+                                {include file="./category-arbre.tpl" no_follow=$categories}
                             </div>
                             <!--<div class="col-sm-5 right">
                                 <ul class="list-style-none list_categorie">
@@ -109,15 +73,31 @@
             </div>
         </section>
         {else}
+        <div class="col-sm-3">
+            <div class="panel-group accordion" id="accordionOne">
+                {include file="./category-arbre.tpl" no_follow=$categories}
+            </div>
+        </div>
+        <div class="col-sm-9">
             {if $products}
+
                 <div class="content_sortPagiBar">
-                    <div class="sortPagiBar clearfix">
-                        {include file="./product-sort.tpl"}
-                        {include file="./nbr-product-page.tpl"}
-                    </div>
-                    <div class="top-pagination-content clearfix">
-                        {include file="./product-compare.tpl"}
-                        {include file="$tpl_dir./pagination.tpl" no_follow=1}
+                   <div class="top-pagination-content clearfix">
+                        <div class="breadCrumbContainer">
+                            <div class="nbrArticle">
+                                <em>{$nb_products} articles</em>
+                            </div>
+                            <div class="breadCrumb">
+                                <div>
+                                        <span>
+                                                <strong>{$supplier->name} | </strong>
+                                        </span>
+
+                                        <span style="color:#333">{$category->name}</span>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -125,12 +105,11 @@
 
                 <div class="content_sortPagiBar">
                     <div class="bottom-pagination-content clearfix">
-                        {include file="./product-compare.tpl"}
-                        {include file="./pagination.tpl" paginationId='bottom' no_follow=1}
                     </div>
                 </div>
             {else}
             NO PRODUCT
             {/if}
+        </div>
         {/if}
     {/if}

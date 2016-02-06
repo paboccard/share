@@ -9575,6 +9575,13 @@ div.panel.panel-default.sidebar-menu{
   border-radius: 0 !important;
 }
 
+.bordered {
+    border : 1px solid #d6d4d4;
+}
+
+.theProduct:hover {
+    border : 1px solid #ed4e6e;
+}
 /** Rond pour le pourcentage **/
 .rond_pourcentage{
   height: 90px;
