@@ -9615,3 +9615,28 @@ div.panel.panel-default.sidebar-menu{
 .theProduct:hover {
     border : 1px solid #ed4e6e;
 }
+/** Rond pour le pourcentage **/
+.rond_pourcentage{
+  height: 90px;
+  width: 90px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #ed4e6e;
+  
+}
+.rond_pourcentage .div_don{
+  font-size: 13px;
+}
+.rond_pourcentage .div_pourcent{
+  font-size: 19px;
+}
+.badge_rond {
+  z-index: 20;
+  position: absolute;
+  top: 30px;
+  right : 25px;
+  font-weight: 700;
+  color : #fff;
+}

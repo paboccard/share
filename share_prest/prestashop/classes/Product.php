@@ -6174,4 +6174,30 @@ class ProductCore extends ObjectModel
 
         return $result[0]['id_association'];
     }
+
+    public static function getAssociations(){
+        $sql = 'SELECT * 
+                FROM my_associations';
+        
+        $res = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+        return $res;
+    }
+
+    public static function getAssociationById($id){
+        $sql = 'SELECT * 
+                FROM my_associations
+                WHERE id_association = '.(int)$id;
+        
+        $res = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+        return $res;
+    }
+
+    public static function getNameAssociationById($id){
+        $sql = 'SELECT name 
+                FROM my_associations
+                WHERE id_association = '.(int)$id;
+        
+        $res = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+        return $res;
+    }
 }

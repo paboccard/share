@@ -465,6 +465,9 @@ abstract class PaymentModuleCore extends Module
                             'unit_price' => Tools::displayPrice($product_price, $this->context->currency, false),
                             'price' => Tools::displayPrice($product_price * $product['quantity'], $this->context->currency, false),
                             'quantity' => $product['quantity'],
+                            'asso_selected' => (Product::getNameAssociationById((int)$product['asso_selected'])),
+                            'price_asso' => (($product['pourcentage']/100)*$product_price * $product['quantity']),
+                            'pourcentage' => $product['pourcentage'],
                             'customization' => array()
                         );
 

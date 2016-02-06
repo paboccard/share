@@ -52,6 +52,36 @@
 			</tr>
 		</table>
 	</td>
+
+	<td style="border:1px solid #D6D4D4;">
+		<table class="table">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td align="right">
+					<font size="2" face="Open-sans, sans-serif" color="#555454">
+						<strong>{$product['asso_selected'][0]['name']|escape:'html':'UTF-8'}</strong>
+					</font>
+				</td>
+				<td width="10">&nbsp;</td>
+			</tr>
+		</table>
+	</td>
+	<td style="border:1px solid #D6D4D4;">
+		<table class="table">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td align="right">
+					<font size="2" face="Open-sans, sans-serif" color="#555454">
+						<p>{$product['pourcentage']|string_format:"%.2f"} %</p>
+						
+						<p>{$product['price_asso']|string_format:"%.2f"} €</p>
+					</font>
+				</td>
+				<td width="5">&nbsp;</td>
+			</tr>
+		</table>
+	</td>
+
 	<td style="border:1px solid #D6D4D4;">
 		<table class="table">
 			<tr>

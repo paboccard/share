@@ -100,10 +100,16 @@
 					</span>
 				{/if}
 			</div> <!-- end image-block -->
-			<div class="ribbon pourcent">
+			<!--<div class="ribbon pourcent">
                 <div class="theribbon">Don : {$product->getPourcentage()|string_format:"%.2f"}%</div>
                 <div class="ribbon-background"></div>
-            </div>
+            </div>-->
+            <div class="badge_rond">
+				<div class="rond_pourcentage">
+					<div class="div_don"> Don </div> 
+					<div class="div_pourcent">{$product->getPourcentage()|string_format:"%.2f"}%</div>
+				</div>
+			</div>
 			{if isset($images) && count($images) > 0}
 				<!-- thumbnails -->
 				<div id="views_block" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
