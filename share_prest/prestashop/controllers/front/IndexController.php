@@ -44,10 +44,31 @@ class IndexControllerCore extends FrontController
         $supplier=new SupplierControllerCore();
         $supplier->initContent();
 
+        $this->assignKPI();
         /*$this->context->smarty->assign(array('HOOK_HOME' => Hook::exec('displayHome'),
             'HOOK_HOME_TAB' => Hook::exec('displayHomeTab'),
             'HOOK_HOME_TAB_CONTENT' => Hook::exec('displayHomeTabContent')
         ));*/
         $this->setTemplate(_PS_THEME_DIR_.'index.tpl');
+    }
+
+    public function assignKPI() {
+        $b_showKPI = true;
+        if($b_showKPI) {
+            $nb_association = SupplierCore::getAssociationNumber();
+            $nb_totalGain = SupplierCore::getTotalGain();
+            $nb_monthGain = SupplierCore::getMonthGain();
+            $nb_weekGain = SupplierCore::getWeekGain();
+        }
+
+        $this->context->smarty->assign(
+            array(
+                'showKPI' => $b_showKPI,
+                'nb_association' => $nb_association,
+                'nb_totalGain' => $nb_totalGain,
+                'nb_monthGain' => $nb_monthGain,
+                'nb_weekGain' => $nb_weekGain
+                )
+        );
     }
 }
