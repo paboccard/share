@@ -34,4 +34,5 @@
 		</button>
 	</form>
 </div>
+
 <!-- /Block search module TOP -->
