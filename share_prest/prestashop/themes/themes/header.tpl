@@ -109,7 +109,7 @@
 					</div>
 				</header>
 			</div>
-			{if $page_name =='index'}
+			{if $page_name =='index' && $showKPI}
 				{include file="./banner_number.tpl"}
 			{/if}
 			<div class="columns-container">

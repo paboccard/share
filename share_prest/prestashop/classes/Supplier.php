@@ -455,6 +455,49 @@ class SupplierCore extends ObjectModel
         }
     }
 
+    public static function getAssociationNumber()
+    {
+        $query = 'SELECT count(*) as count FROM my_associations';
+        $res = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+
+        if (count($res)) {
+            return $res[0]['count'];
+        }
+    }
+
+    public static function getTotalGain() {
+        $query = 'SELECT sum(discount) as sum FROM my_order_association_gain';
+        $res = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+
+        if (count($res)) {
+            return $res[0]['sum'];
+        }    
+    }
+
+    public static function getMonthGain() {
+        $query = 'SELECT sum(discount) as sum FROM my_order_association_gain as oag ';
+        $query .= 'JOIN '._DB_PREFIX_.'orders as o ON oag.id_order = o.id_order ';
+        $query .= 'WHERE date_upd >= DATE_FORMAT(DATE_ADD(CURDATE(), INTERVAL -1 MONTH), "%Y%m%01") ';
+        $query .= 'AND date_upd <= DATE_FORMAT(LAST_DAY(DATE_ADD(CURDATE(), INTERVAL -1 MONTH)), "%Y%m%d")';
+        $res = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+
+        if (count($res)) {
+            return $res[0]['sum'];
+        }    
+    }
+
+    public static function getWeekGain() {
+        $query = 'SELECT sum(discount) as sum FROM my_order_association_gain as oag ';
+        $query .= 'JOIN '._DB_PREFIX_.'orders as o ON oag.id_order = o.id_order ';
+        $query .= 'WHERE date_upd >= DATE_FORMAT(DATE_ADD(DATE_SUB(CURDATE(), INTERVAL WEEKDAY(CURDATE()) DAY), INTERVAL -1 WEEK), "%Y%m%d") ';
+        $query .= 'AND date_upd <= DATE_FORMAT(DATE_ADD(DATE_ADD(DATE_SUB(CURDATE(), INTERVAL WEEKDAY(CURDATE()) DAY), INTERVAL -1 WEEK), INTERVAL 6 DAY), "%Y%m%d")';
+        $res = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+
+        if (count($res)) {
+            return $res[0]['sum'];
+        }    
+    }
+
     public static function getProductsBySupplierAndCategory($id_supplier, $id_category, $id_lang, $p, $n,
         $order_by = null, $order_way = null, $get_total = false, $active = true, $active_category = true)
     {
