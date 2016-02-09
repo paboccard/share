@@ -2899,7 +2899,7 @@ exit;
     {
         switch ($type) {
             case 'by':
-                $list = array(0 => 'name', 1 => 'price', 2 => 'date_add', 3 => 'date_upd', 4 => 'position', 5 => 'manufacturer_name', 6 => 'quantity', 7 => 'reference');
+                $list = array(0 => 'name', 1 => 'don', 2 => 'price', 3 => 'date_add', 4 => 'date_upd', 5 => 'position', 6 => 'manufacturer_name', 7 => 'quantity', 8 => 'reference');
                 $value = (is_null($value) || $value === false || $value === '') ? (int)Configuration::get('PS_PRODUCTS_ORDER_BY') : $value;
                 $value = (isset($list[$value])) ? $list[$value] : ((in_array($value, $list)) ? $value : 'position');
                 $order_by_prefix = '';

@@ -1088,7 +1088,7 @@ class FrontControllerCore extends Controller
         // 'orderwaydefault' => Tools::getProductsOrder('way'),
 
         $stock_management = Configuration::get('PS_STOCK_MANAGEMENT') ? true : false; // no display quantity order if stock management disabled
-        $order_by_values  = array(0 => 'name', 1 => 'price', 2 => 'date_add', 3 => 'date_upd', 4 => 'position', 5 => 'manufacturer_name', 6 => 'quantity', 7 => 'reference');
+        $order_by_values  = array(0 => 'name', 1 => 'don', 2 => 'price', 3 => 'date_add', 4 => 'date_upd', 5 => 'position', 6 => 'manufacturer_name', 7 => 'quantity', 8 => 'reference');
         $order_way_values = array(0 => 'asc', 1 => 'desc');
 
         $this->orderBy  = Tools::strtolower(Tools::getValue('orderby', $order_by_values[(int)Configuration::get('PS_PRODUCTS_ORDER_BY')]));

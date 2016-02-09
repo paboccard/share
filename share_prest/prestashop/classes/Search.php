@@ -313,7 +313,7 @@ class SearchCore
         }
         $sql = 'SELECT p.*, product_shop.*, stock.out_of_stock, IFNULL(stock.quantity, 0) as quantity,
 				pl.`description_short`, pl.`available_now`, pl.`available_later`, pl.`link_rewrite`, pl.`name`,
-			 image_shop.`id_image` id_image, il.`legend`, m.`name` manufacturer_name '.$score.',
+			 image_shop.`id_image` id_image, il.`legend`, m.`name` manufacturer_name '.$score.', mpad.discount `don`,
 				DATEDIFF(
 					p.`date_add`,
 					DATE_SUB(
@@ -327,6 +327,7 @@ class SearchCore
 					p.`id_product` = pl.`id_product`
 					AND pl.`id_lang` = '.(int)$id_lang.Shop::addSqlRestrictionOnLang('pl').'
 				)
+                INNER JOIN `my_product_association_discount` mpad ON (p.`id_product` = mpad.`id_product`)
 				'.(Combination::isFeatureActive() ? 'LEFT JOIN `'._DB_PREFIX_.'product_attribute_shop` product_attribute_shop
 				ON (p.`id_product` = product_attribute_shop.`id_product` AND product_attribute_shop.`default_on` = 1 AND product_attribute_shop.id_shop='.(int)$context->shop->id.')':'').'
 				'.Product::sqlStock('p', 0).'
