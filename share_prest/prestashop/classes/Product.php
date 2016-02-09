@@ -4387,6 +4387,8 @@ class ProductCore extends ObjectModel
             }
         }
 
+        $row['gain'] = Product::getPourcentageById($row['id_product']);
+
         $row = Product::getTaxesInformations($row, $context);
         self::$producPropertiesCache[$cache_key] = $row;
         return self::$producPropertiesCache[$cache_key];
