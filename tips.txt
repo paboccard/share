@@ -1,2 +1,5 @@
+---- Insertion dans la BD du don lors d'une commande ----
+classes > order > OrderDetail.php > ligne 836
+
 ---- Modifier le chemin d'accès à l'index ----
 Dans la base de données -> table "ps_shop_url" -> modifier les champs correspondant 
