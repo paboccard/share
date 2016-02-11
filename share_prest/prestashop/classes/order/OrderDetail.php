@@ -169,6 +169,7 @@ class OrderDetailCore extends ObjectModel
     public $date_add;
     public $validate;
     public $pourcentage;
+    public $gain_website;
 
     /**
      * @see ObjectModel::$definition
@@ -674,10 +675,14 @@ class OrderDetailCore extends ObjectModel
         $this->discount = 0;
         $this->gain_price = 0;
 
+        // Calcul du prix gagne au total (Association et Supplier)
         foreach ($order->product_list as $key => $value) {
             $this->discount += (float)$value['total_wt']*($value['pourcentage']/100);
             $this->gain_price += (float)$value['total_wt'];
         }
+        // Gain de notre Site Web (1% du gain total)
+        $this->gain_website = $this->gain_price * 0.01;
+
 
         // Add new entry to the table
         $this->save();
@@ -833,7 +838,7 @@ class OrderDetailCore extends ObjectModel
         $where_my_cart_product_association = 'id_cart = '.(int)$this->id_cart.' AND id_product = '.(int)$this->id_product.' AND id_address_delivery = '.(int)$this->id_address_delivery.' AND id_product_attribute = '.(int)$this->id_product_attribute.' AND id_association = '.(int)$this->id_association;
         Db::getInstance()->update('my_cart_product_association', $data_my_cart_product_association, $where_my_cart_product_association, $limit = 0, $null_values = false, $use_cache = true, $add_prefix = false);
 
-        $date_my_order_association_gain = ['id_order' => $this->id_order, 'discount' => $this->discount, 'gain_price' => $this->gain_price];
+        $date_my_order_association_gain = ['id_order' => $this->id_order, 'discount' => $this->discount, 'gain_website' => $this->gain_website, 'gain_price' => $this->gain_price];
         Db::getInstance()->insert('my_order_association_gain', $date_my_order_association_gain, $null_values = false, $use_cache = true, $type = Db::INSERT, $add_prefix = false);
 
         return parent::add($autodate = true, $null_values = false);

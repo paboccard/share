@@ -1,3 +1,8 @@
+-- 20160211
+ALTER TABLE my_order_association_gain
+	ADD COLUMN gain_website DECIMAL(20,6) 
+	NOT NULL DEFAULT '0.000000'
+	AFTER discount;
 
 --  20160130
 -- ------------------------------------------------
