@@ -438,7 +438,7 @@ Product list(Index page) Styles
 }
 
 .infoArtPrice span.artGain {
-    color: #ec008c;
+    color: #00B0E5;
     display: inline-block;
     padding: 0 0 0 2px;
 }
@@ -463,7 +463,7 @@ Product list(Index page) Styles
     font-size: .92em;
     line-height: 1.9em;
     overflow: hidden;
-    color:#ed4e6e;
+    color:#00B0E5;
     border-left: #aaaaaa !important;
 }
 
@@ -471,5 +471,5 @@ Product list(Index page) Styles
     padding: 0 0 0 5px;
     font-size: .92em;
     line-height: 1.9em;
-    color:#ed4e6e;
+    color:#00B0E5;
 }
