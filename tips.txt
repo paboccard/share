@@ -1,3 +1,6 @@
+---- Search ----
+autocomplete -> themes > js > blocksearch > blocksearch.js
+
 ---- Insertion dans la BD du don lors d'une commande ----
 classes > order > OrderDetail.php > ligne 836
 

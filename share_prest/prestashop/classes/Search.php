@@ -192,10 +192,14 @@ class SearchCore
         $intersect_array = array();
         $score_array = array();
         $words = explode(' ', Search::sanitize($expr, $id_lang, false, $context->language->iso_code));
+        $intersect_array_supplier = array();
+        $score_array_supplier = array();
+        $wordsSupplier = explode(' ', Search::sanitize($expr, $id_lang, false, $context->language->iso_code));
 
         foreach ($words as $key => $word) {
             if (!empty($word) && strlen($word) >= (int)Configuration::get('PS_SEARCH_MINWORDLEN')) {
                 $word = str_replace(array('%', '_'), array('\\%', '\\_'), $word);
+                $wordSupplier = str_replace(array('%', '_'), array('\\%', '\\_'), $word);
                 $start_search = Configuration::get('PS_SEARCH_START') ? '%': '';
                 $end_search = Configuration::get('PS_SEARCH_END') ? '': '%';
 
@@ -213,6 +217,20 @@ class SearchCore
                 if ($word[0] != '-') {
                     $score_array[] = 'sw.word LIKE \''.$start_search.pSQL(Tools::substr($word, 0, PS_SEARCH_MAX_WORD_LENGTH)).$end_search.'\'';
                 }
+
+                /* Research Supplier */
+                /*$intersect_array_supplier[] = 'SELECT s.id_supplier
+                    FROM '._DB_PREFIX_.'supplier s
+                    WHERE s.name LIKE
+                    '.($wordSupplier[0] == '-'
+                        ? ' \''.$start_search.pSQL(Tools::substr($word, 1, PS_SEARCH_MAX_WORD_LENGTH)).$end_search.'\''
+                        : ' \''.$start_search.pSQL(Tools::substr($word, 0, PS_SEARCH_MAX_WORD_LENGTH)).$end_search.'\''
+                    );
+
+                if ($wordSupplier[0] != '-') {
+                    $score_array_supplier[] = 'sw.word LIKE \''.$start_search.pSQL(Tools::substr($word, 0, PS_SEARCH_MAX_WORD_LENGTH)).$end_search.'\'';
+                }*/
+
             } else {
                 unset($words[$key]);
             }
@@ -298,6 +316,11 @@ class SearchCore
 					)
 					WHERE p.`id_product` '.$product_pool.'
 					ORDER BY position DESC LIMIT 10';
+
+            //$res = $db->executeS($sql, true, false);
+            //$sql2 = $db->executeS('SELECT DISTINCT * FROM '._DB_PREFIX_.'supplier p WHERE active = 1');
+            //$result2 = [0 => "FNAC", 1 => "DARTY"];
+            //return json_encode(array($res,$sql2));
             return $db->executeS($sql, true, false);
         }
 

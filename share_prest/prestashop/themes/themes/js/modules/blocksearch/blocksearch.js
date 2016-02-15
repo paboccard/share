@@ -47,8 +47,13 @@ $(document).ready(function()
 				},
 				parse: function(data) {
 					var mytab = [];
+					//console.log(data);
 					for (var i = 0; i < data.length; i++)
 						mytab[mytab.length] = { data: data[i], value: data[i].cname + ' > ' + data[i].pname };
+					/*data = JSON.parse(data);
+					console.log(data);
+					for (var i = 0; i < data[0].length; i++)
+						mytab[mytab.length] = { data: data[0][i], value: data[0][i].cname + ' > ' + data[0][i].pname };*/
 					return mytab;
 				},
 				extraParams: {
