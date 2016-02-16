@@ -486,3 +486,7 @@ a.quick-view-mobile:hover {
     color: white;
     text-decoration: none;
 }
+
+.product-image-container {
+  margin-top: 20px;
+}

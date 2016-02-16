@@ -1,4 +1,4 @@
-{*
+*{*
 * 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
@@ -79,7 +79,7 @@
 						{/if}
 					</div>
 					<div class="ribbon pourcent">
-		                <div class="theribbon">Don : {$product.gain|string_format:"%.2f"}%</div>
+		                <div class="theribbon"><center>Don<br/>{$product.gain|string_format:"%.2f"}%</center></div>
 		                <div class="ribbon-background"></div>
 		            </div>
 					{if isset($product.is_virtual) && !$product.is_virtual}{hook h="displayProductDeliveryTime" product=$product}{/if}
