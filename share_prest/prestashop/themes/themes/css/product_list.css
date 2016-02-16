@@ -473,3 +473,16 @@ Product list(Index page) Styles
     line-height: 1.9em;
     color:#00B0E5;
 }
+
+
+a.quick-view-mobile {
+    background-color: #337ab7;
+    color: white;
+    padding: 7px;
+}
+
+a.quick-view-mobile:hover {
+    background-color: #449cb7;
+    color: white;
+    text-decoration: none;
+}
