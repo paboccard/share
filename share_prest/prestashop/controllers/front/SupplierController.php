@@ -41,6 +41,7 @@ class SupplierControllerCore extends FrontController
         parent::setMedia();
         $this->addCSS(_THEME_CSS_DIR_.'product_list.css');
         $this->addJS(_THEME_JS_DIR_.'header.js');
+        $this->addJS(_THEME_JS_DIR_.'product_list.js');
     }
 
     public function canonicalRedirection($canonicalURL = '')
