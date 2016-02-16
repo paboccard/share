@@ -6270,7 +6270,7 @@ table.table_block td {
   text-decoration: line-through; }
 
 .old-price.product-price {
-  font-size: 17px; }
+  font-size: 12px; }
 
 .special-price {
   color: #f13340; }
@@ -9551,6 +9551,9 @@ div.panel.panel-default.sidebar-menu{
   width:90px;
   left:50%;
   margin-left: -35px;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
 }
 .ribbon.pourcent .theribbon {
   /*width: 110px;*/

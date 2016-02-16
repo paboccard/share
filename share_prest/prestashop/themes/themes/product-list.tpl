@@ -47,6 +47,20 @@
 		{if $totModuloTablet == 0}{assign var='totModuloTablet' value=$nbItemsPerLineTablet}{/if}
 		{if $totModuloMobile == 0}{assign var='totModuloMobile' value=$nbItemsPerLineMobile}{/if}
 		<li class="ajax_block_product{if $page_name == 'index' || $page_name == 'product'} col-xs-12 col-sm-4 col-md-3{else} col-xs-12 col-sm-6 col-md-4{/if}{if $smarty.foreach.products.iteration%$nbItemsPerLine == 0} last-in-line{elseif $smarty.foreach.products.iteration%$nbItemsPerLine == 1} first-in-line{/if}{if $smarty.foreach.products.iteration > ($smarty.foreach.products.total - $totModulo)} last-line{/if}{if $smarty.foreach.products.iteration%$nbItemsPerLineTablet == 0} last-item-of-tablet-line{elseif $smarty.foreach.products.iteration%$nbItemsPerLineTablet == 1} first-item-of-tablet-line{/if}{if $smarty.foreach.products.iteration%$nbItemsPerLineMobile == 0} last-item-of-mobile-line{elseif $smarty.foreach.products.iteration%$nbItemsPerLineMobile == 1} first-item-of-mobile-line{/if}{if $smarty.foreach.products.iteration > ($smarty.foreach.products.total - $totModuloMobile)} last-mobile-line{/if}">
+
+
+	        <div style="height:50px">
+	        {if $product.price_without_reduction > 0 && isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}
+				{hook h="displayProductPriceBlock" product=$product type="old_price"}
+				{if $product.specific_prices.reduction_type == 'percentage'}
+					<div class="price-percent-reduction">
+						-{$product.specific_prices.reduction * 100}%
+						<br/>
+						<span class="old-price product-price">{displayWtPrice p=$product.price_without_reduction}</span>
+					</div>
+				{/if}
+			{/if}
+			</div>
 			<div class="product-container" itemscope itemtype="https://schema.org/Product">
 				<div class="theProduct bordered">
 					<div class="infoArt infoBorder">
@@ -55,7 +69,6 @@
 						</div>
 						<div class="infoArtPrice  col-sm-4">
 							<span class="artPrice ">{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}</span>
-							<span class="artGain">{math|string_format:"%.2f" equation="(( x * y ) / 100 )" x=$product.price y=$product.gain} €</span>
 						</div>
 					</div>
 					<div class="product-image-container">
@@ -79,9 +92,14 @@
 						{/if}
 					</div>
 					<div class="ribbon pourcent">
-		                <div class="theribbon"><center>Don<br/>{$product.gain|string_format:"%.2f"}%</center></div>
+		                <div class="theribbon">
+		                	Don<br/>
+		                	{$product.gain|string_format:"%.2f"}%<br/>
+		                	<span class="artGain">{math|string_format:"%.2f" equation="(( x * y ) / 100 )" x=$product.price y=$product.gain} €</span>
+		                </div>
 		                <div class="ribbon-background"></div>
 		            </div>
+
 					{if isset($product.is_virtual) && !$product.is_virtual}{hook h="displayProductDeliveryTime" product=$product}{/if}
 					{hook h="displayProductPriceBlock" product=$product type="weight"}
 				</div>

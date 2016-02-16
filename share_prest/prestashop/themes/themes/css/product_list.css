@@ -437,10 +437,12 @@ Product list(Index page) Styles
     display: block;
 }
 
-.infoArtPrice span.artGain {
-    color: #00B0E5;
+span.artGain {
+    /*color: #00B0E5;*/
+    color:gold;
     display: inline-block;
     padding: 0 0 0 2px;
+    font-size:15px;
 }
 .btWrapperContainer {
     padding: 5px 0 3px;
@@ -488,5 +490,14 @@ a.quick-view-mobile:hover {
 }
 
 .product-image-container {
-  margin-top: 20px;
+  margin-top: 25px;
+}
+
+.price-percent-reduction {
+  height: 50px;
+    width: 90px;
+    border-radius: 90px 90px 0 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 5px;
 }
