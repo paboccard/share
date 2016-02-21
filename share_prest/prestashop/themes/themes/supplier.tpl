@@ -41,6 +41,7 @@
                             <div class="panel-group accordion" id="accordionOne">
                                 {include file="./category-arbre.tpl" no_follow=$categories}
                             </div>
+
                             <!--<div class="col-sm-5 right">
                                 <ul class="list-style-none list_categorie">
                                     <li><a class="li_hover" href="listProduitParMarque.php">Appareil Photo</a></li>
@@ -77,6 +78,7 @@
             <div class="panel-group accordion" id="accordionOne">
                 {include file="./category-arbre.tpl" no_follow=$categories}
             </div>
+            {$HOOK_LEFT_COLUMN}
         </div>
         <div class="col-sm-9">
             {if $products}

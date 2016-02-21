@@ -171,4 +171,12 @@
   min-width: 50%;
   width: auto; }
 
+  .layered_subtitle{
+  color : #00B0E5;
+}
+
+.nomargin a{
+  color : #337ab7;
+}
+
 /*# sourceMappingURL=blocklayered.css.map */

@@ -116,6 +116,9 @@ class SupplierControllerCore extends FrontController
             $this->assignAll();
             $this->setTemplate(_PS_THEME_DIR_.'supplier-list.tpl');
         }
+
+        $this->context->smarty->assign(array('HOOK_LEFT_COLUMN' => Hook::exec('leftColumn')
+        ));
     }
 
     /**

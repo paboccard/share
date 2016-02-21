@@ -54,6 +54,7 @@ class BlockLayered extends Module
 	public function install()
 	{
 		if (parent::install() && $this->registerHook('header') && $this->registerHook('leftColumn')
+		&& $this->registerHook('topColumn')
 		&& $this->registerHook('categoryAddition') && $this->registerHook('categoryUpdate') && $this->registerHook('attributeGroupForm')
 		&& $this->registerHook('afterSaveAttributeGroup') && $this->registerHook('afterDeleteAttributeGroup') && $this->registerHook('featureForm')
 		&& $this->registerHook('afterDeleteFeature') && $this->registerHook('afterSaveFeature') && $this->registerHook('categoryDeletion')
@@ -667,6 +668,17 @@ class BlockLayered extends Module
 
 	public function hookLeftColumn($params)
 	{
+		$this->context->controller->addJS(($this->_path).'blocklayered.js');
+		$this->context->controller->addJS(_PS_JS_DIR_.'jquery/jquery-ui-1.8.10.custom.min.js');
+		$this->context->controller->addJQueryUI('ui.slider');
+		$this->context->controller->addCSS(_PS_CSS_DIR_.'jquery-ui-1.8.10.custom.css');
+
+		if (version_compare(_PS_VERSION_, '1.6.0', '>=') === true)
+			$this->context->controller->addCSS(($this->_path).'blocklayered.css', 'all');
+		else
+			$this->context->controller->addCSS(($this->_path).'blocklayered-15.css', 'all');
+		$this->context->controller->addJQueryPlugin('scrollTo');
+		
 		return $this->generateFiltersBlock($this->getSelectedFilters());
 	}
 
@@ -3519,5 +3531,9 @@ class BlockLayered extends Module
 			return Tools::purifyHTML($value);
 		else
 			return filter_var($value, FILTER_SANITIZE_STRING);
+	}
+
+	public function hookColumnTop($params){
+		return $this->hookLeftColumn($params);
 	}
 }
