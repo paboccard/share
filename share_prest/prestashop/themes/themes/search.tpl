@@ -65,24 +65,58 @@ class="page-heading {if !isset($instant_search) || (isset($instant_search) && !$
     <div class="content_sortPagiBar">
         <div class="sortPagiBar clearfix {if isset($instant_search) && $instant_search} instant_search{/if}">
             {include file="$tpl_dir./product-sort.tpl"}
-            {if !isset($instant_search) || (isset($instant_search) && !$instant_search)}
+            {*{if !isset($instant_search) || (isset($instant_search) && !$instant_search)}
                 {include file="./nbr-product-page.tpl"}
-            {/if}
+            {/if}*}
         </div>
     	<div class="top-pagination-content clearfix">
-            {include file="./product-compare.tpl"}
+            {*{include file="./product-compare.tpl"}
             {if !isset($instant_search) || (isset($instant_search) && !$instant_search)}
                 {include file="$tpl_dir./pagination.tpl" no_follow=1}
-            {/if}
+            {/if}*}
         </div>
 	</div>
-	{include file="$tpl_dir./product-list.tpl" products=$search_products}
-    <div class="content_sortPagiBar">
-    	<div class="bottom-pagination-content clearfix">
+        <div class="col-sm-12">
+            {if $products}
+
+                <div class="content_sortPagiBar">
+                   <div class="top-pagination-content clearfix">
+                        <div class="breadCrumbContainer">
+                            <div class="nbrArticle">
+                                <em>{$nb_products} articles</em>
+                            </div>
+                            <div class="breadCrumb">
+                                <div>
+                                        <span>
+                                                <strong>{$supplier->name} | </strong>
+                                        </span>
+
+                                        <span style="color:#333">{$category->name}</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_sortPagiBar">
+                    <div class="bottom-pagination-content clearfix">
+                        {include file="./product-list.tpl" products=$products}
+                    </div>
+                </div>
+                <div class="content_sortPagiBar">
+                    <div class="bottom-pagination-content clearfix">
+                    </div>
+                </div>
+            {else}
+            NO PRODUCT
+            {/if}
+        </div>
+        
+	        {*   {include file="$tpl_dir./product-list.tpl" products=$search_products}
+    
         	{include file="./product-compare.tpl"}
         	{if !isset($instant_search) || (isset($instant_search) && !$instant_search)}
                 {include file="$tpl_dir./pagination.tpl" paginationId='bottom' no_follow=1}
-            {/if}
-        </div>
-    </div>
+            {/if}*}
+            
 {/if}
