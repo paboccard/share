@@ -6675,7 +6675,7 @@ ul.footer_links {
       margin-left: 10px; }
 
 .content_sortPagiBar .sortPagiBar {
-  border-bottom: 1px solid #d6d4d4;
+  /*border-bottom: 1px solid #d6d4d4;*/
   clear: both; }
   .content_sortPagiBar .sortPagiBar #productsSortForm {
     float: left;

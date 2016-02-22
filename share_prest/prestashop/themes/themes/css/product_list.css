@@ -458,6 +458,10 @@ span.artGain {
     text-align: left;
 }
 
+.noBorder{
+  border : 0px !important;
+}
+
 .nbrArticle {
     float: right;
     padding: 0 10px;
@@ -474,6 +478,10 @@ span.artGain {
     font-size: .92em;
     line-height: 1.9em;
     color:#00B0E5;
+}
+
+.breadCrumb .lighter{
+  color : #00B0E5 !important;
 }
 
 
