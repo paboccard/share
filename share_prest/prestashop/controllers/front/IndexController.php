@@ -40,6 +40,9 @@ class IndexControllerCore extends FrontController
         $this->addJS(_THEME_JS_DIR_.'toucheffects.js');
         $this->addJS(_THEME_JS_DIR_.'supplier_list.js');
         $this->addJS(_THEME_JS_DIR_.'header.js');
+        $this->addJS(_THEME_JS_DIR_.'waypoints.min.js');
+        $this->addJS(_THEME_JS_DIR_.'jquery.counterup.min.js');
+        $this->addJS(_THEME_JS_DIR_.'front.js');
         
         $supplier=new SupplierControllerCore();
         $supplier->initContent();
