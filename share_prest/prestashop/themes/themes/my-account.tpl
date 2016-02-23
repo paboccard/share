@@ -33,10 +33,10 @@
 {/if}
 <p class="info-account">{l s='Welcome to your account. Here you can manage all of your personal information and orders.'}</p>
 <div class="row addresses-lists">
-	<div class="col-xs-12 col-sm-6 col-lg-4">
+	<div class="col-xs-12 col-sm-6 col-lg-5">
 		<ul class="myaccount-link-list">
             {if $has_customer_an_address}
-            <li><a href="{$link->getPageLink('address', true)|escape:'html':'UTF-8'}" title="{l s='Add my first address'}"><i class="icon-building"></i><span>{l s='Add my first address'}</span></a></li>
+            <li class=""><a href="{$link->getPageLink('address', true)|escape:'html':'UTF-8'}" title="{l s='Add my first address'}"><i class="icon-building"></i><span>{l s='Add my first address'}</span></a></li>
             {/if}
             <li><a href="{$link->getPageLink('history', true)|escape:'html':'UTF-8'}" title="{l s='Orders'}"><i class="icon-list-ol"></i><span>{l s='Order history and details'}</span></a></li>
             {if $returnAllowed}
@@ -58,6 +58,3 @@
     </div>
 {/if}
 </div>
-<ul class="footer_links clearfix">
-<li><a class="btn btn-default button button-small" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s='Home'}"><span><i class="icon-chevron-left"></i> {l s='Home'}</span></a></li>
-</ul>

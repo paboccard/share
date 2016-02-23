@@ -5969,7 +5969,7 @@ span.exclusive {
   font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   position: relative;
-  background: #C673B3;
+  background: #00B0E5;
   border: none;
   color: white;
   transition: .2s;
@@ -5995,7 +5995,7 @@ span.exclusive {
   padding-left: 10px;
 }
 .button-small:hover{
-  background-color: #915483 !important;
+  background-color: #008EBA !important;
   color : white !important;
 }
 /*.button.button-small {
@@ -6054,6 +6054,9 @@ span.exclusive {
 }
 .button.button-medium i{
   padding-left: 10px;
+}
+.button.button-medium i{
+  padding-right: 7px;
 }
 
 .button-medium:hover{

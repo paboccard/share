@@ -458,8 +458,8 @@ span.artGain {
     text-align: left;
 }
 
-.noBorder{
-  border : 0px !important;
+.breadCrumbContainer .noBorder{
+  border : 0px solid black !important;
 }
 
 .nbrArticle {
