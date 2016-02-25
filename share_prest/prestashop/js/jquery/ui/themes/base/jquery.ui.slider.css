@@ -18,9 +18,7 @@
 }
 .ui-slider .ui-slider-handle {
 	position: absolute;
-	background: #671cf1 !important;
   	border-radius: 50%;
-  	border-color: #671cf1 !important;
 	z-index: 2;
 	width: 1.2em;
 	height: 1.2em;

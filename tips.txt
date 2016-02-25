@@ -1,3 +1,6 @@
+---- Slider Design ----
+prestashop/js/jquery/ui/themes/base/jquery.ui.slider.css
+
 ---- Search ----
 autocomplete -> themes > js > blocksearch > blocksearch.js
 

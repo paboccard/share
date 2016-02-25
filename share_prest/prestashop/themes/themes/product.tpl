@@ -298,7 +298,7 @@
 								<div class="clearfix"></div>
 								{foreach from=$groups key=id_attribute_group item=group}
 									{if $group.attributes|@count}
-										<fieldset class="attribute_fieldset col-lg-6 col-md-12 col-xs-12">
+										<fieldset class="attribute_fieldset col-lg-6 col-md-6 col-xs-6">
 											<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'}&nbsp;</label>
 											{assign var="groupName" value="group_$id_attribute_group"}
 											<div class="attribute_list">
@@ -343,14 +343,20 @@
 							</div> <!-- end attributes -->
 						</div>
 						{/if}
-						<div class="div_select_association">
-							<label class="attribute_label">Choisissez une association</label>
-							<select name="{$groupName}" id="group_{$id_attribute_group|intval}" class="form-control attribute_select_association no-print">
-								{assign var='associations' value=Cart::getAssociations()}
-								{foreach from=$associations item=association}			
-									<option value="{$association['id_association']}"> {$association['name']|escape:'html':'UTF-8'}</option>
-								{/foreach}
-							</select>
+						<div class="div_select_association col-lg-12 col-md-12 col-xs-12">
+							<div class="row">
+								<label class="attribute_label">Choisissez une association</label>
+							</div>
+							<div class="row">
+								<span class="custom-dropdown custom-dropdown--white">
+								<select name="{$groupName}" id="group_{$id_attribute_group|intval}" class="  attribute_select_association no-print custom-dropdown__select custom-dropdown__select--white">
+									{assign var='associations' value=Cart::getAssociations()}
+									{foreach from=$associations item=association}			
+										<option value="{$association['id_association']}"> {$association['name']|escape:'html':'UTF-8'}</option>
+									{/foreach}
+								</select>
+								</span>
+							</div>
 						</div>
 					</div> <!-- end product_attributes -->
 					<div class="">

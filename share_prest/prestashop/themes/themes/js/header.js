@@ -9,6 +9,7 @@ $(document).ready(function(){
 	function stickIt() {
 
 	  var orgElementPos = $('.original').offset();
+	  if (orgElementPos != null){
 	  orgElementTop = orgElementPos.top;               
 
 	  if ($(window).scrollTop() >= (orgElementTop)) {
@@ -26,6 +27,6 @@ $(document).ready(function(){
 	    $('.cloned').hide();
 	    $('.original').css('visibility','visible');
 	  }
-	}
+	}}
 
 });
