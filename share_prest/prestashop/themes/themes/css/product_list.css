@@ -498,7 +498,7 @@ a.quick-view-mobile:hover {
 }
 
 .product-image-container {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .price-percent-reduction {
@@ -508,4 +508,11 @@ a.quick-view-mobile:hover {
     font-size: 20px;
     line-height: 20px;
     padding-top: 5px;
+}
+
+
+.img-logo {
+  display: block;
+  max-height: 50px;
+  width: auto; 
 }

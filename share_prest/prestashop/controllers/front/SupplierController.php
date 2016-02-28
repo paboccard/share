@@ -140,6 +140,7 @@ class SupplierControllerCore extends FrontController
                 array(
                     'nb_products' => $nbProducts,
                     'isProductList' => true,
+                    'isSupplier' => true,
                     'products' => $products,
                     'categories' => $a_categories,
                     'path' => ($this->supplier->active ? Tools::safeOutput($this->supplier->name) : ''),

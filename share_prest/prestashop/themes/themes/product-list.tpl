@@ -60,6 +60,12 @@
 					</div>
 				{/if}
 			{/if}
+
+			<div style="float:right">
+				{if !$isSupplier}
+				<img src="{$img_sup_dir}{$product.id_supplier|escape:'html':'UTF-8'}-small_default.jpg" alt="" class="img-logo">
+				{/if}
+			</div>
 			</div>
 			<div class="product-container" itemscope itemtype="https://schema.org/Product">
 				<div class="theProduct bordered">

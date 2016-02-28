@@ -1,4 +1,4 @@
----- Slider Design ----
+﻿---- Slider Design ----
 prestashop/js/jquery/ui/themes/base/jquery.ui.slider.css
 
 ---- Search ----
@@ -9,3 +9,6 @@ classes > order > OrderDetail.php > ligne 836
 
 ---- Modifier le chemin d'accès à l'index ----
 Dans la base de données -> table "ps_shop_url" -> modifier les champs correspondant 
+
+---- Ajouter logo ------
+mettre le logo dans <id>-small_default.jpg,  il sera d'une hauteur de 50px dans la liste de produit

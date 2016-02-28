@@ -104,10 +104,13 @@
                 <div class="theribbon">Don : {$product->getPourcentage()|string_format:"%.2f"}%</div>
                 <div class="ribbon-background"></div>
             </div>-->
-            <div class="badge_rond">
+            <div class="badge_rond" style="width:90px">
 				<div class="rond_pourcentage">
 					<div class="div_don"> Don </div> 
 					<div class="div_pourcent">{$product->getPourcentage()|string_format:"%.2f"}%</div>
+				</div>
+				<div>
+					<img src="{$img_sup_dir}{$product->id_supplier|escape:'html':'UTF-8'}-small_default.jpg" alt="" class="img-responsive">
 				</div>
 			</div>
 			{if isset($images) && count($images) > 0}
