@@ -458,11 +458,9 @@ function findCombination()
 	$('#attributes select, #attributes input[type=hidden], ' + radio_inputs).each(function(){
 		choice.push(parseInt($(this).val()));
 	});
-
 	//verify if this combinaison is the same that the user's choice
 	if (typeof combinationsHashSet !== 'undefined') {
 		var combination = combinationsHashSet[choice.sort().join('-')];
-
 		if (combination)
 		{
 			if (combination['minimal_quantity'] > 1)
@@ -526,6 +524,14 @@ function updateDisplay()
 {
 	var productPriceDisplay = productPrice;
 	var productPriceWithoutReductionDisplay = productPriceWithoutReduction;
+
+	var select = $('.attribute_select_association').val();
+	$('#idAssociation').val(select);
+	
+	//change link to association detail
+	var urlAsso = $('.lien_association').attr('href');
+	var idxEgal = urlAsso.indexOf('id');
+	$('.lien_association').attr("href", urlAsso.substring(0,idxEgal+3)+select);
 
 	if (!selectedCombination['unavailable'] && quantityAvailable > 0 && productAvailableForOrder == 1)
 	{
@@ -1106,7 +1112,16 @@ function getProductAttribute()
 	//value of id association
 	var select = $('.attribute_select_association').val();
 	$('#idAssociation').val(select);
-	request += '/' + select;
+	
+	//change link to association detail
+	var urlAsso = $('.lien_association').attr('href');
+	var idxEgal = urlAsso.indexOf('id');
+	$('.lien_association').attr("href", urlAsso.substring(0,idxEgal+3)+select);
+	
+	if (request.slice(-1) != '/')
+		request += '/' + select;
+	else
+		request += select;
 
 	var url = window.location + '';
 
@@ -1142,47 +1157,49 @@ function checkUrl()
 			if (tabParams[0] == '')
 				tabParams.shift();
 
-			var len = tabParams.length;
-			for (var i=0; i<len; i++)
-			{
-				tabParams[i] = tabParams[i].replace(attribute_anchor_separator, '-');
-				tabValues.push(tabParams[i].split('-'));
-			}
-
-			// fill html with values
-			$('.color_pick').removeClass('selected').parent().parent().children().removeClass('selected');
-
-			count = 0;
-			for (var z in tabValues)
-				for (var a in attributesCombinations)
-					if (attributesCombinations[a]['group'] === decodeURIComponent(tabValues[z][1])
-						&& attributesCombinations[a]['id_attribute'] === decodeURIComponent(tabValues[z][0]))
-					{
-						count++;
-
-						// add class 'selected' to the selected color
-						$('#color_' + attributesCombinations[a]['id_attribute']).addClass('selected').parent().addClass('selected');
-						$('input:radio[value=' + attributesCombinations[a]['id_attribute'] + ']').prop('checked', true);
-						$('input[type=hidden][name=group_' + attributesCombinations[a]['id_attribute_group'] + ']').val(attributesCombinations[a]['id_attribute']);
-						$('#attributes select[name=group_' + attributesCombinations[a]['id_attribute_group'] + ']').val(attributesCombinations[a]['id_attribute']);
-						if (!!$.prototype.uniform)
-							$.uniform.update('input[name=group_' + attributesCombinations[a]['id_attribute_group'] + '], select[name=group_' + attributesCombinations[a]['id_attribute_group'] + ']');
-
-					}
-			// find combination and select corresponding thumbs
-			if (count)
-			{
-				if (firstTime)
+			if (tabParams.length > 2){
+				var len = tabParams.length;
+				for (var i=0; i<len; i++)
 				{
-					firstTime = false;
-					findCombination();
+					tabParams[i] = tabParams[i].replace(attribute_anchor_separator, '-');
+					tabValues.push(tabParams[i].split('-'));
 				}
-				original_url = url;
-				return true;
-			}
-			// no combination found = removing attributes from url
-			else
-				window.location.replace(url.substring(0, url.indexOf('#')));
+
+				// fill html with values
+				$('.color_pick').removeClass('selected').parent().parent().children().removeClass('selected');
+
+				count = 0;
+				for (var z in tabValues)
+					for (var a in attributesCombinations)
+						if (attributesCombinations[a]['group'] === decodeURIComponent(tabValues[z][1])
+							&& attributesCombinations[a]['id_attribute'] === decodeURIComponent(tabValues[z][0]))
+						{
+							count++;
+
+							// add class 'selected' to the selected color
+							$('#color_' + attributesCombinations[a]['id_attribute']).addClass('selected').parent().addClass('selected');
+							$('input:radio[value=' + attributesCombinations[a]['id_attribute'] + ']').prop('checked', true);
+							$('input[type=hidden][name=group_' + attributesCombinations[a]['id_attribute_group'] + ']').val(attributesCombinations[a]['id_attribute']);
+							$('#attributes select[name=group_' + attributesCombinations[a]['id_attribute_group'] + ']').val(attributesCombinations[a]['id_attribute']);
+							if (!!$.prototype.uniform)
+								$.uniform.update('input[name=group_' + attributesCombinations[a]['id_attribute_group'] + '], select[name=group_' + attributesCombinations[a]['id_attribute_group'] + ']');
+
+						}
+				// find combination and select corresponding thumbs
+				if (count)
+				{
+					if (firstTime)
+					{
+						firstTime = false;
+						findCombination();
+					}
+					original_url = url;
+					return true;
+				}
+				// no combination found = removing attributes from url
+				else
+					window.location.replace(url.substring(0, url.indexOf('#')));
+			} 
 		}
 	}
 	return false;

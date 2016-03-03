@@ -359,6 +359,7 @@
 									{/foreach}
 								</select>
 								</span>
+								<a class="lien_association" href="{$link->getAssociationLink(1)|escape:'html':'UTF-8'}">Détail de l'association</a>
 							</div>
 						</div>
 					</div> <!-- end product_attributes -->

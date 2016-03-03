@@ -1,3 +1,17 @@
+-- 20160303
+ALTER TABLE my_associations ADD COLUMN (
+	but VARCHAR(150) NOT NULL DEFAULT '',
+	zoneInfluence VARCHAR(75) NOT NULL DEFAULT '',
+	fondateur VARCHAR(100) NOT NULL DEFAULT '',
+	anneeFondation INT(10) UNSIGNED NOT NULL,
+	president VARCHAR(100) NOT NULL DEFAULT '',
+	slogan VARCHAR(150) NOT NULL DEFAULT '',
+	lienWeb VARCHAR(100) NOT NULL DEFAULT '',
+	introduction VARCHAR(250) NOT NULL DEFAULT '',
+	descritpion VARCHAR(1000) NOT NULL DEFAULT ''
+);
+
+
 -- 20160211
 ALTER TABLE my_order_association_gain
 	ADD COLUMN gain_website DECIMAL(20,6) 

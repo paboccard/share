@@ -1307,6 +1307,24 @@
     'type' => 'class',
     'override' => false,
   ),
+  'Association' => 
+  array (
+    'path' => '',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'AssociationController' => 
+  array (
+    'path' => 'override/controllers/front/AssociationController.php',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'AssociationCore' => 
+  array (
+    'path' => 'classes/Association.php',
+    'type' => 'class',
+    'override' => false,
+  ),
   'Attachment' => 
   array (
     'path' => '',
