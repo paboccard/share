@@ -249,7 +249,9 @@
 									{/strip}</span>
 								{/if}
 
-                                <p class="don">Don unitaire : <span class="nb_price">{(($product->getPourcentage()/100)*$productPrice)|string_format:"%.2f"}€</span></p>
+                                <p class="don">Don unitaire : <span class="nb_price">{(($product->getPourcentage()/100)*$productPrice)|string_format:"%.2f"}€</span>
+                                </p>
+                                <!--<p>{*{((($product->getPourcentage()/100)*$productPrice)*0.66)|string_format:"%.2f"} € remboursé <a href="{$link->getRemboursementDonLink()|escape:'html':'UTF-8'}*}" class="medium">En savoir plus..</a></p>-->
 
 							</div> <!-- end prices -->
 							{if $packItems|@count && $productPrice < $product->getNoPackPrice()}

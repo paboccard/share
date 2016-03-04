@@ -340,6 +340,17 @@ class LinkCore
         return $url.$dispatcher->createUrl('association', $id_lang, $params, $this->allow, '');
     }
 
+    public function getRemboursementDonLink()
+    {
+        if (!$id_lang) {
+            $id_lang = Context::getContext()->language->id;
+        }
+
+        $dispatcher = Dispatcher::getInstance();
+
+        return $url.$dispatcher->createUrl('remboursementDon', $id_lang);
+    }
+
     /**
      * Create a link to a supplier's product list by cateogry.
      *

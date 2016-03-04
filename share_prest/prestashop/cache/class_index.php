@@ -3491,6 +3491,12 @@
     'type' => 'class',
     'override' => false,
   ),
+  'RemboursementDonController' => 
+  array (
+    'path' => 'override/controllers/front/RemboursementDonController.php',
+    'type' => 'class',
+    'override' => false,
+  ),
   'RequestSql' => 
   array (
     'path' => '',
