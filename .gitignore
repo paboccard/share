@@ -1,2 +1,9 @@
 share_prest/prestashop/cache/*
 share_prest/prestashop/config/settings.inc.php
+share_prest/prestashop/config/xml/blog-fr.xml
+share_prest/prestashop/config/xml/default_country_modules_list.xml
+share_prest/prestashop/config/xml/modules_native_addons.xml
+share_prest/prestashop/config/xml/must_have_modules_list.xml
+share_prest/prestashop/config/xml/tab_modules_list.xml
+share_prest/prestashop/config/xml/trusted_modules_list.xml
+share_prest/prestashop/modules/gamification/data/data_FR_EUR_FR.json
