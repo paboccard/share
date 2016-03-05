@@ -364,6 +364,29 @@ class LinkCore
     }
 
     /**
+     * Create a link to an association
+     *
+     * @param mixed $idAssociation int
+     * @param string $alias
+     * @param int $id_lang
+     * @return string
+     */
+    public function getSupplierByCategory($id_category, $alias = null, $id_lang = null, $relative_protocol = false)
+    {
+        if (!$id_lang) {
+            $id_lang = Context::getContext()->language->id;
+        }
+
+        $dispatcher = Dispatcher::getInstance();
+
+        // Set available keywords
+        $params = array();
+        $params['id_category'] = $id_category;
+
+        return $url.$dispatcher->createUrl('index', $id_lang, $params, $this->allow, '');
+    }
+
+    /**
      * Create a link to a manufacturer
      *
      * @param mixed $manufacturer Manufacturer object (can be an ID supplier, but deprecated)

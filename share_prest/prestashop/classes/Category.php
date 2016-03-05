@@ -548,6 +548,45 @@ class CategoryCore extends ObjectModel
 
         return $categories;
     }
+
+    /**
+     * @return boolean if the supplier get the categorie or child in n+3
+    **/
+    public static function getCategoryByIdAndSupplier($id_supplier, $id_category, $category_root = 2,$id_lang = false) {
+        $my_category = new Category($id_category,$id_lang);
+        $sub_categories = $my_category->recurseLiteCategTree(3, 0, $id_lang, null)['children'];
+        //$sub_categories = /*Category::getChildren($id_category, $id_lang, true, false);*/ $my_category->getSubCategories($id_lang,true);
+        $sql = '
+            SELECT c.id_category, cl.name, c.id_parent
+            FROM `'._DB_PREFIX_.'category` c
+            '.Shop::addSqlAssociation('category', 'c').'
+                        INNER JOIN '._DB_PREFIX_.'product p ON p.id_category_default = c.id_category
+            LEFT JOIN `'._DB_PREFIX_.'category_lang` cl ON c.`id_category` = cl.`id_category`'.Shop::addSqlRestrictionOnLang('cl').'
+            WHERE p.id_supplier='.$id_supplier
+                        //.' OR c.id_category IN (SELECT cat.id_parent FROM '._DB_PREFIX_.'category cat)'
+                        .($id_lang ? 'AND `id_lang` = '.(int)$id_lang : '').//' AND (c.id_parent='.(int)$id_category.' OR c.id_parent IN (SELECT cat.id_category FROM '._DB_PREFIX_.'category cat WHERE id_parent='.(int)$id_category.'))
+            ' '.(!$id_lang ? 'GROUP BY c.id_category' : '').'
+            ORDER BY c.`level_depth` ASC, category_shop.`position` ASC';
+        
+        $resultWithShipper = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
+
+        $supplierTmp = array();
+        $boolPresent = false;
+        foreach ($resultWithShipper as $key) {
+            $boolPresent = false;
+            foreach ($sub_categories as $key2) {
+                if ($key['id_parent'] == $key2['id'] || $key['id_parent'] == $id_category){
+                    return true;   
+                }
+                foreach ($key2['children'] as $key3 ) {
+                   if ($key['id_parent'] == $key3['id']){
+                        return true;        
+                    }
+                }
+            }
+        }
+        return false;
+    }
     
     public static function getAllCategoriesName($root_category = null, $id_lang = false, $active = true, $groups = null,
                                                 $use_shop_restriction = true, $sql_filter = '', $sql_sort = '', $sql_limit = '')

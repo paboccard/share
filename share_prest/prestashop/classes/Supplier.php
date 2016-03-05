@@ -130,6 +130,17 @@ class SupplierCore extends ObjectModel
         return Supplier::getSupplierCategoriesById($this->id);
     }
     
+
+    public static function getSupplierCategoryById($id,$id_category) {
+        $a_categories = Category::getCategoryByIdAndSupplier($id,$id_category);
+        return $a_categories;
+    }
+    
+    public function getCategoryById($id_category) {
+        //echo "caca";
+        return Supplier::getSupplierCategoryById($this->id,$id_category);
+    }
+
     /**
      * Return suppliers
      *

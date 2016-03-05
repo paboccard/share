@@ -108,8 +108,19 @@
 						</div>
 					</div>
 				</header>
+						
 			</div>
+			<!--<nav class="horizontal-nav full-width horizontalNav-notprocessed">-->
 			{if $page_name =='index' && $showKPI}
+				<div class="center">
+				  	<ul>
+				  		<li><a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">Accueil</a></li>
+				  		{foreach from=$categories item=cat}
+				    		<li><a href="{$link->getSupplierByCategory($cat['id_category'])|escape:'html':'UTF-8'}">{$cat['name']|escape:'html':'UTF-8'}</a></li>
+				    	{/foreach}
+				  	</ul>		  	
+				</div>
+			
 				{include file="./banner_number.tpl"}
 			{/if}
 			<div class="columns-container">
