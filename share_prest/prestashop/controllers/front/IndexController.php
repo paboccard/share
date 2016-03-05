@@ -26,7 +26,14 @@
 
 class IndexControllerCore extends FrontController
 {
+    protected $idCategory = null;
     public $php_self = 'index';
+
+    public function init(){
+        parent::init();
+        // Get page main parameters
+        $this->idCategory = (int)Tools::getValue('id_category', null);
+    }
 
     /**
      * Assign template vars related to page content
@@ -44,8 +51,22 @@ class IndexControllerCore extends FrontController
         $this->addJS(_THEME_JS_DIR_.'jquery.counterup.min.js');
         $this->addJS(_THEME_JS_DIR_.'front.js');
         
-        $supplier=new SupplierControllerCore();
-        $supplier->initContent();
+        $supplier = new SupplierControllerCore();
+        if ($idCategory == null)            
+            $supplier->initContent($this->idCategory);
+        else{
+            $supplier->initContent($this->idCategory);
+            
+        }
+
+        /**
+         * get categories level 2 for present them in header
+        **/        
+        $categories = Category::getChildrenWithNbSelectedSubCat(2,'',true,null,true);
+        
+        $this->context->smarty->assign(array(
+            'categories' => $categories
+        ));
 
         $this->assignKPI();
         /*$this->context->smarty->assign(array('HOOK_HOME' => Hook::exec('displayHome'),

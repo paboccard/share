@@ -94,8 +94,9 @@ class SupplierControllerCore extends FrontController
     /**
      * Assign template vars related to page content
      * @see FrontController::initContent()
+     * @param id_categoy : for select suppliers by category
      */
-    public function initContent()
+    public function initContent($id_category = null)
     {
         if (Tools::getValue('ajax')) {
             return;
@@ -113,7 +114,12 @@ class SupplierControllerCore extends FrontController
                 $this->setTemplate(_PS_THEME_DIR_.'supplier.tpl');
             }
         } else {
-            $this->assignAll();
+            if ($id_category == null){
+                $this->assignAll();
+            }
+            else{
+                $this->assignAllByCategory($id_category);
+            }
             $this->setTemplate(_PS_THEME_DIR_.'supplier-list.tpl');
         }
 
@@ -241,5 +247,51 @@ class SupplierControllerCore extends FrontController
     public function getSupplier()
     {
         return $this->supplier;
+    }
+
+    protected function assignAllByCategory($id_category)
+    {
+        if (Configuration::get('PS_DISPLAY_SUPPLIERS')) {
+            $result = Supplier::getSuppliers(true, $this->context->language->id, true);
+            $nbProducts = count($result);
+            $this->pagination($nbProducts);
+
+            $supplierTmp = array();
+            
+            $suppliers = Supplier::getSuppliers(true, $this->context->language->id, true, $this->p, $this->n);
+            $allSuppliers = Supplier::getSuppliers(true, $this->context->language->id, true, $this->p);
+            foreach ($suppliers as &$row) {
+                $row['image'] = (!file_exists(_PS_SUPP_IMG_DIR_.'/'.$row['id_supplier'].'-'.ImageType::getFormatedName('medium').'.jpg')) ? $this->context->language->iso_code.'-default' : $row['id_supplier'];
+            }
+            foreach ($allSuppliers as &$row) {
+                $row['image'] = (!file_exists(_PS_SUPP_IMG_DIR_.'/'.$row['id_supplier'].'-'.ImageType::getFormatedName('medium').'.jpg')) ? $this->context->language->iso_code.'-default' : $row['id_supplier'];
+                $rowTmp = new Supplier($row['id_supplier']);
+                if ($rowTmp->getCategoryById($id_category)){
+                    array_push($supplierTmp,$row);
+                }
+                //$row['category'] = $rowTmp->getCategoryById($id_category);
+            }
+
+            usort($supplierTmp, function($a, $b) {
+                $result = 0;
+                if ($a['association_discount'] < $b['association_discount']) {
+                    $result = 1;
+                } else if ($a['association_discount'] > $b['association_discount']) {
+                    $result = -1;
+                }
+                return $result; 
+            });
+
+            $this->context->smarty->assign(array(
+                'pages_nb' => ceil($nbProducts / (int)$this->n),
+                'nbSuppliers' => $nbProducts,
+                'mediumSize' => Image::getSize(ImageType::getFormatedName('medium')),
+                'suppliers_list' => $suppliers,
+                'allSuppliers_list' => $supplierTmp,
+                'add_prod_display' => Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY'),
+            ));
+        } else {
+            Tools::redirect('index.php?controller=404');
+        }
     }
 }
