@@ -38,9 +38,11 @@
 
                     <div class="item catEntreprise">
                         <div class="col-md-3">
-                            <div class="panel-group accordion" id="accordionOne">
+                            <ul id="accordion" class="accordion">
+                                <li>
                                 {include file="./category-arbre.tpl" no_follow=$categories}
-                            </div>
+                                <li>
+                            </ul>
 
                             <!--<div class="col-sm-5 right">
                                 <ul class="list-style-none list_categorie">
@@ -75,9 +77,11 @@
         </section>
         {else}
         <div class="col-sm-3">
-            <div class="panel-group accordion" id="accordionOne">
-                {include file="./category-arbre.tpl" no_follow=$categories}
-            </div>
+            <ul id="accordion" class="accordion">
+                <li>
+                    {include file="./category-arbre.tpl" no_follow=$categories}
+                <li>
+            </ul>
             {$HOOK_LEFT_COLUMN}
         </div>
         <div class="col-sm-9">

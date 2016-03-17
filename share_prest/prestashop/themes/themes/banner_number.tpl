@@ -4,7 +4,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="item">
                     <div class="icon">
-                        <i class="fa fa-align-justify"></i>
+                        <i class="fa fa-list"></i>
                     </div>
                     <h4><span class="counter">{$nb_association}</span><br>associations</h4>
                 </div>
@@ -12,7 +12,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="item">
                     <div class="icon">
-                        <i class="fa fa-eur"></i>
+                        <i class="fa fa-thumbs-o-up"></i>
                     </div>
                     <h4><span class="counter">{$nb_totalGain|string_format:"%.2f"}</span>€<br> récoltés<br>au Total</h4>
                 </div>
@@ -20,7 +20,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="item">
                     <div class="icon">
-                        <i class="fa fa-eur"></i>
+                        <i class="fa fa-calendar"></i>
                     </div>
                     <h4><span class="counter">{$nb_monthGain|string_format:"%.2f"}</span>€<br> récoltés<br>le mois dernier</h4>
                 </div>
