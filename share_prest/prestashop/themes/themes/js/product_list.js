@@ -1,5 +1,5 @@
-var INIT_NB_PRODUCT = 2; // 3 produits au départ
-var NB_PRODUCT_ADD_BY_SCROLL = 3;
+var INIT_NB_PRODUCT = 1; // 2 produits au départ
+var NB_PRODUCT_ADD_BY_SCROLL = 2;
 
 
 $(document).ready(function(){

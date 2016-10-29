@@ -7,3 +7,12 @@ share_prest/prestashop/config/xml/must_have_modules_list.xml
 share_prest/prestashop/config/xml/tab_modules_list.xml
 share_prest/prestashop/config/xml/trusted_modules_list.xml
 share_prest/prestashop/modules/gamification/data/data_FR_EUR_FR.json
+share_prest/prestashop/img/tmp/*
+share_prest/prestashop/modules/gamification/views/css/*
+share_prest/prestashop/test.txt
+share_prest/prestashop/admin754ki8w7d/test.txt
+share_prest/prestashop/log/*
+share_prest/.idea/
+share_prest/prestashop/img/su/*
+share_prest/prestashop/img/p/*
+dossier_image/*

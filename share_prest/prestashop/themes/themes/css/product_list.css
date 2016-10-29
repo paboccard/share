@@ -1,3 +1,5 @@
+@import url('color.css');
+
 /*******************************************************
 Product list Styles
 ********************************************************/
@@ -469,7 +471,7 @@ span.artGain {
     font-size: .92em;
     line-height: 1.9em;
     overflow: hidden;
-    color:#00B0E5;
+    color:var(--main-color7);
     border-left: #aaaaaa !important;
 }
 
@@ -477,19 +479,32 @@ span.artGain {
     padding: 0 0 0 5px;
     font-size: .92em;
     line-height: 1.9em;
-    color:#00B0E5;
+    color:var(--main-color7);
 }
 
 .breadCrumb .lighter{
-  color : #00B0E5 !important;
+  color : var(--main-color7) !important;
 }
 
 
 a.quick-view-mobile {
-    background-color: #337ab7;
+    background-color: var(--main-color8);
     color: white;
     padding: 7px;
+  display: block;
+  width: 120px;
+  margin : auto;
 }
+
+span.detailhead{
+  font-size: 20px;
+}
+
+span.detailhead.price_product{
+  display: block;
+  margin-bottom: 5px;
+}
+
 
 a.quick-view-mobile:hover {
     background-color: #449cb7;

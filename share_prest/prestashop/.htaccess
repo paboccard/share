@@ -10,8 +10,18 @@ SetEnv HTTP_MOD_REWRITE On
 RewriteEngine on
 
 
+#Domain: localhost:8888
+RewriteRule . - [E=REWRITEBASE:/share/share_prest/prestashop/]
+RewriteRule ^api$ api/ [L]
+
+RewriteRule ^api/(.*)$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
+
+# AlphaImageLoader for IE and fancybox
+RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ js/jquery/plugins/fancybox/images/$1.$2 [L]
+
+
 #Domain: localhost
-RewriteRule . - [E=REWRITEBASE:/prestashop/]
+RewriteRule . - [E=REWRITEBASE:/share/share_prest/prestashop/]
 RewriteRule ^api$ api/ [L]
 
 RewriteRule ^api/(.*)$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
@@ -31,6 +41,6 @@ AddType application/x-font-woff .woff
 </IfModule>
 
 #If rewrite mod isn't enabled
-ErrorDocument 404 /prestashop/index.php?controller=404
+ErrorDocument 404 /share/share_prest/prestashop/index.php?controller=404
 
 # ~~end~~ Do not remove this comment, Prestashop will keep automatically the code outside this comment when .htaccess will be generated again

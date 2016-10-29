@@ -1,6 +1,6 @@
 {function showMenu}
     {if $level == 2}
-        <div class="link"><i class="fa fa-list-alt"></i>{$entry->name[1]}<i class="fa fa-chevron-down"></i></div>
+        <div class="link"><span class="fa fa-list-alt icon1"></span>{$entry->name[1]}<span class="fa fa-chevron-down pull-right"></span></div>
     {else}
         <ul class="submen">
             <li>

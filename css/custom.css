@@ -1,3 +1,5 @@
+@import url('../../color.css');
+
 /* your styles go here */
 div.panel.panel-default.sidebar-menu{
 	border-top-width: 15px !important;
@@ -119,7 +121,7 @@ div.panel.panel-default.sidebar-menu{
 .box-simple.box-blue {
   padding: 20px;
   border: dotted 1px #999999;
-  background: #F47E46;
+  background: var(--main-color5);
   color: #fff;
   opacity: 0.5;
 }

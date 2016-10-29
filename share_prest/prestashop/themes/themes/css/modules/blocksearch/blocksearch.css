@@ -1,13 +1,15 @@
+@import url('../../color.css');
+
 #search_block_top {
-  padding-top: 15px;
-  padding-bottom: 15px; 
+  padding-top: 19px;
+  padding-bottom: 16px; 
 }
 #search_block_top #searchbox {
   float: left;
   width: 100%; 
 }
 #search_block_top .btn.button-search {
-  background: #203871;
+  background: var(--color-search);
   display: block;
   position: absolute;
   top: 0;
@@ -16,7 +18,7 @@
   color: #fff;
   width: 50px;
   text-align: center;
-  padding: 10px 0 11px 0; 
+  padding: 4px 0 7px 0; 
 }
 #search_block_top .btn.button-search span {
   display: none; 
@@ -30,16 +32,15 @@
   width: 100%;
   text-align: center; 
 }
-#search_block_top .btn.button-search:hover {
-  color: rgb(64, 151, 119); 
-}
+
+
 #search_block_top #search_query_top {
   display: inline;
-  padding: 13px 60px 13px 13px;
-  height: 45px;
+  padding: 5px 60px 5px 13px;
+  height: 35px;
   background: #fbfbfb;
   margin-right: 1px; 
-  border : 1px solid #F24C6E;
+  border : 1px solid var(--color-search);
 }
 
 .ac_results {

@@ -34,9 +34,9 @@
 		{assign var='productPrice' value=$product->getPrice(false, $smarty.const.NULL, 6)}
 		{assign var='productPriceWithoutReduction' value=$product->getPriceWithoutReduct(true, $smarty.const.NULL)}
 	{/if}
-<div itemscope itemtype="https://schema.org/Product">
+<div itemscope itemtype="https://schema.org/Product" >
 	<meta itemprop="url" content="{$link->getProductLink($product)}">
-	<div class="primary_block row">
+	<div class=" row">
 		{if !$content_only}
 			<div class="container">
 				<div class="top-hr"></div>
@@ -163,7 +163,7 @@
 		</div> <!-- end pb-left-column -->
 		<!-- end left infos-->
 		<!-- center infos -->
-		<div class="box pb-center-column col-xs-12 col-sm-6 col-md-6">
+		<div class="box pb-left-column col-xs-12 col-sm-8 col-md-6">
 			{if $product->online_only}
 				<p class="online_only">{l s='Online only'}</p>
 			{/if}
@@ -174,13 +174,6 @@
 							<div id="short_description_content" class="rte align_justify" itemprop="description">{$product->description_short}</div>
 						{/if}
 
-						{if $product->description}
-							<p class="buttons_bottom_block">
-								<a href="javascript:{ldelim}{rdelim}" class="button">
-									{l s='More details'}
-								</a>
-							</p>
-						{/if}
 						<!--{if $packItems|@count > 0}
 							<div class="short_description_pack">
 							<h3>{l s='Pack content'}</h3>

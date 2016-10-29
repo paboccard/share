@@ -32,7 +32,7 @@
 
 
     <div id="content">
-    	<div class="container">
+    	<div id="home_manufacturer" class="container">
 
     		<div class="row">
     			<div class="col-sm-offset-1 col-sm-10">
@@ -43,8 +43,8 @@
     						
 							<li class="col-sm-12 col-md-6 num_li">
 								<figure>
-									
-									<div><img src="{$img_sup_dir}{$supplier['image']|escape:'html':'UTF-8'}-medium_default.jpg" alt="" class="img-responsive">
+									<a href="{$link->getsupplierLink($supplier['id_supplier'], $supplier['link_rewrite'])|escape:'html':'UTF-8'}">
+									<div><img class="imgFigure" src="{$img_sup_dir}{$supplier['image']|escape:'html':'UTF-8'}-medium_default.jpg" alt="" class="img-responsive">
 									</div>
 									<figcaption>
 										<h3>{$supplier.name}</h3>
@@ -53,8 +53,9 @@
 		    								<span class="hidden-sm">73 Associations aidées</span>
 		    								<span class="hidden-sm">{$supplier['association_gain']|string_format:"%.2f"}€ donnés</span>
 		    							</div>
-										<a href="{$link->getsupplierLink($supplier['id_supplier'], $supplier['link_rewrite'])|escape:'html':'UTF-8'}" class="btn btn-template-transparent-primary">Voir les ventes</a>
+										<div class="btn btn-template-transparent-primary btn_ventes">Voir les ventes</div>
 									</figcaption>
+									</a>
 								</figure>
 								<div class="badge_rond">
 									<div class="rond_pourcentage">

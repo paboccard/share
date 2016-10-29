@@ -1,0 +1,77 @@
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic,300italic);*/
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+
+body{
+  font-family: "Source Sans Pro", 'Arial', 'PT Sans' !important;
+  color : #9ED0EC;
+}
+
+:root{
+  /*F2127B*/
+  --color-fushia:#ff0084; /*cerlce*/
+  --color-search:#5B7DC1; /* search bar */
+  --color-background-supplier: #f1e9de; /* supplier background color {F2F3FF} */
+
+  --color-background-account: #b66955;
+
+  --color-background-menuNavigation:#5B7DC1; /* menu navigation {b0b1bd} */
+  --color-text-menuNavigation:#fff;
+
+  --color-banner: #ffffff; /* banner background color */
+
+  --color-header:#000000; /*header text*/
+
+  --color-background-priceWithDon : #00B0E5; /* product list color price with don {FFD646} */
+
+  --main-color2:#7cc2cb; /*fond*/
+  --main-color2RGBA:rgba(124,194,203,0.4);
+  --main-color3:#4C5A65; /*header*/
+  --main-color4:#BB856C; /**/
+  --main-color5:#06D6A0; /*cat*/
+  --main-color6:#1B9AAA;
+  --main-color7:#00B0E5; /*blue don */
+  --main-color8:#5B7DC1; /*blue achat express */
+  --main-color9:#555454; /*font color*/
+  --main-color10:#7cc2cb; /* bleu turquoise - search - cat -  */
+  --main-color11:#2e466c; /* bleu turquoise foncé */
+  --main-color12:#E5E5E5; /* border hearder gris clair */
+  --main-color13:#91003E; /* rose foncé */
+
+  /*
+  5733
+
+  203871
+  9C02A7
+  F47E46
+  00B0E5
+  337ab7
+  FFD646
+  38a7bb*/
+  /* palette 1
+  pink:EF0568
+  blue:77CBE3
+  bluedark:93C4EF
+  grey:E2E1D9 
+  brown:B88568
+  */
+  /* palette 2
+  pink:EAD5E1
+  green:AEE0C5
+  babyblue:CBEAEB
+  orange:FFB100 
+  deepturquoise:6799A3
+  */
+  /* palette 3
+  jauneclair:F8FFE5
+  green:06D6A0
+  blue:1B9AAA
+  rose:EF476F 
+  orange:FFC43D
+
+  4C5A65
+  40919c
+  7cc2cb
+  6aa5ad
+  */
+  
+} 

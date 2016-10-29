@@ -13,448 +13,447 @@
 	<atom:link href="http://www.prestashop.com/blog/fr/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.prestashop.com/blog/fr</link>
 	<description></description>
-	<lastBuildDate>Mon, 29 Feb 2016 08:39:55 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 23 Aug 2016 14:58:46 +0000</lastBuildDate>
 	<language>fr-FR</language>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>http://wordpress.org/?v=3.8.1</generator>
 	<item>
-		<title>6 astuces pour mettre en place une stratégie marketing automation efficace</title>
-		<link>https://www.prestashop.com/blog/fr/6-astuces-mettre-en-place-strategie-marketing-automation-efficace/</link>
-		<comments>https://www.prestashop.com/blog/fr/6-astuces-mettre-en-place-strategie-marketing-automation-efficace/#comments</comments>
-		<pubDate>Wed, 24 Feb 2016 14:54:59 +0000</pubDate>
+		<title>CMS Critic Award : nominez PrestaShop !</title>
+		<link>https://www.prestashop.com/blog/fr/cms-critics-awards-nominez-prestashop/</link>
+		<comments>https://www.prestashop.com/blog/fr/cms-critics-awards-nominez-prestashop/#comments</comments>
+		<pubDate>Wed, 10 Aug 2016 08:39:26 +0000</pubDate>
 		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
+				<category><![CDATA[Actualités PrestaShop]]></category>
 
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19733</guid>
-		<description><![CDATA[<p>Pour les e-commerçants, les outils de marketing automation sont un moyen très puissant pour simplifier leur travail quotidien tout en développant la relation avec leurs clients. Le marketing automation fonctionne d&#8217;après un principe simple : les emails sont mis en place une fois dans un logiciel d&#8217;emailing et, en fonction de certains critères (comme un [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/6-astuces-mettre-en-place-strategie-marketing-automation-efficace/">6 astuces pour mettre en place une stratégie marketing automation efficace</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20429</guid>
+		<description><![CDATA[<p>Cette année encore nous participons aux CMS Critic Award qui récompensent les meilleurs logiciels dans diverses catégories. Aidez-nous à faire partie des nominés en nous sélectionnant pour les catégories : Best Open Source CMS Best eCommerce Software Pour supporter PrestaShop rendez-vous à l’adresse suivante :    Nominez PrestaShop Merci et faites passer le mot sur les [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/cms-critics-awards-nominez-prestashop/">CMS Critic Award : nominez PrestaShop !</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></description>
-				<content:encoded><![CDATA[<p>Pour les e-commerçants, les outils de marketing automation sont un moyen très puissant pour simplifier leur travail quotidien tout en développant la relation avec leurs clients.<br />
-Le marketing automation fonctionne d&rsquo;après un principe simple : les emails sont mis en place une fois dans un logiciel d&rsquo;emailing et, en fonction de certains critères (comme un événement spécial ou une date), ils sont envoyés automatiquement. Ces critères peuvent être liés à la vie privée du destinataire (anniversaire par exemple) ou encore à son cycle de vie client (un an après la première inscription, deux semaines après un achat, etc.).</p>
-<p><span id="more-19733"></span></p>
-<p>Pour que les stratégies d&rsquo;automatisation marketing fonctionnent, il faut avant tout que les emails ne paraissent pas trop robotiques ou automatiques. Il faut envoyer des emails personnalisés, adaptés à chaque destinataire.<br />
-En plus de faire gagner du temps, les emailings automatisés ont l&rsquo;avantage d&rsquo;être généralement très bien acceptés par les destinataires. En effet, ils répondent à une action concrète que le destinataire a réalisée et ne sont jamais hors sujet ou déplacés. Les mailings automatisés ont donc de bien meilleurs taux d&rsquo;ouvertures et de clics.<br />
-Pour vous aider à automatiser vos campagnes, les experts de l&rsquo;emailing de <a href="https://www.prestashop.com/fr/partenaires/marketing/newsletter2go" target="_blank">Newsletter2Go </a>vous présentent 6 conseils pratiques :</p>
-<p><strong>1. Le potentiel des emails transactionnels</strong></p>
+				<content:encoded><![CDATA[<p>Cette année encore nous participons aux CMS Critic Award qui récompensent les meilleurs logiciels dans diverses catégories.</p>
+<p><span id="more-20429"></span></p>
+<p>Aidez-nous à faire partie des nominés en nous sélectionnant pour les catégories :</p>
 <ul>
-<li>Vendre plus grâce aux recommandations produit.</li>
-<li>Augmenter le taux de conversions lors du check-out</li>
+<li>Best Open Source CMS</li>
+<li>Best eCommerce Software</li>
 </ul>
-<p>Les emails transactionnels sont parfaits pour débuter dans l&rsquo;email marketing automation. Il s&rsquo;agit d&rsquo;emails que vous connaissez bien : confirmation d&rsquo;inscription ou d&rsquo;achat, information sur la livraison, etc.<br />
-Ces emails ne doivent pas être sous-estimés, car ils sont très souvent ouverts. Ils sont parfaitement adaptés pour des recommandations produit. Mais pensez au timing : un email de recommandation produit juste après un achat sera généralement beaucoup moins efficace que le même email envoyé après réception du premier produit acheté.<br />
-Très important : les emails de relancer de panier d&rsquo;achat. Ceux-ci sont envoyés à des clients qui ont abandonné leur panier d&rsquo;achat sans finaliser la commande. Par expérience, nous savons que beaucoup de clients réagiront positivement (voir même seront reconnaissants), car ils ont abandonné leur panier pour diverses raisons comme un simple manque de temps ou une mauvaise connexion.</p>
-<p><strong>2. Individualisez</strong></p>
-<ul>
-<li>Adapter le design des mailings automatisés pour correspondre à la newsletter régulière</li>
-<li>Plus l&rsquo;email sera personnel, plus il sera efficace</li>
-</ul>
-<p>Le visuel de votre campagne marketing automation devrait être adapté à votre newsletter régulière pour que vos emails automatisés n&rsquo;aient pas l&rsquo;air de spams. Il s&rsquo;agit en plus de mettre en place une communication cohérente et de renforcer votre image de marque.<br />
-Mais ne pensez pas qu&rsquo;au visuel ! Le langage est important et doit être cohérent avec vos newsletters et les textes sur votre site.</p>
-<p>Il faut que chaque email donne l&rsquo;impression d&rsquo;avoir été écrit personnellement et d&rsquo;être le fruit d&rsquo;un travail sérieux et réfléchi.</p>
-<p><a href="https://www.prestashop.com/blog/fr/files/2016/02/01.jpg"><img class="aligncenter size-full wp-image-19734" alt="01" src="https://www.prestashop.com/blog/fr/files/2016/02/01.jpg" width="1000" height="667" /></a></p>
-<p>© Ruth Black / Fotolia.com</p>
-<p><strong>3. Célébrez les fêtes</strong></p>
-<ul>
-<li>Les campagnes individualisées peuvent tripler les ventes</li>
-</ul>
-<p>Il y a de nombreux événements qui justifient d&rsquo;envoyer des mailings automatisés. Les campagnes les plus appréciées sont les classiques emails de bienvenue ainsi que les emails d&rsquo;anniversaire. Très faciles à mettre en place, ils permettent de renforcer vos liens avec vos clients, de leur montrer que vous tenez à eux et d&rsquo;augmenter en même temps vos ventes.</p>
-<p>D&rsquo;autres événements qui peuvent justifier un mailing sont, par exemple, les commémorations de la première inscription, un an après le premier achat, les fêtes religieuses, les grands événements sportifs, etc.</p>
-<p>Dans ce type de mailings, la personnalisation est très importante et doit être appliquée autant que possible : dans l&rsquo;objet du mail, dans le preheader, dans le contenu, etc. La personnalisation peut multiplier le succès de vos emailings par 5 ! (Source : http://www.marketingprofs.com/charts/2010/3751/birthday-anniversary-emails-generate-more-revenue)</p>
-<p><strong>4. Envoyer des cadeaux pour approfondir la relation client</strong></p>
-<ul>
-<li>Faire comprendre son importance à chaque destinataire</li>
-<li>Motiver à l&rsquo;achat de manière intelligente</li>
-</ul>
-<p>Pour récompenser vos clients les plus fidèles ou réactiver les clients inactifs, il est conseillé de mettre en place des campagnes spéciales et d&rsquo;offrir des cadeaux de type bon d&rsquo;achat, réduction, etc.<br />
-N&rsquo;en abusez pas cela dit ! Si vous voulez que vos emails aient l&rsquo;air personnels, il ne faut pas envoyer des bons d&rsquo;achat en masse et surtout : il faut que vos bons d&rsquo;achat soient personnalisés (pas de code type 23556, utilisez plutôt des mots ou des phrases adaptées à vos clients).</p>
-<p><strong>5. L&rsquo;accompagnement durable</strong></p>
-<ul>
-<li>Considérer l&rsquo;email marketing automation comme une manière de pérenniser la relation client</li>
-<li>Optimiser à l&rsquo;aide de test A/B</li>
-</ul>
-<p>L&rsquo;email marketing ne doit jamais être vu comme un simple canal de vente, mais plutôt comme un moyen de développer la relation avec vos clients. Pour cela, il est important de réfléchir au parcours d&rsquo;achat de vos clients et à vos différents points de contact pour optimiser ceux-ci.</p>
-<p>Votre relation avec vos clients commence le jour de leur inscription dans votre boutique et l&rsquo;email de bienvenue.</p>
-<p>Chaque email fait partie d&rsquo;un tout relatif au cycle de vie client et doit contenir les contenus adaptés, toucher le ton juste et atteindre personnellement le destinataire. Trouver la manière parfaite de s&rsquo;adresser à vos clients, n&rsquo;est pas si simple que cela&#8230;</p>
-<p>Ainsi, il vous faudra optimiser continuellement, en réalisant des tests A/B, en repensant votre stratégie, voir en demandant l&rsquo;avis de vos destinataires à l&rsquo;aide de petits sondages.</p>
-<p><strong>6. La bonne communication pour chaque situation</strong></p>
-<ul>
-<li>Segmenter les destinataires et adapter la communication à chaque segment</li>
-<li>Comprendre la situation des destinataires</li>
-</ul>
-<p>Au sein du cycle de vie client, il y a de nombreux points de contact et pour chaque point de contact, il faut un email adapté, c&rsquo;est-à-dire avec un contenu qui soit en accord avec la situation du destinataire.</p>
-<p>Essayez de vous mettre à la place de vos clients. Vous devriez communiquer différemment avec des clients très actifs et des clients moins actifs. Segmentez vos contacts en fonction de leur profession et adaptez votre communication. Et n&rsquo;hésitez pas à récompenser vos clients les plus actifs avec des bons d&rsquo;achats de temps à autre !</p>
-<p><em>L&rsquo;email marketing automation offre aux marchands de nombreuses opportunités pour approfondir leur relation avec leurs clients et pour augmenter leur chiffre d&rsquo;affaires. Grâce à <a href="https://www.prestashop.com/fr/partenaires/marketing/newsletter2go" target="_blank">Newsletter2Go</a>, vous pourrez créer facilement ce type de campagnes.</em><br />
-<em> L&rsquo;interface de <a href="https://www.prestashop.com/fr/partenaires/marketing/newsletter2go" target="_blank">Newsletter2Go</a> pour Prestashop vous permet en plus de synchroniser automatiquement vos clients entre les deux systèmes. Essayez et découvrez par vous-même la puissance du marketing automation !</em></p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/6-astuces-mettre-en-place-strategie-marketing-automation-efficace/">6 astuces pour mettre en place une stratégie marketing automation efficace</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+<p>Pour supporter PrestaShop rendez-vous à l’adresse suivante :</p>
+<p style="text-align: center"><a class="btn btn-sucess" style="background-color: #2f2f2f;border: 1px solid #191717;border-bottom: 3px solid #292727;margin: 20px 0 0;color: #fff" href="https://goo.gl/Id19gi" target="_blank"><i class="fa fa-ticket"></i>   Nominez PrestaShop</a></p>
+<p>Merci et faites passer le mot sur les réseaux sociaux en cliquant sur les boutons de partage au bas de cet article. Nous vous tiendrons informés des résultats.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/cms-critics-awards-nominez-prestashop/">CMS Critic Award : nominez PrestaShop !</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/6-astuces-mettre-en-place-strategie-marketing-automation-efficace/feed/</wfw:commentRss>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/cms-critics-awards-nominez-prestashop/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
-		<title>Participez au Nord Conversion Day : l’événement dédié à la conversion</title>
-		<link>https://www.prestashop.com/blog/fr/participez-au-nord-conversion-day-levenement-dedie-conversion-loptimisation-sites-web/</link>
-		<comments>https://www.prestashop.com/blog/fr/participez-au-nord-conversion-day-levenement-dedie-conversion-loptimisation-sites-web/#comments</comments>
-		<pubDate>Mon, 22 Feb 2016 14:01:13 +0000</pubDate>
-		<dc:creator><![CDATA[Camille Sila]]></dc:creator>
+		<title>Masterclass &#8211; Apprenez à optimiser votre taux de conversion</title>
+		<link>https://www.prestashop.com/blog/fr/masterclass-apprenez-optimiser-taux-conversion/</link>
+		<comments>https://www.prestashop.com/blog/fr/masterclass-apprenez-optimiser-taux-conversion/#comments</comments>
+		<pubDate>Fri, 05 Aug 2016 14:57:27 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+		<category><![CDATA[Evènements]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20377</guid>
+		<description><![CDATA[<p>À l&#8217;occasion du PrestaShop Day 2016, certains d&#8217;entre vous ont pu assister en live à la masterclass dédiée à l&#8217;optimisation d&#8217;un site e-commerce. De nombreuses boutiques avaient postulé pour passer sous la loupe de deux routards du web : Mathilde le Rouzic qui oeuvre dans l&#8217;e-commerce depuis 2005, avec deux startups à son actif et François le Pichon, directeur digital de Lonsdale, doté [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/masterclass-apprenez-optimiser-taux-conversion/">Masterclass &#8211; Apprenez à optimiser votre taux de conversion</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>À l&rsquo;occasion du<strong> PrestaShop Day 2016</strong>, certains d&rsquo;entre vous ont pu assister en live à la masterclass dédiée à l&rsquo;optimisation d&rsquo;un site e-commerce. De nombreuses boutiques avaient postulé pour passer sous la loupe de deux routards du web : <a href="http://growthmamma.com/" target="_blank">Mathilde le Rouzic</a> qui oeuvre dans l&rsquo;e-commerce depuis 2005, avec deux startups à son actif et François le Pichon, directeur digital de <a href="http://www.lonsdale.fr/" target="_blank">Lonsdale</a>, doté d&rsquo;une solide expérience en ergonomie et en webdesign.<br />
+<span id="more-20377"></span></p>
+<p>Ils ont sélectionné 5 sites PrestaShop, qu&rsquo;ils ont analysé en direct afin de partager avec vous les éléments d&rsquo;optimisation qui pourraient permettre d&rsquo;obtenir un meilleur taux de transformation. <strong>Ergonomie, design, éléments de réassurance, anatomie des zones clés</strong> (header, footer, homepage, fiche produit), tout est passé en revue dans cette masterclass que vous pouvez découvrir <a href="https://youtu.be/x3Tn9UucT3Q" target="_blank">ici en vidéo</a>.</p>
+<h2><span style="color: #00ccff;"><strong>Les éléments marquants pour les 5 sites audités</strong></span></h2>
+<p><strong><a href="http://www.pretacreer.com/" target="_blank"><img class="alignleft size-medium wp-image-20404" alt="pret a creer" src="https://www.prestashop.com/blog/fr/files/2016/08/pret-a-creer-300x180.png" width="300" height="180" /></a>Le site <a href="http://www.pretacreer.com/" target="_blank">Pret à créer</a></strong> est un site de kits d&rsquo;objets déco à réaliser soi-même. Il séduit par son <strong>code couleur très actuel et un design épuré</strong>. Un regret réside dans la compréhension de l&rsquo;offre (il n&rsquo;est pas évident de savoir au premier coup d’œil ce que vend exactement le site). Sur la homepage, le slider en pleine largeur oblige à utiliser des <strong>visuels d&rsquo;excellente qualité</strong> et il faut donc faire attention à ce que ce dernier ne desserve pas la première impression qu&rsquo;on a du site. La homepage pourrait être améliorée en affinant le design des blocs colorés. Le site est <strong>positionné sur un secteur où il pourrait être intéressant de mieux valoriser la présence sociale</strong> (Instagram, Pinterest, etc.). Du côté des listings produits, la présentation du module de filtres devrait être revue pour plus d&rsquo;efficacité.</p>
+<p>&nbsp;</p>
+<p><strong><a href="http://www.alsol.fr/" target="_blank"><img class="alignright size-medium wp-image-20405" alt="alsol" src="https://www.prestashop.com/blog/fr/files/2016/08/alsol-300x180.png" width="300" height="180" /></a>Le site <a href="http://www.alsol.fr/" target="_blank">Alsol</a> </strong>est un site de vente de pergolas et de volets sur-mesure. Même si cette information est présente sur la homepage il est dommage que ce ne soit pas repris sous le logo en baseline (la fabrication française devrait faire partie des éléments de réassurance). Avec des produits à un prix relativement élevé, on apprécie la proposition qui est faite de<strong> voir les produits chez des clients près de chez soi. </strong>En revanche on regrette les visuels produits qui ont tous un watermark qui dévalorise les produits et rend la navigation dans les listings produits moins agréable<strong>. La fiche produit est intéressante car elle propose de nombreuses informations</strong>, élément essentiel lorsque les produits en catalogue ont un prix élevé et une certaine technicité.</p>
+<p>&nbsp;</p>
+<p><strong><a href="https://www.boutique-la-siesta.fr/" target="_blank"><img class="size-medium wp-image-20406 alignleft" alt="lasiesta" src="https://www.prestashop.com/blog/fr/files/2016/08/lasiesta-300x180.png" width="300" height="180" /></a>Le site <a href="https://www.boutique-la-siesta.fr/" target="_blank">Boutique La siesta</a></strong> a été retenu pour évoquer le cas des templates de sites tout prêts. Ils représentent une <strong>excellente alternative à des design sur-mesure</strong> et sont souvent très bien conçus. Si on opte pour ces derniers, on préserve son budget (précieux pour faire de l&rsquo;acquisition par exemple). Néanmoins il faut faire très attention à ne pas dégrader ce design en faisant les ajustements nécessaires à son installation sur sa boutique :<strong> proposer des visuels produits d&rsquo;excellente qualité,</strong> penser à tout traduire si le template est en anglais, s&rsquo;assurer que le template fonctionne bien et que <strong>l&rsquo;UX qu&rsquo;il propose est en adéquation avec votre cible.</strong></p>
+<p>Pour finir, <strong><a href="http://www.la-touche-francaise.fr/" target="_blank">La Touche Française</a></strong> et <strong><a href="http://www.gangdeparis.com/fr/" target="_blank">Gang de Paris</a></strong> ont été présentés pour la<strong> force de leur storytelling.</strong> Ils sortent du lot grâce à un <strong>univers fort, un parti pris qui séduit</strong>. On leur pardonne donc facilement quelques faiblesses dans l&rsquo;exécution du site. Ces dernières peuvent même être génératrices d&rsquo;un attachement particulier à la marque (on sent que l&rsquo;histoire est balbutiante et on a envie d&rsquo;y participer en achetant leurs produits). Cette manière de nous emmener dans leur histoire n&rsquo;est pas sans rappeler un certain <strong><a href="http://www.leslipfrancais.fr/fr/" target="_blank">Slip Français</a>, une des belles réussites de l&rsquo;e-commerce en France</strong> de ces dernières années.</p>
+<p style="text-align: center;"><img class="aligncenter  wp-image-20426" alt="masterclass img" src="https://www.prestashop.com/blog/fr/files/2016/08/masterclass-img.jpg" width="999" height="375" /></p>
+<h2><span style="color: #00ccff;"><strong>Deux </strong></span><span style="color: #00ccff;"><strong>sites efficaces</strong></span></h2>
+<p>Pour illustrer leurs propos et indiquer les meilleures pratiques de sites bien optimisés, Mathilde et François se sont appuyés sur deux sites particulièrement efficaces : <strong><a href="http://www.enviedefraise.fr/" target="_blank">Envie de Fraise</a> et <a href="https://www.tenslife.com/" target="_blank">Tens sunglasses</a>.</strong></p>
+<p><a href="http://www.enviedefraise.fr/" target="_blank"><img class="alignright  wp-image-20388" alt="envie de fraise" src="https://www.prestashop.com/blog/fr/files/2016/08/envie-de-fra-300x226.jpg" width="270" height="203" /></a>Sur le premier, la homepage propose un <strong>design très agréable</strong>, invitant à la visite un univers doux et rassurant. Les<strong> photos mettent en valeur les produits</strong> et permettent aux clientes de s&rsquo;imaginer facilement avec les vêtements vendus sur le site (nombreux visuels produits, avec des mannequins enceintes à différents stades de leur grossesse). Les éléments de réassurance sont <strong>bien visibles et jouent un rôle efficace.</strong></p>
+<p>&nbsp;</p>
+<p><span style="line-height: 1.5;"><a href="https://www.tenslife.com/" target="_blank"><img class="alignleft  wp-image-20389" alt="tenslife" src="https://www.prestashop.com/blog/fr/files/2016/08/tens-300x238.jpg" width="243" height="193" /></a></span></p>
+<p><span style="line-height: 1.5;">Chez Tens, <strong>le design est sobre et élégant</strong>. On apprécie le listing produit &#8211; dès la homepage &#8211; qui permet de <strong>visualiser qu&rsquo;il existe des déclinaisons de chaque produit dans des couleurs différentes.</strong> La fiche produit est claire, avec des <strong>pictos qui structurent bien les informations.</strong> Le visuel produit en pleine largeur de page représente une prise de risque mais la qualité des photos fait passer cette épreuve au site haut la main.</span></p>
+<h2><span style="color: #00ccff;"><strong>Le rappel des bonnes pratiques d&rsquo;optimisation e-commerce</strong></span></h2>
+<p>À la fin de la vidéo de cette masterclass, vous retrouverez le rappel des éléments essentiels pour réussir le développement de sa boutique en ligne. Voici la<strong> check-list des questions à se poser avant de se lancer dans tout projet d&rsquo;optimisation :</strong></p>
+<p style="text-align: center;"><strong>1.</strong> Votre proposition de valeur est-elle cohérente, bien valorisée,<br />
+proposez-vous le bon prix ?</p>
+<p style="text-align: center;"><strong>2.</strong> Vos contenus doivent être d&rsquo;excellente qualité et s&rsquo;inscrire dans un storytelling fort, en accord avec le branding.</p>
+<p style="text-align: center;"><strong>3</strong>. Vos éléments de réassurance sont-ils bien visibles sur toutes vos pages ?</p>
+<p style="text-align: center;"><strong>4.</strong> Votre argumentaire commercial est-il clair et efficace ?</p>
+<p style="text-align: center;"><strong>5</strong>. Avez-vous su montrer ce qui vous rend unique ?</p>
+<p style="text-align: center;"><strong>6.</strong> Votre importance sociale est-elle suffisamment valorisée<br />
+(Presse, Facebook, Instagram, etc.) ?</p>
+<p style="text-align: center;"><strong>7.</strong> Avez-vous bien hiérarchisé l’information sur chaque page ?</p>
+<p style="text-align: center;"><strong>8.</strong> La recherche sur le site est-elle facile, performante ?</p>
+<p style="text-align: center;"><strong>9.</strong> Votre site est-il bien optimisé pour les mobiles et les tablettes ?</p>
+<p style="text-align: center;"><strong>10.</strong> Avez-vous le réflexe de tester, tester, tester ? Sur tous les navigateurs et tous les supports ?</p>
+<p style="text-align: left;">Retrouvez toutes les vidéos du <strong>PrestaShop Day Paris sur la <a href="https://www.youtube.com/playlist?list=PLyZYn1MMU7-yxqIa7yHEKXf_pCvX60cFy" target="_blank">Chaîne YouTube de PrestaShop. </a></strong></p>
+<p>&nbsp;</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/masterclass-apprenez-optimiser-taux-conversion/">Masterclass &#8211; Apprenez à optimiser votre taux de conversion</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/masterclass-apprenez-optimiser-taux-conversion/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Présentation des pages AMP (Accelerated Mobile Pages) et de leurs avantages</title>
+		<link>https://www.prestashop.com/blog/fr/presentation-pages-amp-accelerated-mobile-pages-leurs-avantages/</link>
+		<comments>https://www.prestashop.com/blog/fr/presentation-pages-amp-accelerated-mobile-pages-leurs-avantages/#comments</comments>
+		<pubDate>Mon, 01 Aug 2016 07:32:30 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20303</guid>
+		<description><![CDATA[<p>Lancée par Google, l’initiative open source AMP (Accelerated Mobile Pages) a rapidement été adoptée partout dans le monde. Conçu pour accélérer la navigation mobile, ce projet a été mené en collaboration avec des références du secteur des technologies. Vous souhaitez découvrir le format AMP, connaître son impact sur vos initiatives SEO et en savoir plus [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/presentation-pages-amp-accelerated-mobile-pages-leurs-avantages/">Présentation des pages AMP (Accelerated Mobile Pages) et de leurs avantages</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Lancée par Google, l’initiative open source AMP (Accelerated Mobile Pages) a rapidement été adoptée partout dans le monde. Conçu pour accélérer la navigation mobile, ce projet a été mené en collaboration avec des références du secteur des technologies.</p>
+<p><span id="more-20303"></span></p>
+<p><span style="line-height: 1.5">Vous souhaitez découvrir le format AMP, connaître son impact sur vos initiatives SEO et en savoir plus sur ses avantages pour votre site Web ? Alors lisez la suite.</span></p>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/07/1-amp.jpg"><img class=" wp-image-20305 alignnone" alt="1 amp" src="https://www.prestashop.com/blog/fr/files/2016/07/1-amp.jpg" width="800" height="400" /></a></p>
+<h2><span style="line-height: 1.5;color: #0b87c3">Les pages AMP, qu’est-ce que c’est ?</span></h2>
+<p>Le format AMP (Accelerated Mobile Pages) est une norme de code open source visant à accélérer le chargement des pages Web sur les téléphones portables. Il permet aux éditeurs de rationaliser et d’optimiser les pages lourdes.</p>
+<p>Pour un fonctionnement efficace, la version Web trop volumineuse des sites AMP est remplacée par une version HTML simplifiée. Ainsi, les sites se chargent plus rapidement, sur des appareils plus petits, comme des smartphones.</p>
+<p>Caractéristiques d’un site Web AMP :</p>
+<ul>
+<li>L’utilisation du CSS et du HTML est rationalisée, la taille des éléments CSS intégrés directement dans le code HTML étant inférieure à 50 Ko.</li>
+<li>Grâce au « lazy loading », les images apparaissent uniquement quand vous faites défiler la page.</li>
+<li>Comme les pages Web classiques, les pages AMP prennent en charge les publicités et les outils d’analyse.</li>
+<li>Il ne faut pas utiliser JavaScript.</li>
+<li>Les sites AMP doivent être validés avec l’outil AMP Validator qui est fourni avec la bibliothèque AMP JS.</li>
+<li>Les polices personnalisées doivent faire l’objet d’un mode de chargement spécial et la hauteur et la largeur des images doivent être déclarées.</li>
+<li>Les formulaires sont interdits.</li>
+<li>Il est possible d’ajouter des vidéos à l’aide d’extensions AMP approuvées.</li>
+</ul>
+<p>Toutes ces restrictions garantissent des délais de chargement moins longs et réduisent ainsi la frustration des utilisateurs.</p>
+<h2><span style="color: #0b87c3">Quels sont les avantages des pages AMP ? </span></h2>
+<ul>
+<li>Délais de chargement plus courts</li>
+</ul>
+<p>Le chargement rapide est de loin le principal avantage des pages AMP.<br />
+Avez-vous déjà essayé d’accéder à un contenu depuis un smartphone ? Si c’est le cas, vous avez probablement dû faire preuve de patience à cause de la lenteur du chargement. La plupart des utilisateurs ne bénéficiant pas d&rsquo;une vitesse de connexion élevée, les délais d’attente sont souvent tout simplement trop longs pour permettre la navigation sur mobile.</p>
+<p>Mais les pages AMP garantissent un accès plus rapide au contenu. Selon Google, le délai de chargement des pages Web AMP est entre 15 % et 85 % plus rapide que celui des sites classiques. Et qui dit chargement accéléré, dit expérience utilisateur optimisée. De fait, s&rsquo;ils peuvent accéder rapidement aux informations qu&rsquo;ils cherchent, les utilisateurs vont probablement rester plus longtemps sur votre site.</p>
+<ul>
+<li>Avantages en termes de SEO :</li>
+</ul>
+<p>Il est évident que l’avenir passera par les technologies mobiles, comme le soutient Google. Donc, si votre site est optimisé pour les appareils mobiles, Google peut le mettre en cache plus rapidement, améliorant ainsi votre référencement. De fait, plus un utilisateur reste longtemps sur votre page, meilleur est votre référencement.</p>
+<p>Rien ne souligne mieux l’importance des pages AMP que l’introduction par Google du carrousel de pages AMP qui apparait sur la première page des résultats de recherche sur mobile. Le carrousel regroupe des articles liés à la requête, en incluant une image et le titre de l’article. Cela génère une publicité considérable pour votre contenu.</p>
+<p style="text-align: center"><a href="https://www.prestashop.com/blog/fr/files/2016/07/2-amp.png"><img class="size-full wp-image-20306 aligncenter" alt="2 amp" src="https://www.prestashop.com/blog/fr/files/2016/07/2-amp.png" width="352" height="651" /></a></p>
+<p>&nbsp;</p>
+<h2><span style="color: #0b87c3">Qui peut utiliser les pages AMP ?</span></h2>
+<p>Si les pages AMP sont très utiles, conviennent-elles à tout le monde ? Non.<br />
+Elles sont avant tout adaptées aux sites qui publient des contenus de blog, des articles d’actualité ou tout autre type de contenu. La conversion de vos pages produits ou services en pages AMP aurait un gros inconvénient : vous ne pourriez plus impressionner vos visiteurs avec une présentation bien travaillée, puisque le code HTML doit être simplifié.<br />
+Ainsi, au lieu de faire passer l’intégralité de votre site au format AMP, contentez-vous de convertir votre section blog ou actualités. Si cette dernière se charge à la vitesse de l’éclair, les utilisateurs accèderont rapidement aux informations qu’ils cherchent, améliorant ainsi votre référencement.</p>
+<p>Si vous êtes spécialisé dans le marketing de contenu ou que vous publiez régulièrement du contenu sur votre site, les pages AMP sont un outil lucratif pour booster votre classement dans les moteurs de recherche.</p>
+<h2><span style="color: #0b87c3">Comment se lancer ?</span></h2>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/07/amp.png"><img class=" wp-image-20307 alignnone" alt="amp" src="https://www.prestashop.com/blog/fr/files/2016/07/amp.png" width="869" height="489" /></a></p>
+<p>Si vous avez un site WordPress, il suffit de 5 minutes pour passer au format AMP à l’aide d’un des plug-ins suivants :</p>
+<ul>
+<li>AMP WordPress d’Automattic</li>
+<li>Yoast SEO</li>
+</ul>
+<p>Si vous n’utilisez pas WordPress, vous devez vous rendre sur le site Web d’AMP pour apprendre à coder ces pages en dur.</p>
+<p>Une fois les pages AMP intégrées, soyez patient. Votre contenu n’apparaitra pas immédiatement dans les résultats de recherche. Il faudra au minimum quelques jours à Google pour analyser ces nouvelles pages. Ce processus peut être relativement lent, surtout s’il s’agit d&rsquo;un contenu déjà existant.</p>
+<p>AMP est un framework open source gratuit qui offre des opportunités lucratives en vous permettant d’optimiser le référencement de votre site et votre classement dans les moteurs de recherche. Ne passez pas à côté et proposez à vos utilisateurs une expérience mobile accélérée.</p>
+<p>Allez-vous adopter le format AMP pour vos pages de blog et de contenu ? Dites-nous tout dans les commentaires !</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<p><strong>À propos de l&rsquo;auteur :</strong></p>
+<p><img class="alignleft" alt="Logo" src="https://www.prestashop.com/blog/nl/files/2016/07/Logo.jpg" width="258" height="90" />SHAMLATECH est une agence de services professionnels internationale spécialiste du secteur depuis plus de 8 ans. La société propose des services de développement Web, e-commerce et mobile ainsi que de webmarketing.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/presentation-pages-amp-accelerated-mobile-pages-leurs-avantages/">Présentation des pages AMP (Accelerated Mobile Pages) et de leurs avantages</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/presentation-pages-amp-accelerated-mobile-pages-leurs-avantages/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>E-commerce : 6 astuces pour fixer des prix défiant toute concurrence — Partie 2/2</title>
+		<link>https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-22/</link>
+		<comments>https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-22/#comments</comments>
+		<pubDate>Thu, 21 Jul 2016 07:21:27 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20361</guid>
+		<description><![CDATA[<p>Dans la première partie de cet article, nous vous avons présenté 3 approches pour fixer vos prix de manière compétitive : garder un œil sur vos coûts, ne jamais sous-estimer la valeur de vos produits et fixer vos prix selon leur marque ou catégorie. Aujourd’hui, nous vous donnons 3 astuces supplémentaires pour fixer des prix défiant toute [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-22/">E-commerce : 6 astuces pour fixer des prix défiant toute concurrence — Partie 2/2</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Dans la première partie de cet article, nous vous avons présenté 3 approches pour fixer vos prix de manière compétitive : garder un œil sur vos coûts, ne jamais sous-estimer la valeur de vos produits et fixer vos prix selon leur marque ou catégorie. Aujourd’hui, nous vous donnons 3 astuces supplémentaires pour fixer des prix défiant toute concurrence.</p>
+<p><span id="more-20361"></span></p>
+<h2><span style="color: #3d698e;">4. Analysez l’historique des tarifs de vos concurrents pour identifier des opportunités de ventes (remises exceptionnelles le week-end ou ventes flash en soirée)</span></h2>
+<p>(**partie 1/3 de l’article)<br />
+Si la majorité des achats répondent à un besoin immédiat, il est impensable d&rsquo;appliquer la même logique à la définition de vos prix. La plupart des entreprises adoptent par exemple des <a href="https://fr.wikipedia.org/wiki/Pricing_dynamique" target="_blank">stratégies de tarification dynamique</a> ou des <a href="https://blog.prisync.com/implementing-an-effective-discount-strategy/" target="_blank">stratégies basées sur les remises</a>.</p>
+<p>Certaines mettent en valeur leurs week-ends de soldes grâce à des campagnes marketing, tandis que d’autres ont réussi à fidéliser une bonne poignée de clients avec leurs folles soirées de ventes flash.</p>
+<p>L&rsquo;identification et l&rsquo;adoption compétitive de ces tendances revêtent autant d&rsquo;importance que vos stratégies produit, car il ne s&rsquo;agit pas simplement d’offrir des remises, mais de développer et fidéliser votre base client.</p>
+<p>Pour les marchands, il est donc crucial de surveiller et d’analyser l’historique des tarifs des concurrents tout en suivant attentivement l&rsquo;évolution des prix réels.</p>
+<p><img class="alignnone size-full wp-image-20363" alt="image1" src="https://www.prestashop.com/blog/fr/files/2016/07/image1.jpg" width="1300" height="867" /></p>
+<h2><span style="color: #3d698e;">5. Gardez un œil sur les produits en rupture de stock chez vos concurrents</span></h2>
+<p>Du moment qu’un produit est disponible, l’importance des prix reste indéniable.<br />
+Les acheteurs en ligne prennent en compte la disponibilité des produits en même temps que leurs prix. Si un produit est en rupture de stock quelque part, ils iront faire leurs achats ailleurs. Il en est de même quand le prix du produit est trop élevé : l&rsquo;acheteur le survolera sans trop y prêter attention et ira chercher un produit similaire ailleurs.</p>
+<p>Ce procédé cognitif est une véritable aubaine pour les marchands. Pour fixer vos tarifs, intéressez-vous de près aux stocks disponibles chez vos concurrents :</p>
+<p>les acheteurs sont enclins à payer davantage pour un produit en rupture de stock. Pour certains articles avec lesquels il est difficile de dégager une bonne marge, c’est donc le moment ou jamais d’augmenter le prix. L’entreprise e-commerce qui assure la disponibilité de ses stocks tout en gardant un œil sur ceux de ses concurrents peut ainsi fixer des prix potentiellement plus avantageux. Armé des bons outils, vous pouvez identifier les tarifs et les stocks de vos concurrents et adapter votre stratégie en conséquence, le tout en quelques clics seulement.</p>
+<h2><span style="color: #3d698e;">6. Exploitez les données pour négocier de meilleurs prix avec vos fournisseurs </span></h2>
+<p>En matière de négociation commerciale, les données constituent un atout de taille, car elles permettent d&rsquo;étayer un argument de manière objective.</p>
+<p>Que l’on soit fournisseur ou <a href="https://blog.prisync.com/tips-supplier-relationships-in-ecommerce/" target="_blank">professionnel e-commerce</a>, personne ne peut contester les résultats découlant des données.</p>
+<p>Il n’est pas rare de voir un même produit affiché à des tarifs différents d’une boutique en ligne à une autre. Aussi, les entreprises de e-commerce se plaignent-elles souvent auprès de leurs fournisseurs. Après tout, leurs concurrents doivent certainement profiter de prix fournisseur plus intéressants ! Vous plaindre de la sorte ne vous avancera pas beaucoup. Et si vous présentiez les choses de manière plus structurée à l’aide de données concrètes prouvant que le fournisseur de vos concurrents propose des prix plus avantageux ? Dans le cadre des négociations, les preuves sont d’une importance capitale et sont susceptibles de vous aider à obtenir des remises ou des contrats plus intéressants.</p>
+<p>En clair : soyez perspicace en montrant que vous savez parfaitement ce qu’il se passe entre vos fournisseurs et vos concurrents, et faites valoir votre droit à un meilleur contrat avec assurance.</p>
+<h2><span style="color: #3d698e;">Conclusion</span></h2>
+<p>L’analyse des données collectées par la veille concurrentielle n’est pas chose aisée et ne consiste pas uniquement en un suivi des prix pratiqués sur le marché.</p>
+<p>Si cette pratique peut vous permettre de booster vos ventes et vos profits, vous pouvez toutefois aller beaucoup plus loin. Les stratégies de tarification dynamique dont nous avons parlé précédemment sont applicables aux boutiques de toute taille et permettent de dépasser la concurrence sur un marché hautement concurrentiel.</p>
+<hr />
+<p>&nbsp;</p>
+<p><strong>À propos de l’auteur</strong></p>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/07/6SmartCompetitivePricingTactics_4.png"><img class="size-full wp-image-20315 alignleft" alt="6SmartCompetitivePricingTactics_4" src="https://www.prestashop.com/blog/fr/files/2016/07/6SmartCompetitivePricingTactics_4.png" width="144" height="177" /></a>Expert en e-commerce et PME, Burc Tanir est le PDG de Prisync.com, qui propose une solution de suivi des prix du marché utilisée par des entreprises dans plus de 40 pays.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-22/">E-commerce : 6 astuces pour fixer des prix défiant toute concurrence — Partie 2/2</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-22/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Livraison e-commerce : Pourquoi est-il indispensable d’offrir une experience optimale sur votre boutique en ligne</title>
+		<link>https://www.prestashop.com/blog/fr/livraison-e-commerce-il-indispensable-doffrir-experience-optimale-boutique-en-ligne/</link>
+		<comments>https://www.prestashop.com/blog/fr/livraison-e-commerce-il-indispensable-doffrir-experience-optimale-boutique-en-ligne/#comments</comments>
+		<pubDate>Thu, 14 Jul 2016 08:30:44 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Partenaires PrestaShop]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20329</guid>
+		<description><![CDATA[<p>La livraison La livraison gagne toujours plus en importance pour les acheteurs en ligne. Si de nombreux magasins virtuels misent actuellement sur une livraison aussi rapide que possible des commandes, les options qu’ils proposent dans ce cadre sont souvent trop limitées. Une étude européenne (MetaPack « Flexible delivery options » 2015) réalisée auprès de 3 [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/livraison-e-commerce-il-indispensable-doffrir-experience-optimale-boutique-en-ligne/">Livraison e-commerce : Pourquoi est-il indispensable d’offrir une experience optimale sur votre boutique en ligne</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h2><span style="color: #d40029">La livraison</span></h2>
+<p><strong>La livraison</strong> gagne toujours plus en <strong>importance</strong> pour les acheteurs en ligne. Si de nombreux magasins virtuels misent actuellement sur une livraison aussi rapide que possible des commandes, les options qu’ils proposent dans ce cadre sont souvent trop limitées. Une <strong>étude européenne</strong> (<em>MetaPack « Flexible delivery options » 2015</em>) réalisée auprès de 3 000 acheteurs en ligne âgés entre 18 et 65 ans révèle que l’<strong>expérience logistique</strong> revêt un caractère très important dans le processus d’achat en ligne. Pas moins de 49 % des consommateurs se disent prêts à payer plus pour leurs achats s’ils peuvent choisir entre différents modes de livraison.</p>
+<p><span id="more-20329"></span></p>
+<p>Pour un nombre croissant de clients, le <strong>choix du lieu et du moment de la livraison</strong> représente aussi un facteur essentiel, à côté de la <strong>rapidité</strong>. Le client ne souhaite en effet pas toujours se faire livrer sa commande <strong>le plus vite possible</strong> mais il veut pouvoir choisir une <strong>livraison</strong> qui permette <strong>de réceptionner véritablement le colis</strong>. Pour cette raison, les acheteurs en ligne optent régulièrement pour la solution du <strong>point de retrait</strong>, grâce à laquelle ils peuvent déterminer eux-mêmes quand ils vont <strong>enlever leur colis : après le travail, pendant la pause de midi ou même durant le week-end</strong>.</p>
+<div id="attachment_20333" style="width: 907px" class="wp-caption alignnone"><img class="size-full wp-image-20333" alt="Source : MetaPack « Flexible delivery options » 2015" src="https://www.prestashop.com/blog/fr/files/2016/07/PourquoiExperienceLogistiqueImportante1.png" width="897" height="391" /><p class="wp-caption-text">Source : MetaPack « Flexible delivery options » 2015</p></div>
+<p>La présentation d’un colis dans un point de retrait est un beau service à destination de vos clients, mais il s’oppose aussi, d’une certaine manière, au <strong>confort associé à la commande en ligne à domicile</strong>. La solution consiste donc à proposer plusieurs options. Donnez à vos clients la possibilité de <strong>choisir eux-mêmes un lieu ou un moment de livraison</strong>. Veulent-ils recevoir leur colis <strong>en journée</strong>, <strong>en soirée</strong> ou le<strong> samedi</strong> ? Préfèrent-ils une livraison <strong>chez eux, sur leur lieu de travail</strong> ou dans un <strong>point de retrait</strong> ? Les acheteurs en ligne veulent <strong>choisir</strong> où et quand ils recevront leurs commandes. Le choix en matière de livraison donne le contrôle au client. Le contrôle sur sa propre liberté. En offrant à vos clients le <strong>choix</strong>, la <strong>rapidité</strong> et le <strong>confort</strong> en termes de livraison, vous augmenterez le <strong>potentiel d’achat</strong>.</p>
+<h2><span style="color: #d40029">Flexibilité en ligne</span></h2>
+<div id="attachment_20337" style="width: 436px" class="wp-caption aligncenter"><img class="wp-image-20337 " alt="Source : Les nouveaux modes de livraison les plus populaires via le portail d’intervention DHL Parcel – oct. 15-fév. 16." src="https://www.prestashop.com/blog/fr/files/2016/07/PourquoiExperienceLogistiqueImportante2.png" width="426" height="283" /><p class="wp-caption-text">Source : Les nouveaux modes de livraison les plus populaires via le portail d’intervention DHL Parcel – oct. 15-fév. 16.</p></div>
+<p>Nos <strong>emplois du temps surchargés</strong> nous empêchent parfois d’être à la maison au moment choisi pour une livraison. Accordez donc à vos clients une marge de décision plus grande encore en leur permettant d’<strong>intervenir en cas de première livraison manquée.</strong> Votre client n’est pas chez lui lors du passage du livreur ? Il pourra demander une nouvelle tentative de livraison via un outil d’intervention en ligne, à une autre date ou à un autre point de retrait. Avec une telle <strong>possibilité d’intervention</strong>, non seulement vous offrez à vos clients un <strong>service extrêmement flexible</strong> mais celui-ci contribue en outre à un <strong>processus durable</strong> : la garantie d’une livraison réussie !</p>
+<p>Un examen des tendances via le <strong>portail d’intervention DHL</strong> indique que, quand le destinataire n’était pas chez lui lors de la première tentative de livraison, le choix se porte surtout sur une nouvelle présentation dans un <strong>DHL Parcel (point de retrait)</strong> autre que celui prévu au départ. Par ailleurs, les tendances tirées de notre outil d’intervention nous montrent que toutes les autres options de livraison pouvant être sélectionnées jouent également un rôle important. L’offre de possibilités multiples donne au client un sentiment de <strong>liberté</strong>, de <strong>flexibilité</strong> et de <strong>professionnalisme</strong> de la part de l’expéditeur.</p>
+<h2><span style="color: #d40029">Solutions de retour</span></h2>
+<div id="attachment_20339" style="width: 433px" class="wp-caption aligncenter"><img class="wp-image-20339 " alt="Source : Consommateurs qui ont acheté des articles en ligne, en sachant qu’ils les retourneront (en partie) (selon l’âge) – MetaPack « Flexible delivery options » 2015" src="https://www.prestashop.com/blog/fr/files/2016/07/PourquoiExperienceLogistiqueImportante3.png" width="423" height="300" /><p class="wp-caption-text">Source : Consommateurs qui ont acheté des articles en ligne, en sachant qu’ils les retourneront (en partie) (selon l’âge) – MetaPack « Flexible delivery options » 2015</p></div>
+<p>Parallèlement aux différents modes de livraison, les <strong>solutions de retour</strong> sont aussi d’une importance capitale. Si le retour était à l’origine important pour les consommateurs après l’achat, il joue désormais un rôle crucial dès la <strong>décision d’achat</strong> en tant que telle. Tout comme pour les modes de livraison, les solutions de retour influencent également le consommateur dans son choix d’une boutique en ligne spécifique. Cela s’explique par le fait que de plus en plus de consommateurs achètent en ligne avec l’intention de <strong>retourner une partie de leurs emplettes</strong>. À l’instar d’une cabine d’essayage, le consommateur veut essayer plusieurs articles dans différentes tailles et couleurs avant de pouvoir ensuite faire le bon choix.</p>
+<p>En proposant à vos clients une solution de retour simple, vous combinez le <strong>confort du shopping en ligne</strong> avec la <strong>liberté</strong> en matière de prise de décision. De grands acteurs tels que Zalando et bol.com misent sur le retour <strong>gratuit et en toute facilité</strong>. Vous pouvez, vous aussi, proposer à vos clients un service de retour sous différentes formes. Chez DHL Parcel, nous pouvons soutenir votre boutique en ligne en offrant les options suivantes : le client demande une étiquette de retour via <strong>votre service clientèle</strong>, il crée lui-même <strong>en ligne une étiquette de retour</strong> ou il utilise l’étiquette de retour déjà présente <strong>dans la boîte</strong>. Cette étiquette de retour permet au client de retourner des articles via un de nos <strong>DHL Parcelshops</strong>. DHL possède le <strong>plus grand réseau de points de retrait</strong> en Belgique. Il y aura donc toujours un DHL Parcelshop près de l’adresse de votre client.</p>
+<h2><span style="color: #d40029">La clé du succès</span></h2>
+<p><strong>La tendance qui se dessine est claire</strong> : pour réussir, les boutiques en ligne doivent, comme les acteurs de référence dans le secteur tels que bol.com et Amazon, élargir leur <strong>palette de modes de livraison disponibles</strong>. Est-il donc aussi possible, pour une petite boutique en ligne, de proposer un tel service ? Oui, car le monde de la logistique bouge en permanence et continuera toujours d’offrir de nouvelles améliorations et <strong>solutions innovantes</strong> afin d’optimiser l’expérience logistique du consommateur. Des solutions destinées aussi bien aux grands intervenants qu’aux <strong>nouvelles petites boutiques en ligne</strong>, et qui en boosteront le service.</p>
+<div id="attachment_20340" style="width: 909px" class="wp-caption alignnone"><img class="size-full wp-image-20340" alt="Source :  MetaPack « Flexible delivery options » 2015 " src="https://www.prestashop.com/blog/fr/files/2016/07/PourquoiExperienceLogistiqueImportante4.png" width="899" height="391" /><p class="wp-caption-text">Source : MetaPack « Flexible delivery options » 2015</p></div>
+<p>Une grande partie des consommateurs accordent donc davantage d’importance au moment, au lieu et au mode de livraison de leur colis plutôt qu’au coût de cette livraison. <strong>Le choix du moment de la livraison</strong> est, avec le <strong>délai, le lieu de la livraison</strong> et la <strong>solution de retour</strong>, un des facteurs décisionnels importants pour le choix d’une boutique en ligne spécifique par un client. Optez pour la flexibilité en choisissant un partenaire logistique proche de vos clients et capable de vous fournir un large <strong>éventail de modes de livraison et de solutions de retour</strong>. Offrir les bonnes marques ou les bons produits ainsi qu’une expérience logistique optimale vous ouvrira la voie de la réussite !</p>
+<p>En tant que <strong>partenaire officiel</strong> de PrestaShop, DHL Parcel a pour but de contribuer à votre réussite. Téléchargez le <a href="http://addons.prestashop.com/fr/22138-dhl-parcel-belux.html" target="_blank">module d’expédition gratuit</a>, demandez un <strong>compte client</strong> et expédiez vos colis <strong>rapidement et facilement</strong> avec DHL Parcel.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/livraison-e-commerce-il-indispensable-doffrir-experience-optimale-boutique-en-ligne/">Livraison e-commerce : Pourquoi est-il indispensable d’offrir une experience optimale sur votre boutique en ligne</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/livraison-e-commerce-il-indispensable-doffrir-experience-optimale-boutique-en-ligne/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>PrestaShop et ses partenaires au salon e-commerce Paris</title>
+		<link>https://www.prestashop.com/blog/fr/prestashop-ses-partenaires-au-salon-e-commerce-paris/</link>
+		<comments>https://www.prestashop.com/blog/fr/prestashop-ses-partenaires-au-salon-e-commerce-paris/#comments</comments>
+		<pubDate>Wed, 13 Jul 2016 09:39:07 +0000</pubDate>
+		<dc:creator><![CDATA[Cindy Deguingand]]></dc:creator>
 				<category><![CDATA[Evènements]]></category>
 
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19719</guid>
-		<description><![CDATA[<p>Le 24 mars prochain au Stab Vélodrome de Roubaix aura lieu la deuxième édition du Nord Conversion Day, une journée entièrement dédiée à la conversion. PrestaShop, partenaire de l’événement, vous invite à participer à cette journée riche d&#8217;enseignements. De l’ergonomie à l’AB testing, du eye-tracking à la reconnaissance faciale en passant par le responsive design, vous obtiendrez [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/participez-au-nord-conversion-day-levenement-dedie-conversion-loptimisation-sites-web/">Participez au Nord Conversion Day : l’événement dédié à la conversion</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20343</guid>
+		<description><![CDATA[<p>L’année 2016 signe le retour du Village PrestaShop au Salon e-commerce Paris, qui ouvrira ses portes du 12 au 14 Septembre, Pavillon 2.1 stand F075 à Porte de Versailles ! Quelle que soit votre problématique, PrestaShop, ses agences web et solutions e-commerce vous conseilleront: développement de site e-commerce, solutions de paiement en ligne, transports de [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/prestashop-ses-partenaires-au-salon-e-commerce-paris/">PrestaShop et ses partenaires au salon e-commerce Paris</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></description>
-				<content:encoded><![CDATA[<p>Le <strong>24 mars prochain </strong>au <strong>Stab Vélodrome de Roubaix </strong>aura lieu la deuxième édition du <a href="http://www.nordconversionday.com/" target="_blank">Nord Conversion Day</a>, une journée entièrement dédiée à la conversion. PrestaShop, partenaire de l’événement, vous invite à participer à cette journée riche d&rsquo;enseignements.<br />
-De l’ergonomie à l’AB testing, du eye-tracking à la reconnaissance faciale en passant par le responsive design, vous obtiendrez toutes les clés pour booster votre activité.</p>
-<p><span id="more-19719"></span>Vous pourrez assister à pas moins de <strong>neuf conférences</strong> pour découvrir les <strong>dernières techniques en matière de conversion</strong> sur desktop, mobile et tablette, le tout illustré par des <strong>cas concrets</strong>.</p>
-<p>Ne manquez pas la<strong> conférence animée par PrestaShop à 10h30</strong> ! Notre responsable support Christophe Bernon sera accompagné de Benjamin Hamon, fondateur de la boutique PrestaShop <a href="http://www.skylantern.fr/" target="_blank">SkyLantern</a>. Ils vous livreront leurs conseils et astuces pour maximiser votre conversion.</p>
-<p align="center"><strong><a href="https://docs.google.com/forms/d/1LdRCPZpKwWN1zYQVrbRfIuOEJcF0jSpIqI39sFGFijg/viewform?c=0&amp;w=1" target="_blank">Inscrivez-vous gratuitement</a></strong></p>
-<p><em>Pour plus d’informations sur le programme et les différentes thématiques consultez le site de l’événement <a href="http://www.nordconversionday.com/" target="_blank">nordconversionday.com</a></em></p>
+				<content:encoded><![CDATA[<p>L’année 2016 signe le retour du Village PrestaShop au Salon e-commerce Paris, qui ouvrira ses portes du 12 au 14 Septembre, <strong>Pavillon 2.1 stand F075</strong> à Porte de Versailles !</p>
+<p><span style="line-height: 1.5">Quelle que soit votre problématique, PrestaShop, ses agences web et solutions e-commerce vous conseilleront: développement de site e-commerce, solutions de paiement en ligne, transports de vos colis, SEO, marketplaces&#8230;</span></p>
+<p><span id="more-20343"></span></p>
+<p>Cette année, PrestaShop et ses partenaires joignent leurs expertises pour faire de votre entreprise une success story. Vous pourrez ainsi rencontrer sur notre stand <strong>N°F075</strong> :</p>
+<ul>
+<li>nos agences web partenaires: <a href="http://www.profileo.com/" target="_blank">Profileo</a>, <a href="http://www.lagence123.com/" target="_blank">l’Agence 123,</a> <a href="http://www.202-ecommerce.com/en/" target="_blank">202 ecommerce</a>,</li>
+<li>notre agence SEO  partenaire <a href="http://www.blog-ecommerce.com/" target="_blank">Blog ECommerce</a>,</li>
+<li>l’outil analytics <a href="http://www.brainify.it/" target="_blank">Brainify</a></li>
+<li>la solution de Paiement 100% PME <a title="Module PayPlug" href="http://addons.prestashop.com/fr/8795-payplug-paiement-en-ligne-simple-et-securise-.html" target="_blank">PayPlug</a></li>
+<li>la solution pour vendre sur marketplaces <a href="http://www.iziflux.com/" target="_blank">Iziflux</a>.</li>
+</ul>
 <p>&nbsp;</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/participez-au-nord-conversion-day-levenement-dedie-conversion-loptimisation-sites-web/">Participez au Nord Conversion Day : l’événement dédié à la conversion</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+<p>PrestaShop vous a concocté un programme riche :</p>
+<ul>
+<li>Notre atelier solution <a href="https://www.ecommerceparis.com/Programme/Ateliers-Solutions" target="_blank">« Lancer, développer et propulser sa boutique en ligne avec PrestaShop 1.7 »</a>, le mardi 13 septembre de 14h45 à 15h30, en salle 3</li>
+<li>Des <strong>démonstrations de PrestaShop 1.7</strong> sur notre stand par l’équipe produit</li>
+<li>Des <strong>rencontres avec nos conseillers PrestaShop</strong> pour booster votre boutique en ligne</li>
+<li>Notre <strong>équipe partenariat</strong> évoquera les synergies de PrestaShop avec les agences web, développeurs freelances et entreprises IT</li>
+<li>… Et des cadeaux, rien que pour vous !</li>
+</ul>
+<p>Rendez-vous en Septembre pour faire le plein d’idées e-commerce!</p>
+<div class="text-center"><a class="btn btn-sucess" style="background-color: #2f2f2f;border: 1px solid #191717;border-bottom: 3px solid #292727;margin: 20px 0 0;color: #fff" href="https://badge.parisretailweek.com/default.aspx?Idlangue=FR&amp;idinvitation=EXECP" target="_blank"><i class="fa fa-ticket"></i>   Réservez votre place !</a></div>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/prestashop-ses-partenaires-au-salon-e-commerce-paris/">PrestaShop et ses partenaires au salon e-commerce Paris</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/participez-au-nord-conversion-day-levenement-dedie-conversion-loptimisation-sites-web/feed/</wfw:commentRss>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/prestashop-ses-partenaires-au-salon-e-commerce-paris/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
-		<title>Etude de cas: Développer son activité avec les Réseaux Sociaux</title>
-		<link>https://www.prestashop.com/blog/fr/etude-cas-developper-activite-les-reseaux-sociaux/</link>
-		<comments>https://www.prestashop.com/blog/fr/etude-cas-developper-activite-les-reseaux-sociaux/#comments</comments>
-		<pubDate>Mon, 15 Feb 2016 08:30:05 +0000</pubDate>
-		<dc:creator><![CDATA[Kate Robinson]]></dc:creator>
-				<category><![CDATA[Success Story]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19703</guid>
-		<description><![CDATA[<p>Le temps est précieux pour les e-commerçants, c&#8217;est pourquoi ils sont souvent réticents à investir les réseaux sociaux. Nous avons échangé sur ce sujet avec Philippe Bertron, Dirigeant et Fondateur du site Etoffe.com. Il nous livre aujourd&#8217;hui son experience et ses conseils pour aider les e-commerçants à tirer parti des réseaux sociaux. A quel point [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/etude-cas-developper-activite-les-reseaux-sociaux/">Etude de cas: Développer son activité avec les Réseaux Sociaux</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>Le temps est précieux pour les e-commerçants, c&rsquo;est pourquoi ils sont souvent réticents à investir les réseaux sociaux. Nous avons échangé sur ce sujet avec <strong>Philippe Bertron</strong>, Dirigeant et Fondateur du site <a href="http://www.etoffe.com/" target="_blank">Etoffe.com</a>. Il nous livre aujourd&rsquo;hui son experience et ses conseils pour aider les e-commerçants à tirer parti des réseaux sociaux.<br />
-<span id="more-19703"></span> </p>
-<h2 style="color:#509195">A quel point les réseaux sociaux sont-ils importants pour votre activité ?</h2>
-<p><a href="http://www.etoffe.com/" target="_blank">Etoffe.com</a> est un site de vente en ligne de tissus et de papiers peints de luxe. N&rsquo;ayant pas de magasin physique, il était important pour nous d&rsquo;offrir un terrain de dialogue et d&rsquo;échange privilégié à nos clients. De plus, la plupart de nos réseaux sociaux nous servent aujourd&rsquo;hui de vitrine, pour communiquer sur les nouvelles collections, les opérations de promotions et les sujets liés à notre secteur (expositions, salons…). </p>
-<p>Notre métier se prête à merveille au jeu du contenu, puisque nous avons la chance de travailler avec des marques qui produisent de très beaux visuels. C’est donc idéal pour y partager ces supports, et fédérer autour de notre contenu, une communauté pointue d&rsquo;amateurs de déco haut-de-gamme. </p>
-<p>Notre stratégie social media est pleinement axée sur le branding, l&rsquo;image et l&rsquo;éditorial. Nous ne sommes que rarement dans une logique de mise en avant purement commerciale. </p>
-<p>Enfin, nous pensons qu&rsquo;avoir une communication riche et régulière auprès d&rsquo;un nombre important de fans ou followers est un élément de réassurance supplémentaire faisant preuve de notre légitimité dans notre secteur.</p>
-<h2 style="color:#509195">Quels réseaux sociaux utilisez-vous ? Pourquoi ?</h2>
-<p><strong>Facebook</strong> est notre plus importante communauté avec bientôt 20 000 fans. C&rsquo;est un réseau social pionnier qui permet de nombreuses alternatives en termes de ciblage. Nous utilisons par exemple le ciblage par intérêts, mais aussi le ciblage des profils Facebook de nos abonnés newsletters, grâce au système d&rsquo;import de notre base email sur la plateforme. Cela nous permet de leur partager les nouveautés et actualités de nos marques, en nous appuyant sur des visuels forts. La viralité de certains produits ou motifs est un bon indicateur de tendances et nous permet de tester et identifier de futurs best-sellers !</p>
-<p>Nous sommes également présents sur <strong>Instagram</strong> et <strong>Pinterest</strong>, convaincus que les réseaux d&rsquo;images sont absolument incontournables lorsqu&rsquo;on a la chance comme nous d&rsquo;avoir une bibliothèque de visuels immensément riche. Montrer les motifs et les matières est notre première préoccupation.</p>
-<p>Nous utilisons quotidiennement <strong>Scoop.it</strong>, un réseau social de veille et curation encore trop confidentiel mais qui réserve de très belles surprises en termes de ventes et de trafic. Cet outil permet d&rsquo;agréger toutes les actualités liées à notre secteur d&rsquo;activité et nous garantit un trafic extrêmement qualifié. Scoop.it nous permet de nous positionner en tant qu&rsquo;experts dans le secteur du textile, du papier peint et du monde de la décoration haut-de-gamme.</p>
-<p>Nous avons une utilisation plus mineure de <strong>Twitter</strong>, qui nous permet principalement de relayer certaines actualités du monde des éditeurs, ainsi que les articles partagés sur notre Scoop.it.</p>
-<h2 style="color:#509195">Comment gérez-vous ces chaînes de réseaux sociaux ?</h2>
-<p>Nous avons un planning différent pour chaque réseau social. Nous réalisons deux posts hebdomadaires sur Facebook, car nous souhaitons proposer un contenu de grande qualité à chaque prise de parole sur ce réseau social où nous avons le plus de fans. </p>
-<p>Notre Scoop.it est alimenté une fois par jour. Nous rendons ainsi publique la veille quotidienne effectuée sur différents sites de notre secteur.</p>
-<p>Nous utilisons Twitter comme un relais de notre contenu Facebook et Scoop.it. Nous retweetons aussi les éditeurs avec qui nous travaillons.</p>
-<p>Nous postons une fois par jour sur Instagram, en début d&rsquo;après-midi. Notre site nous fournit un très beau vivier parmi lequel piocher de belles images, de beaux motifs.</p>
-<p>Enfin, Pinterest est alimenté quotidiennement également, de nos nouvelles collections ou de visuels marquants.</p>
-<h2 style="color:#509195">D’où viennent les inspirations de contenu que vous publiez ?</h2>
-<p>Nous tirons nos idées des petites merveilles que nous proposons sur notre site, des tendances en décoration, des découvertes que les membres de l&rsquo;équipe font dans les salons ou les expositions. Nous tirons aussi des leçons des réactions de notre communauté à nos prises de parole et apprenons peu à peu à savoir ce qui plaît à nos abonnés. En effet, ce qui sera viral sur les réseaux sociaux n&rsquo;est pas nécessairement ce qui est le plus commercial. Il faut apprendre à jongler entre ce qui plaît parce que c&rsquo;est spectaculaire, et ce qui se vendra vraiment !</p>
-<h2 style="color:#509195">Quels outils utilisez-vous et recommandez-vous ?</h2>
-<p>Pour les réseaux sociaux, nous utilisons beaucoup d&rsquo;outils de programmation des publications : <strong>Buffer</strong> pour Twitter, l&rsquo;outil de planification des publications disponible sur Facebook ou <strong>Latergram</strong> pour Instagram. Les insights Facebook et Twitter sont assez complets pour être utilisables.<br />
-En revanche, pour suivre les performances de notre compte Instagram, nous devons utiliser un Analytics bien distinct et nous avons choisi <strong>Iconosquare</strong> pour le moment. </p>
-<h2 style="color:#509195">Combien avez-vous investi dans les réseaux sociaux ?</h2>
-<p>Nous dépensons assez peu sur les réseaux sociaux, mais nous y consacrons beaucoup de temps. Nous sponsorisons régulièrement nos publications Facebook et nous créons souvent des campagnes d&rsquo;acquisition via Facebook Ads (qui propose également de diffuser ces publicités sur Instagram depuis peu). Pour autant, les réseaux sociaux représentent moins de 5% nos dépenses marketing, et nous préférons allouer du budget à des canaux à fort ROI comme Google Adwords.</p>
-<h2 style="color:#509195">Quels conseils donneriez-vous aux e-commerçants souhaitant être présents sur les réseaux sociaux ?</h2>
-<p>Sur les réseaux sociaux, il faut être: percutant, original et qualitatif. A l&rsquo;heure où les utilisateurs sont noyés sous une masse d&rsquo;informations issues de marques différentes, il faut savoir capter leur intérêt en cultivant un ton, un contenu et une ligne éditoriale uniques. Enfin, le caractère d&rsquo;exclusivité est souvent la clé d&rsquo;un follower convaincu !</p>
-<p>Il faut apporter beaucoup de soin à la portée visuelle de la publication. La règle est désormais bien connue : pas de post sans image ! Nous avons la chance de disposer d’énormément de contenu visuel. Quand ce n&rsquo;est pas le cas, il faut savoir faire preuve de créativité afin d&rsquo;accompagner ses mots d&rsquo;un support visuel fort et accrocheur.</p>
-<p>À travers les réseaux sociaux, il s&rsquo;agit de proposer une expérience à notre communauté, partager des informations exclusives, inédites, étonnantes, mais aussi percutantes et en cohérence avec notre activité. Les réseaux sociaux sont un espace de loisirs pour les utilisateurs, mais aussi d&rsquo;information. Il faut veiller à conserver une présence agréable et qualitative sur ce levier.</p>
-<p>Enfin, et comme souvent dans l&rsquo;univers du web, il ne faut pas hésiter à tester ! Une bonne maîtrise du ciblage passe par des dizaines de tests avant de trouver la bonne recette. Chaque audience est propre au secteur et il faut apprendre à apprivoiser la sienne.</p>
-<hr width="20%" align="left">
-<p>Prêts à lancer votre campagne sur les réseaux sociaux pour votre site e-commerce? Pour en savoir plus consultez l&rsquo;article d&rsquo;Hanna Oeljeschlaeger expert HootSuite sur: <a href="https://www.prestashop.com/blog/fr/boostez-boutique-en-ligne-les-reseaux-sociaux-partie-1-2/">Comment booster votre boutique en ligne avec les réseaux sociaux</a>. </p>
-<p>Vous n’avez pas encore votre boutique en ligne? Commencez dès aujourd’hui avec <a href="http://www.prestashop.com/">PrestaShop</a>. </p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/etude-cas-developper-activite-les-reseaux-sociaux/">Etude de cas: Développer son activité avec les Réseaux Sociaux</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/etude-cas-developper-activite-les-reseaux-sociaux/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
-		</item>
-		<item>
-		<title>E-commerçants : introduction au reciblage ou retargeting</title>
-		<link>https://www.prestashop.com/blog/fr/e-commercants-introduction-au-reciblage-retargeting/</link>
-		<comments>https://www.prestashop.com/blog/fr/e-commercants-introduction-au-reciblage-retargeting/#comments</comments>
-		<pubDate>Mon, 08 Feb 2016 08:30:08 +0000</pubDate>
+		<title>Brexit : Qu’est-ce qui pourrait changer pour l’e-commerce d’un point de vue juridique et fiscal ?</title>
+		<link>https://www.prestashop.com/blog/fr/brexit-quest-ce-changer-commerce-dun-point-vue-juridique-fiscal/</link>
+		<comments>https://www.prestashop.com/blog/fr/brexit-quest-ce-changer-commerce-dun-point-vue-juridique-fiscal/#comments</comments>
+		<pubDate>Fri, 08 Jul 2016 12:28:10 +0000</pubDate>
 		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
 				<category><![CDATA[Conseils E-commerce]]></category>
 
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19693</guid>
-		<description><![CDATA[<p>Vous avez certainement déjà vécu une expérience similaire : vous parcourez une boutique en ligne, mais vous ne vous sentez pas prêt à acheter quelque chose et retournez donc lire quelques articles sur BuzzFeed. Pendant la navigation, vous vous rendez compte que les produits que vous venez de consulter apparaissent de part et d&#8217;autre des [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commercants-introduction-au-reciblage-retargeting/">E-commerçants : introduction au reciblage ou retargeting</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20322</guid>
+		<description><![CDATA[<p>De nombreux commerçants français se demandent quelles répercussions la sortie du Royaume-Uni de l’Union européenne pourrait avoir sur l’e-commerce, en particulier sur les ventes destinées aux consommateurs anglo-saxons. Les conséquences possibles à court et à moyen terme de la sortie du Royaume-Uni de l’UE (« Brexit ») en termes de commerce international sont présentées ici, [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/brexit-quest-ce-changer-commerce-dun-point-vue-juridique-fiscal/">Brexit : Qu’est-ce qui pourrait changer pour l’e-commerce d’un point de vue juridique et fiscal ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></description>
-				<content:encoded><![CDATA[<p>Vous avez certainement déjà vécu une expérience similaire : vous parcourez une boutique en ligne, mais vous ne vous sentez pas prêt à acheter quelque chose et retournez donc lire quelques articles sur BuzzFeed. Pendant la navigation, vous vous rendez compte que les produits que vous venez de consulter apparaissent de part et d&rsquo;autre des pages. Comment le site peut-il savoir que vous êtes intéressé par ces articles en particulier ? En tant qu&rsquo;e-commerçant, vous vous êtes probablement déjà demandé si cette approche pourrait fonctionner avec <em>votre</em> <a href="http://prestashop.com/">boutique</a> ? La réponse est oui ! Aujourd&rsquo;hui, nous invitons Garret Gan, du site de marketing numérique <a href="http://www.thalamus.co/" target="_blank">Thalamus</a>, à nous faire part de son expertise.<br />
-<span id="more-19693"></span></p>
-<h2 style="color:#353466">1. Qu&rsquo;est-ce que le reciblage ?</h2>
-<p>Le reciblage publicitaire ou retargeting consiste à afficher les contenus que l&rsquo;utilisateur a consultés dans un site e-commerce. Voici comment cela fonctionne : l&rsquo;e-commerçant inclut une ligne de code sur son site qui permet d&rsquo;enregistrer un cookie de suivi dans le navigateur de l&rsquo;utilisateur. Grâce à ce cookie, les <a href="http://www.thalamus.co/display/retargeting" target="_blank">entreprises de reciblage</a> peuvent visualiser le parcours de la personne sur le Web et afficher des publicités en conséquence.</p>
-<p>C&rsquo;est un principe très similaire à celui qu&rsquo;emploient les scientifiques pour observer les animaux à distance à l&rsquo;aide de capteurs : dans ce cas précis, le capteur est enregistré dans le navigateur de l&rsquo;utilisateur, ce qui permet ensuite de lui proposer des publicités en fonction de ses habitudes de navigation. </p>
-<p>La stratégie la plus efficace consiste à afficher des publicités contenant un produit de votre boutique que l&rsquo;utilisateur a consulté (chaussures, pantalon, t-shirt, accessoire, etc.) assorti d&rsquo;une réduction symbolique, ce qui l&rsquo;incitera à revenir sur votre site pour effectuer l&rsquo;achat.  </p>
-<h2 style="color:#353466">2. Quels types d&rsquo;entreprises utilisent le reciblage ? Pourquoi ?</h2>
-<p>Les entreprises utilisant le reciblage appartiennent à une multitude de domaines différents : e-commerce, applis mobiles, sites B2B, marketing, etc.</p>
-<p>Le reciblage est un outil de communication extrêmement efficace pour communiquer avec des utilisateurs ayant déjà consulté votre site et améliorer leur expérience. </p>
-<p>Ils bénéficient également d&rsquo;une navigation Web plus pertinente, car les publicités qui leur sont proposées contiennent des articles qu&rsquo;ils ont déjà consultés ainsi que des promotions/concours. Sans cette technologie, les e-commerçants doivent deviner eux-mêmes quels produits de leur boutique plaisent le plus aux utilisateurs. </p>
-<p>À ses débuts, le reciblage était parfois perçu comme invasif par les utilisateurs, mais il fait aujourd&rsquo;hui partie de notre quotidien, car de nombreuses entreprises l&rsquo;utilisent depuis des années.</p>
-<h2 style="color:#353466">3. Quel est le prix d&rsquo;une campagne de reciblage ?</h2>
-<p>Les e-commerçants peuvent choisir des entreprises comme <a href="http://www.thalamus.co/ad_partners/adroll" target="_blank">AdRoll</a> et <a href="http://www.thalamus.co/ad_partners/retargeter" target="_blank">Retargeter</a> pour des tarifs avoisinant 100 dollars par semaine (voire moins). D&rsquo;autres sites comme <a href="http://www.thalamus.co/ad_partners/tellapart" target="_blank">TellApart</a>, <a href="http://www.thalamus.co/ad_partners/criteo" target="_blank">Criteo</a> et <a href="http://www.thalamus.co/ad_partners/simpli-fi" target="_blank">Simpli.fi</a> proposent des fonctionnalités avancées comme l&rsquo;optimisation créative dynamique (qui repose sur des algorithmes proposant automatiquement les articles les plus pertinents) ou les fils de catalogues produit (les produits proposés sont des articles similaires à ceux consultés par l&rsquo;utilisateur sur la boutique en ligne).</p>
-<h2 style="color:#353466">4. Comment lancer une campagne de reciblage pour ma boutique ?</h2>
-<p>Pour les e-commerçants, il est utile de mettre en œuvre des campagnes de reciblage toute l&rsquo;année. De nombreuses entreprises e-commerce ont ainsi augmenté leur taux de conversion en offrant de petites réductions sur les articles figurant dans les paniers abandonnés par les utilisateurs.</p>
-<p>Après avoir appris comment maximiser les conversions grâce au reciblage publicitaire, vous pouvez passer à des approches plus complexes comme l&rsquo;optimisation créative dynamique et les fils de catalogues produit (mentionnées plus haut), ou établir des partenariats avec des <a href="http://www.thalamus.co/display/ad-network" target="_blank">réseaux publicitaires</a> pour attirer davantage d&rsquo;utilisateurs.</p>
-<hr align="left" width="20%">
-<p>Lancez-vous dès aujourd&rsquo;hui en consultant les évaluations d&rsquo;entreprises comme AdRoll et Retargeter sur le site de <a href="http://www.thalamus.co/" target="_blank">Thalamus</a>. Ensuite, vous pourrez vous attaquer à votre première campagne de reciblage ! Vous avez déjà mis en place votre campagne ? Faites-nous part de vos astuces et de vos conseils dans les commentaires. </p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commercants-introduction-au-reciblage-retargeting/">E-commerçants : introduction au reciblage ou retargeting</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/e-commercants-introduction-au-reciblage-retargeting/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Vidéos sur les réseaux sociaux : premiers pas</title>
-		<link>https://www.prestashop.com/blog/fr/videos-les-reseaux-sociaux-premiers-pas/</link>
-		<comments>https://www.prestashop.com/blog/fr/videos-les-reseaux-sociaux-premiers-pas/#comments</comments>
-		<pubDate>Mon, 08 Feb 2016 07:01:54 +0000</pubDate>
-		<dc:creator><![CDATA[Julie Liu]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19695</guid>
-		<description><![CDATA[<p>Un bref coup d&#8217;œil à Facebook qui se transforme en trente minutes de visionnage de vidéos&#8230; nous avons tous déjà vécu cette situation. Les vidéos attirent l&#8217;attention des clients, vous en êtes la preuve vivante. Et quand elles sont bien réalisées, elles aident également les entreprises à faire connaître leur marque sur les réseaux sociaux. [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/videos-les-reseaux-sociaux-premiers-pas/">Vidéos sur les réseaux sociaux : premiers pas</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>Un bref coup d&rsquo;œil à Facebook qui se transforme en trente minutes de visionnage de vidéos&#8230; nous avons tous déjà vécu cette situation. Les vidéos attirent l&rsquo;attention des clients, vous en êtes la preuve vivante. Et quand elles sont bien réalisées, elles aident également les entreprises à faire connaître leur marque sur les réseaux sociaux. Aujourd&rsquo;hui, nous vous expliquons comment accroître votre présence sur les réseaux sociaux grâce aux vidéos.<br />
-<span id="more-19695"></span></p>
-<h2 style="color:#e07531">Choisir une plateforme</h2>
-<p>Avant de vous lancer dans le tournage, vous devez d&rsquo;abord choisir la plateforme sur laquelle vous allez partager votre contenu. La plateforme déterminera la durée de votre vidéo et inversement. Commençons avec la plus populaire : </p>
-<h4><a href="https://vine.co/" target="_blank">Vine</a></h4>
-<p>Ce réseau social a été racheté par Twitter en 2012. Le concept de Vine est unique : il ne s&rsquo;agit que de vidéos très courtes. La plateforme est plébiscitée par les utilisateurs de moins de vingt ans. Suite au rachat, une vidéo sur cinq est maintenant publiée sur Twitter, permettant ainsi aux commerçants d&rsquo;atteindre un public plus large. <strong>Durée maximum des vidéos : 6 secondes</strong></p>
-<h4><a href="https://www.instagram.com/" target="_blank">Instagram</a></h4>
-<p>Instagram combine le meilleur en matière d&rsquo;images et de vidéos. En 2010, l&rsquo;entreprise espérait être la plateforme de partage d&rsquo;images la plus importante de sa génération. Avec <a href="http://venturebeat.com/2013/06/20/instagram-users/" target="_blank">130 millions d&rsquo;utilisateurs mensuels</a> en <a href="http://techcrunch.com/2013/06/20/facebook-instagram-video/" target="_blank">2013</a> Instagram a étendu cette ambition en proposant une nouvelle fonctionnalité permettant aux utilisateurs de poster des vidéos. Si vous avez déjà beaucoup d&rsquo;abonnés, vous pourrez ajouter des vidéos sans problème. <strong>Durée maximum des vidéos : 15 secondes</strong></p>
-<h4><a href="https://www.facebook.com/" target="_blank">Facebook</a></h4>
-<p>La <a href="http://newsroom.fb.com/news/2015/09/introducing-360-video-on-facebook/" target="_blank">vidéo à 360°</a> de Facebook était sans conteste l&rsquo;innovation vidéo la plus originale de 2015. Les utilisateurs de Facebook peuvent désormais regarder des vidéos à 360° en inclinant ou en tournant simplement leur appareil mobile. Repousser les limites en faisant connaître sa marque sur Facebook : que demander de plus ? <strong>Durée maximum des vidéos : 3 minutes soit 180 secondes</strong></p>
-<h4><a href="http://twitter.com/" target="_blank">Twitter</a></h4>
-<p>Tout comme Vine, Twitter permet aux utilisateurs de poster des vidéos et de les héberger directement depuis l&rsquo;application. Ces vidéos peuvent être plus longues et il est possible de les mettre en ligne directement depuis l&rsquo;application. Elles sont accompagnées d&rsquo;un tweet afin d&rsquo;augmenter les chances de partage. <strong>Durée maximum des vidéos : 30 secondes </strong></p>
-<h4><a href="https://www.youtube.com/" target="_blank">YouTube</a></h4>
-<p>L&rsquo;un des principaux avantages de YouTube est probablement sa connexion à Google. Si vous postez des vidéos de DIY ou des tutoriels intéressants, vous pouvez monter dans les résultats de recherche et attirer des clients potentiels en utilisant un référencement pertinent. Le deuxième avantage réside dans la publicité, qui vous permet de percevoir des revenus supplémentaires lorsque le nombre de vues augmente. <strong>Durée maximum des vidéos : 15 minutes, soit 900 secondes</strong></p>
-<h4><a href="https://vimeo.com/" target="_blank">Vimeo</a></h4>
-<p>Perçu comme une version plus « professionnelle » de <a href="http://mashable.com/2013/05/30/vimeo-over-youtube/#9fEYcbGXjkqD" target="_blank">YouTube</a>, Vimeo propose à ses utilisateurs des fonctionnalités payantes, qui constituent l&rsquo;élément clé de son modèle commercial. Le chiffre d&rsquo;affaires de Vimeo ne dépend pas de la publicité : vos clients ne sont donc pas obligés d&rsquo;en regarder avant d&rsquo;avoir accès à votre contenu. Si vous souhaitez publier des vidéos courtes et de haute qualité, choisissez Vimeo. <strong>Durée maximum des vidéos : illimitée (jusqu&rsquo;au 25 Go par an)</strong></p>
-<h2 style="color:#e07531">Quelques idées de vidéos pour les réseaux sociaux</h2>
-<p>Maintenant que vous connaissez la longueur potentielle de vos vidéos, vous devez décider quel type de contenu vous allez produire. Voici quelques idées pour bien commencer : </p>
+				<content:encoded><![CDATA[<p>De nombreux commerçants français se demandent quelles répercussions la sortie du Royaume-Uni de l’Union européenne pourrait avoir sur l’e-commerce, en particulier sur les ventes destinées aux consommateurs anglo-saxons.</p>
+<p><span id="more-20322"></span></p>
+<p>Les conséquences possibles à court et à moyen terme de la sortie du Royaume-Uni de l’UE (« Brexit ») en termes de commerce international sont présentées ici, de façon extrêmement synthétisée.</p>
+<p>Le vote de jeudi dernier n’a pas d’effets juridiques immédiats sur le plan international. La sortie du Royaume-Uni de l’UE se déroulera par le biais d’une phase de négociation régie par le Traité de Lisbonne, qui durera vraisemblablement deux ans.</p>
+<p>D’ici là, l’environnement normatif actuellement en vigueur devrait essentiellement rester le même, notamment en ce qui concerne la libre circulation des marchandises et des personnes, ainsi que l’union douanière.</p>
+<p>La célèbre association anglaise de consommateurs « Which » le rappelle sur son site : « How will Brexit affect your consumer rights? No immediate change to your consumer rights. The negotiations around our withdrawal from the EU will be lengthy and there will be no immediate change to your consumer rights when you buy or sell goods and services, or travel abroad ».</p>
+<p>En matière d’e-commerce, les dispositions suivantes continueront à s’appliquer pour les ventes aux consommateurs anglo-saxons :</p>
 <ol>
-<li><strong>Une histoire</strong> &#8211; concevez votre vidéo comme un petit film. La vidéo d&rsquo;<a href="https://www.youtube.com/watch?v=qOIdI_kZNBU" target="_blank">Extra Gum</a> est très bien réalisée et en relation avec son produit.</li>
-<li><strong>Des expériences client</strong> (contenu produit par les utilisateurs) &#8211; partagez les expériences de quelques-uns de vos clients actuels avec les clients potentiels que vous voulez atteindre. Si vous le pouvez, interrogez vous-même vos clients. Sinon, faites comme <a href="https://www.facebook.com/gopro/videos" target="_blank">GoPro</a> et encouragez vos clients à poster leurs meilleures vidéos. </li>
-<li><strong>Les coulisses</strong> (ou un documentaire) &#8211; révélez à vos clients ce qui se passe en coulisses. Si vos produits sont faits main, montrez comment ils sont conçus. Organisez une séance photo, créez un lookbook ou invitez vos clients à en observer le déroulement, comme l&rsquo;a fait <a href="https://vimeo.com/25439223" target="_blank">Crystal Cactus</a> une entreprise new-yorkaise.</li>
-<li><strong>Des entretiens avec des invités ou des employés</strong> &#8211; interrogez un expert, ou bien changez les rôles et proposez à vos fans de vous poser des questions, comme nous l&rsquo;avons fait avec notre <a href="https://www.facebook.com/prestashop/videos/1227558680594405/?theater" target="_blank">campagne Facebook #EQM</a>).</li>
-<li><strong>Des vidéos explicatives</strong> &#8211; apprendre en quelques secondes ? C&rsquo;est possible ! Oreo nous le prouve en montrant <a href="https://v.cdn.vine.co/r/videos/48133739-9554-456A-9AF9-803F42B521B5-618-00000112A175BA3D_1.0.7.mp4?versionId=NQv5RUjDw9AoOKfUOz8lEONNRqJZ3CxV" target="_blank">comment faire des vermicelles avec une vidéo Vine</a>. Vous êtes expert dans votre domaine, utilisez donc les vidéos pour enseigner de nouvelles compétences à vos clients.</li>
-<li><strong>De la culture générale, de l&rsquo;histoire</strong> &#8211; utilisez vos vidéos pour instruire votre communauté. Les geeks de <a href="https://twitter.com/generalelectric/status/683089956277886977" target="_blank">GE</a> partagent leur passion pour la science avec leurs fans. Dans cette vidéo, ils expliquent comment les technologies ont été utilisées de différentes façons pour changer le monde.</li>
-<li><strong>Des animations en 3D ou en stop-motion, des dessins animés</strong> &#8211; regardez cette animation en stop-motion réalisée par la boutique PrestaShop <a href="https://www.instagram.com/p/_o6pdjDv0S/" target="_blank">SelfPackaging</a>. Le thème des fêtes de fin d&rsquo;année était vraiment pertinent en cette période : après tout, qui ne voudrait pas recevoir la visite du père Noël ?</li>
+<li>le délai minimum de 14 (quatorze) jours pour le retour des produits achetés à distance (conformément au Consumer Contract Regulation 2013, qui a transposé au Royaume-Uni la Directive 2011/83/EU relative à la protection des consommateurs) ;</li>
+<li>la garantie légale concernant les vices cachés des produits (qui, au Royaume-Uni, est valable six ans à partir de la livraison des produits, même si, à compter de six mois après la livraison, la charge de la preuve du défaut du produit à la livraison est transférée au consommateur, ce qui la rend plutôt difficile à revendiquer, selon le Consumer Rights Act 2015) ;</li>
+<li>la réglementation de la vente à distance (selon laquelle les commerçants qui expédient depuis l’UE des produits destinés à des consommateurs anglais doivent s’enregistrer au Royaume-Uni aux fins de la TVA lorsque le seuil annuel de facturation est supérieur à 70 000 £) ;</li>
+<li>la réglementation du Mini-One-Stop-Shop (MOSS), pour la déclaration et le versement de la TVA sur la vente de produits numériques aux consommateurs européens (par ex., le téléchargement de musique ou de logiciels, l’accès aux banques de données numériques, etc.).</li>
 </ol>
-<p>À présent, vous avez tous les outils pour commencer à utiliser le marketing vidéo sur les réseaux sociaux. Qu&rsquo;attendez-vous ? Appuyez sur le bouton d&rsquo;enregistrement et lancez-vous ! Vous utilisez déjà les vidéos sur les réseaux sociaux ? Faites-nous part de vos astuces dans les commentaires. </p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/videos-les-reseaux-sociaux-premiers-pas/">Vidéos sur les réseaux sociaux : premiers pas</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+<p>Suite à la sortie officielle du Royaume-Uni de l’UE, tout dépendra des politiques que le Royaume-Uni et l’UE décideront de mener, unilatéralement ou bilatéralement.</p>
+<p>Il est possible que le Royaume-Uni ait à moyen terme un statut juridico-fiscal comparable à celui de la Norvège et de la Suisse du point de vue du commerce intra-européen, dans le cadre d’un régime de libre-échange vers et à partir de l’UE. Cela impliquerait cependant la présence d’une barrière douanière, tout au moins du point de vue administratif et en matière de TVA.</p>
+<p>Cela ne simplifiera pas les choses pour les petits commerces en ligne !</p>
+<hr />
+<p>&nbsp;</p>
+<p>Me Alan Rhode, avocat, est le cofondateur de Taxmen.eu, une société spécialisée dans le conseil juridique et fiscal pour l’e-commerce, dont le siège se situe à Londres. Après avoir travaillé dans des cabinets d’avocats internationaux, Alan est devenu en 2012 associé de Taxmen, tax and legal for eCommerce, un réseau international spécialisé dans les services juridiques et fiscaux destinés opérateurs d’e-commerce. La clientèle du réseau comporte des détaillants du secteur de la mode, des opérateurs de logistique, des agences d’e-commerce et des sociétés de conseil. Alan est assistant en droit fiscal auprès de l’Université Bocconi et de l’Université de Milan. Il a récemment participé en tant qu’enseignant au Master de formation des cadres « Économie numérique : profils juridiques et fiscaux des nouveaux modèles économiques » de la SDA Bocconi School of Management.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/brexit-quest-ce-changer-commerce-dun-point-vue-juridique-fiscal/">Brexit : Qu’est-ce qui pourrait changer pour l’e-commerce d’un point de vue juridique et fiscal ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/videos-les-reseaux-sociaux-premiers-pas/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-<enclosure url="https://v.cdn.vine.co/r/videos/48133739-9554-456A-9AF9-803F42B521B5-618-00000112A175BA3D_1.0.7.mp4" length="916512" type="video/mp4" />
-		</item>
-		<item>
-		<title>Design e-commerce : trouvez l&#8217;inspiration avec le LookBook PrestaShop 2016</title>
-		<link>https://www.prestashop.com/blog/fr/inspiration-design-e-commerce-lookbook-prestashop-2016/</link>
-		<comments>https://www.prestashop.com/blog/fr/inspiration-design-e-commerce-lookbook-prestashop-2016/#comments</comments>
-		<pubDate>Wed, 03 Feb 2016 14:28:26 +0000</pubDate>
-		<dc:creator><![CDATA[Juan Manuel Molina]]></dc:creator>
-				<category><![CDATA[Actualités PrestaShop]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19683</guid>
-		<description><![CDATA[<p>Qu&#8217;ont en commun les meilleures boutiques PrestaShop ? Un design soigné et des photographies de qualité. Ce sont des éléments essentiels pour devenir une référence de votre secteur. Le LookBook PrestaShop 2016 regroupe une sélection de 24 boutiques en ligne qui utilisent de manière harmonieuse et intelligente les couleurs et qui ne négligent pas les [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/inspiration-design-e-commerce-lookbook-prestashop-2016/">Design e-commerce : trouvez l&rsquo;inspiration avec le LookBook PrestaShop 2016</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p><strong>Qu&rsquo;ont en commun les meilleures boutiques PrestaShop ?</strong> Un design soigné et des photographies de qualité. Ce sont des éléments essentiels pour devenir une référence de votre secteur.</p>
-<p>Le <strong>LookBook PrestaShop 2016</strong> regroupe une sélection de 24 boutiques en ligne qui utilisent de manière harmonieuse et intelligente les couleurs et qui ne négligent pas les bonnes pratiques en matière de webdesign.<br />
-<span id="more-19683"></span><br />
-Inspirez-vous des plus belles boutiques PrestaShop et boostez votre taux de conversion.</p>
-<div class="text-center"><a class="btn btn-sucess" style="background-color: #2f2f2f;border: 1px solid #191717;border-bottom: 3px solid #292727;margin: 20px 0 0;color: #fff" href="https://www.prestashop.com/fr/lookbook" target="_blank"><i class="fa fa-download"></i>   Télécharger le Lookbook</a></div>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/inspiration-design-e-commerce-lookbook-prestashop-2016/">Design e-commerce : trouvez l&rsquo;inspiration avec le LookBook PrestaShop 2016</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/inspiration-design-e-commerce-lookbook-prestashop-2016/feed/</wfw:commentRss>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/brexit-quest-ce-changer-commerce-dun-point-vue-juridique-fiscal/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
-		<title>E-commerçants : 2 moyens rapides pour améliorer la gestion des stocks en 2016</title>
-		<link>https://www.prestashop.com/blog/fr/e-commercants-2-moyens-rapides-ameliorer-gestion-stocks-en-2016/</link>
-		<comments>https://www.prestashop.com/blog/fr/e-commercants-2-moyens-rapides-ameliorer-gestion-stocks-en-2016/#comments</comments>
-		<pubDate>Mon, 01 Feb 2016 10:37:07 +0000</pubDate>
+		<title>E-commerce : 6 astuces pour fixer des prix défiant toute concurrence — Partie 1/2</title>
+		<link>https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-12/</link>
+		<comments>https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-12/#comments</comments>
+		<pubDate>Thu, 07 Jul 2016 07:33:23 +0000</pubDate>
 		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
 				<category><![CDATA[Conseils E-commerce]]></category>
 
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19660</guid>
-		<description><![CDATA[<p>Les fêtes de fin d&#8217;année sont terminées. L&#8217;effervescence de Noël a fait place à un calme relatif. Les ventes e-commerce ont battu un nouveau record cette année, bondissant de 20% par rapport à 2014. Mais ne vous réjouissez pas trop vite. La période a permis de mettre en lumière des axes d&#8217;amélioration, parmi lesquels la [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commercants-2-moyens-rapides-ameliorer-gestion-stocks-en-2016/">E-commerçants : 2 moyens rapides pour améliorer la gestion des stocks en 2016</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20311</guid>
+		<description><![CDATA[<p>En matière d’e-commerce, la stratégie pour fixer les prix ne se résume pas à proposer des tarifs similaires ou inférieurs à ceux de la concurrence. En utilisant le bon outil de veille concurrentielle, les marchands peuvent repousser les limites et proposer des tarifs compétitifs de manière plus raisonnée et plus avantageuse. Pour ce faire, il [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-12/">E-commerce : 6 astuces pour fixer des prix défiant toute concurrence — Partie 1/2</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></description>
-				<content:encoded><![CDATA[<p>Les fêtes de fin d&rsquo;année sont terminées. L&rsquo;effervescence de Noël a fait place à un calme relatif. </p>
-<p>Les ventes e-commerce ont battu un nouveau record cette année, bondissant de <a href="http://www.mastercardadvisors.com/modules/news/a_happy_holiday_season_for_retailers.html" target="_blank">20%</a> par rapport à 2014. Mais ne vous réjouissez pas trop vite. La période a permis de mettre en lumière des axes d&rsquo;amélioration, parmi lesquels la gestion des stocks. </p>
-<p>Les ruptures de stock sont extrêmement frustrantes. Après avoir travaillé d&rsquo;arrache-pied pour attirer les acheteurs avec des campagnes de publicité audacieuses et après les avoir séduits avec des tarifs exceptionnels et des descriptions de produits pertinentes, vous assistez avec impuissance à une situation problématique : les acheteurs ne peuvent finalement pas ajouter l&rsquo;article à leur panier, car il est indisponible. Que faire pour éviter de tels désagréments ?<br />
-<span id="more-19660"></span><br />
-La gestion des stocks est par essence un aspect complexe de la vente au détail. Même les marchands les plus avisés se sont un jour retrouvés avec des stocks excessifs ou insuffisants. Grâce à l&rsquo;exploitation des données, ces désagréments n&rsquo;ont désormais plus lieu d&rsquo;être. Il suffit d&rsquo;un rapide coup d&rsquo;œil à l&rsquo;historique des données de vente et aux articles les plus populaires pour identifier les produits qui permettent d&rsquo;<a href="http://www.wiser.com/wisepricer?utm_source=PrestaShop&amp;utm_medium=gp&amp;utm_campaign=1-16&amp;utm_content=2inventory" target="_blank">améliorer les marges bénéficiaires</a> et dont les ventes ne déçoivent jamais. Approfondissons ces deux idées.</p>
-<h2 style="color:#38315d">Des données de vente précieuses</h2>
-<p>Lorsque vous faites évoluer votre activité, il est important de disposer des données nécessaires pour examiner la situation initiale et l&rsquo;impact de vos ajustements. Si un produit ne se vend pas bien, c&rsquo;est peut-être parce que son prix n&rsquo;est pas compétitif ou simplement à cause d&rsquo;une météo anormalement chaude pour la saison (les marchands de vêtements observent souvent ce phénomène). Dans les deux cas, le fait de connaître le nombre de produits vendus et les conditions dans lesquelles ils ont été vendus vous aide à déterminer la stratégie la plus efficace. </p>
-<p>À l&rsquo;instar de la plupart des aspects de l’e-commerce, la gestion des stocks est un processus continu. Il est impossible de se contenter de passer une commande et de ne plus rien faire ensuite. Il convient plutôt de réévaluer en permanence un <a href="http://www.wiser.com/assortment?utm_source=PrestaShop&amp;utm_medium=gp&amp;utm_campaign=1-16&amp;utm_content=2inventory" target="_blank">inventaire optimisé</a> pour identifier les produits et les quantités qui se vendent, ainsi que les écueils à éviter. S&rsquo;agissant des stocks, il est clair qu&rsquo;il faut regarder en arrière pour pouvoir avancer et envisager l&rsquo;avenir avec sérénité. </p>
-<h2 style="color:#38315d">Pourquoi analyser les meilleures ventes ?</h2>
-<p>Comme vous le savez, votre gamme de produits a un impact considérable sur votre réussite commerciale. À ce titre, certains produits sont plus importants que d&rsquo;autres. Le <a href="http://www.forbes.com/sites/davelavinsky/2014/01/20/pareto-principle-how-to-use-it-to-dramatically-grow-your-business/" target="_blank">principe de Pareto</a> indique que 80 % de vos ventes proviennent de 20 % de vos stocks. C&rsquo;est pour cela que les produits les plus vendus sont particulièrement intéressants. Avec ces articles, vous attirez les clients sur votre site et vos tarifs les incitent à acheter. Dans ce contexte, comment faire pour être sûr d&rsquo;avoir toujours en stock les produits les plus populaires, qui vont faire décoller votre boutique en ligne ? </p>
-<p>C&rsquo;est ici qu&rsquo;interviennent les données. Afin de trouver les nouveaux produits incontournables à ajouter à votre offre, il est essentiel de savoir comment ces articles se vendent et comment ils se classent sur les grandes plateformes, notamment Amazon. Dans un premier temps, les marchands doivent choisir la ou les catégories susceptibles d&rsquo;accroître leur capacité de vente. Il est ainsi possible d&rsquo;identifier les produits susceptibles de booster les ventes. Une combinaison des<a href="http://blog.wiser.com/drive-the-bandwagon-how-to-catch-assortment-trends-early/?utm_source=PrestaShop&amp;utm_medium=gp&amp;utm_campaign=1-16&amp;utm_content=2inventory" target="_blank">tendances de popularité</a> (évaluation et classement sur Amazon au fil du temps, par exemple) et des informations sur les coûts et les prix peut ensuite vous donner une idée de la volatilité de l&rsquo;article et de ce que vous pourriez gagner sur chaque vente. Après tout, il semble logique de vouloir ajouter uniquement les produits les mieux notés et les plus rentables pour optimiser votre processus de vente. </p>
-<p>Enfin, il est utile de procéder à une <a href="http://blog.wiser.com/how-to-enhance-assortment-discovery-using-market-price-intelligence/?utm_source=PrestaShop&amp;utm_medium=gp&amp;utm_campaign=1-16&amp;utm_content=2inventory" target="_blank">analyse des lacunes</a> en se basant sur les meilleurs produits trouvés. Il se peut que certains produits parmi les plus vendus soient associés à de faibles marges. Toutefois, ils sont peut-être proposés par tous vos concurrents. Dans ce cas, il peut s&rsquo;avérer judicieux de faire une croix sur vos marges habituelles et de proposer ces produits malgré tout pour éviter de perdre des clients. Vous pourrez toujours récupérer ces marges sur des produits uniques pour lesquels le prix fixé n&rsquo;a pas besoin d&rsquo;être aussi compétitif.</p>
-<h2 style="color:#38315d">Comment améliorer plus rapidement la gestion des stocks ?</h2>
-<p>L&rsquo;automatisation est le moyen le plus simple de ne jamais être à court des produits les plus demandés. De cette façon, vous n&rsquo;avez plus à vous tourmenter au sujet des articles les plus appréciés. Les fêtes de fin d&rsquo;année étant terminées, tous les commerçants sont maintenant en quête des nouveaux produits populaires qui vont dynamiser les ventes et leur faire retrouver les niveaux de la mi-décembre ou presque. Avec une préparation de gamme orientée données, la baisse des ventes après Noël n&rsquo;est plus une fatalité. En s&rsquo;appuyant sur l&rsquo;historique interne des données de vente et sur le suivi des meilleures ventes, chaque marchand peut tenir le rythme et même donner la cadence en ce début d&rsquo;année.</p>
-<h4 style="color:#38315d">À propos de l&rsquo;auteur</h4>
-<p>Angelica Valentine est responsable Content Marketing chez <a href="http://www.wiser.com/?utm_source=PrestaShop&amp;utm_medium=gp&amp;utm_campaign=1-16&amp;utm_content=2inventory" target="_blank">Wiser</a>, leader des solutions de tarification et de merchandising orientées données pour les commerçants, les marques et les fabricants. Originaire d&rsquo;Oakland, en Californie, aux États-Unis, Angelica Valentine aime écrire, découvrir de nouvelles choses et participer à des événements musicaux, gastronomiques et culturels dans la région de la baie de San Francisco.</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commercants-2-moyens-rapides-ameliorer-gestion-stocks-en-2016/">E-commerçants : 2 moyens rapides pour améliorer la gestion des stocks en 2016</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+				<content:encoded><![CDATA[<p><strong>En matière d’e-commerce, la stratégie pour fixer les prix ne se résume pas à proposer des tarifs similaires ou inférieurs à ceux de la concurrence.</strong></p>
+<p>En utilisant le bon outil de veille concurrentielle, les marchands peuvent repousser les limites et proposer des tarifs compétitifs de manière plus raisonnée et plus avantageuse. Pour ce faire, il suffit de vous pencher sur certains scénarios commerciaux que nous avons tous tendance à mettre de côté.</p>
+<p><span id="more-20311"></span></p>
+<p>Aujourd’hui, je vous présente 6 astuces qui vous permettront de prendre une longueur d&rsquo;avance sur la concurrence en fixant des prix compétitifs, quelle que soit la taille de votre entreprise. Rassurez-vous, il n’est pas question de baisser vos prix ou encore de dire adieu à vos marges bénéficiaires, mais d’apprendre à optimiser votre réactivité et à développer un sens de la proactivité grâce à des <a href="https://prisync.com/" target="_blank">outils de veille automatisés pour surveiller les prix de vos concurrents</a>.</p>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/07/6SmartCompetitivePricingTactics_2.png"><img class="alignnone size-full wp-image-20314" alt="6SmartCompetitivePricingTactics_2" src="https://www.prestashop.com/blog/fr/files/2016/07/6SmartCompetitivePricingTactics_2.png" width="975" height="732" /></a></p>
+<h2><span style="color: #3d698e">1. Conjuguez compétitivité et rentabilité</span></h2>
+<p>Ceux qui ignorent leurs <a href="https://www.quora.com/What-are-the-standard-operating-costs-for-running-an-e-commerce-website" target="_blank">coûts</a> et se concentrent uniquement sur leur compétitivité n&rsquo;iront jamais très loin. En tant que marchand, vous savez sûrement qu’il n’est pas possible de proposer des tarifs compétitifs tout en faisant attention à votre coût de produit. Certes, la rentabilité est primordiale, mais pour ce faire, il est nécessaire de toujours garder un œil sur <a href="http://www.ecorner.com.au/FAQs-Questions-Ideas-Centre/Costs-Issues-Starting-An-eCommerce-Online-Business#.V17PYeZ96Rs" target="_blank">vos coûts</a>, <span style="text-decoration: underline">tout particulièrement</span> lorsqu’il s’agit d’ajuster vos prix par rapport à ceux de vos concurrents.</p>
+<p>Ainsi, il est inutile de baisser vos prix à tout va. Pour atteindre et maintenir une compétitivité à toute épreuve, il vous faut analyser vos coûts.</p>
+<p>Lorsque vos prix ne sont pas suffisamment compétitifs par rapport à ceux du marché, le plus important est de trouver une solution pour diminuer vos <strong>coûts en amont de la chaîne</strong>. Et ce n’est qu’après cette étape que vous serez en mesure d’offrir des remises ou des tarifs revus à la baisse à vos clients.</p>
+<h2><span style="color: #3d698e">2. Ne sous-estimez jamais la valeur de vos produits et suivez activement l’évolution du marché pour identifier les opportunités de hausse de prix</span></h2>
+<p>Attention à ne pas fixer des tarifs défiant toute concurrence : vous pourriez devenir trop compétitif.</p>
+<p>Vos prix ne manqueront pas d&rsquo;attirer l&rsquo;attention des clients potentiels, mais jusqu’où vous faudra-t-il aller ? Si vos clients recherchent à tout prix la meilleure affaire possible, pourquoi ne pas réduire vos prix au maximum ? Nous vous recommandons d&rsquo;ajuster vos tarifs pour vous positionner juste derrière le second concurrent le moins cher, tout en gardant vos prix bien inférieurs aux siens.</p>
+<p>Et rassurez-vous, augmenter vos prix de cette manière n’a en réalité aucun impact sur les <a href="https://www.prestashop.com/blog/fr/5-raisons-dinvestir-les-comparateurs-de-prix/" target="_blank">comparateurs de prix</a> ou encore sur les acheteurs en ligne. Cette approche vous permettra en outre de dégager une marge bénéficiaire plus importante, ce qui consolidera votre bilan sans pour autant affecter vos coûts.</p>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/07/6SmartCompetitivePricingTactics_3.png"><img class="alignnone size-full wp-image-20313" alt="6SmartCompetitivePricingTactics_3" src="https://www.prestashop.com/blog/fr/files/2016/07/6SmartCompetitivePricingTactics_3.png" width="975" height="684" /></a></p>
+<h2><span style="color: #3d698e">3. Analysez les catégories de produit et les stratégies de fixation de prix de vos concurrents</span></h2>
+<p>En ligne, les prix sont généralement fixés en fonction de la catégorie ou de la marque du produit. Cette stratégie peut être influencée par certaines approches budgétaires au sein de l&rsquo;entreprise ou par des partenariats particuliers avec des fournisseurs pour des marques précises. Dans tous les cas, si l’on prend en compte cette réalité, le suivi des prix de la concurrence et la microgestion des prix semblent quelque peu futiles.</p>
+<p>Avec les bons outils, les marchands peuvent obtenir des informations sur les prix selon leur marque ou leur catégorie, et ainsi prendre de l’avance sur leurs concurrents. La meilleure méthode ? L’agrégation, c’est-à-dire le regroupement de produits sous une seule marque ou catégorie. Il s’agit ensuite de calculer le rapport prix/performance pour chaque site, ce qui fera office de valeur de référence pour tous les produits (catégorie ou marque) agrégés. Vous pouvez ainsi évaluer l’efficacité de la stratégie de fixation des prix d’une entreprise pour une marque ou une catégorie donnée par rapport à la concurrence.<br />
+Vous pouvez également identifier les entreprises concurrentes les plus performantes sur des marques/catégories données ainsi que leurs lacunes. À partir de ces analyses comparées, les marchands peuvent donc ajuster leurs prix par marques ou catégories de produits.</p>
+<p>Vous souhaitez découvrir davantage d&rsquo;astuces pour fixer des tarifs compétitifs ? Consultez la deuxième partie de cet article !</p>
+<hr />
+<p>&nbsp;</p>
+<p><strong>À propos de l’auteur</strong></p>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/07/6SmartCompetitivePricingTactics_4.png"><img class="size-full wp-image-20315 alignleft" alt="6SmartCompetitivePricingTactics_4" src="https://www.prestashop.com/blog/fr/files/2016/07/6SmartCompetitivePricingTactics_4.png" width="144" height="177" /></a>Expert en e-commerce et PME, Burc Tanir est le PDG de Prisync.com, qui propose une solution de suivi des prix du marché utilisée par des entreprises dans plus de 40 pays.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-12/">E-commerce : 6 astuces pour fixer des prix défiant toute concurrence — Partie 1/2</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/e-commercants-2-moyens-rapides-ameliorer-gestion-stocks-en-2016/feed/</wfw:commentRss>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/e-commerce-6-astuces-fixer-prix-defiant-concurrence-partie-12/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
-		<title>E-commerce : Les tendances web design pour 2016</title>
-		<link>https://www.prestashop.com/blog/fr/e-commerce-les-tendances-web-design-pour-2016/</link>
-		<comments>https://www.prestashop.com/blog/fr/e-commerce-les-tendances-web-design-pour-2016/#comments</comments>
-		<pubDate>Mon, 01 Feb 2016 08:30:22 +0000</pubDate>
-		<dc:creator><![CDATA[Julie Liu]]></dc:creator>
+		<title>L’Europe, un marché à investir, de nouveaux clients à conquérir…</title>
+		<link>https://www.prestashop.com/blog/fr/leurope-marche-investir-nouveaux-clients-conquerir/</link>
+		<comments>https://www.prestashop.com/blog/fr/leurope-marche-investir-nouveaux-clients-conquerir/#comments</comments>
+		<pubDate>Tue, 05 Jul 2016 16:07:11 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+		<category><![CDATA[Partenaires PrestaShop]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20285</guid>
+		<description><![CDATA[<p>Ouvrez votre site à plus de 300 millions d’e-acheteurs européens potentiels ! Le marché de l’international constitue une véritable ambition pour de nombreux e-commerçants mais soulève également de nombreuses questions par sa complexité : quels pays cibler ? Comment répondre aux habitudes locales ? Quels délais et coûts de livraison ? Comment gérer les retours ou les formalités douanières ? Autant [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/leurope-marche-investir-nouveaux-clients-conquerir/">L’Europe, un marché à investir, de nouveaux clients à conquérir…</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><span style="color: #000000;"><b>Ouvrez votre site à plus de 300 millions d’e-acheteurs européens potentiels !</b></span></p>
+<p>Le marché de l’international constitue une véritable ambition pour de nombreux e-commerçants mais soulève également de nombreuses questions par sa complexité : quels pays cibler ? Comment répondre aux habitudes locales ? Quels délais et coûts de livraison ? Comment gérer les retours ou les formalités douanières ? Autant d’interrogations qui peuvent vous décourager et retarder le développement de vos ventes hors des frontières.</p>
+<p>Et si nous vous disions que l<strong>’international n’est, en réalité, pas si compliqué à appréhender </strong>?</p>
+<p><span id="more-20285"></span>Pour démarrer à l’international, il n’est pas indispensable de cibler des marchés lointains (comme l’Asie ou l’Amérique du Nord), différents de la France aussi bien culturellement que financièrement. En effet, <strong>l’international c’est aussi l’Europe</strong> ! Occupant la 1<sup>ere</sup> place sur le marché du e-commerce mondial, l’Europe constitue un nouveau territoire de jeu pour les e-commerçants français. Facilités douanières grâce à l’ouverture des frontières, monnaie commune et culture proche sont autant d’éléments qui peuvent vous inciter à ouvrir vos ventes aux pays européens.</p>
+<h3><span style="color: #25b9d7;"><b>L’Europe vous ouvre ses portes</b></span></h3>
+<p>Avec une croissance de 14,3% et un <strong>chiffre d’affaires de</strong> <strong>423,8 milliards d’euros en 2014,</strong> l’e-commerce européen constitue plus que jamais une opportunité dans votre développement. Les pays frontaliers se démarquent et sont de véritables marchés porteurs du fait des croissances enregistrées. Ces pays constituent, en effet, des marchés dynamiques du fait d’une croissance de la consommation déjà bien installée et d’un pouvoir d’achat souvent conséquent. Le Royaume-Uni et l’Allemagne occupent ainsi les deux premiers rangs du e-commerce en Europe et enregistrent respectivement +17% et +21% de croissance en 2014. L’Espagne, l’Italie ou encore le Portugal connaissent également de fortes croissances depuis plusieurs années en matière de e-commerce. De par leur caractère latin, ces derniers pays ont une forte affinité culturelle avec la France et constituent donc des pays à privilégier dans votre démarrage à l’international. Enfin, avec un accès à plus de <strong>7 millions d’e-acheteurs francophones potentiels, le Benelux est certainement la première cible à privilégier.</strong></p>
+<h3><span style="color: #25b9d7;"><b>Le saviez-vous : 32 % des e-acheteurs européens passent commande sur des sites étrangers ?</b></span></h3>
+<p>Les ventes transfrontalières font partie intégrante des habitudes d’achat de ces pays. Pour preuve, les pays les plus représentés à l’export depuis la France sont<b> </b>la Belgique (86%), l’Espagne (69%), l’Italie (64%), l’Allemagne (57%) et le Royaume-Uni (53%). <b></b></p>
+<p>De nombreuses places restent encore à prendre pour les e-commerçants français. En proposant une production unique avec le fameux « made in France » couplée à un service personnalisé et de qualité, vous obtiendrez alors une place de choix sur la scène européenne. N’hésitez pas à<strong> faire de la livraison un critère pour vos e-acheteurs </strong>; des partenaires de confiance et une bonne qualité de service vous aideront à gagner en satisfaction clients.</p>
+<h3><span style="color: #25b9d7;"><b>La livraison au cœur des préoccupations des e-acheteurs européens</b></span></h3>
+<p>Pour toucher un public étranger et capter des ventes additionnelles sur l’international, il faut pouvoir répondre aux usages particuliers de chacun des pays ciblés. Cela va au-delà de la simple traduction de votre site internet. De nombreux freins à l’achat existent effectivement et la livraison figure comme le 4<sup>e</sup> critère le plus important pour un achat en ligne. Au cœur des exigences se trouvent bien sûr la rapidité, la fiabilité de la livraison ainsi que son coût mais l’on trouve également une place de plus en plus importante accordée au choix dans le mode de livraison. En effet, la <strong>diversité des modalités de livraison est devenue nécessaire pour répondre aux nouvelles exigences et aux habitudes locales des e-acheteurs européens</strong>. La livraison à domicile, de fait, ne constitue plus un critère déterminant pour la majorité d’entre eux mais une alternative à la livraison en relais, en consigne ou tout autre points de retrait. Il est donc important lors de votre lancement de vous entourer de partenaires de confiance susceptibles de vous aider à appréhender les marchés étrangers.</p>
+<h3><span style="color: #25b9d7;"><b style="line-height: 1.5;">La Poste-Colissimo, un partenaire de confiance pour développer votre activité en Europe</b></span></h3>
+<p>Avec une nouvelle offre dédiée au marché européen, Colissimo accompagnera votre développement en 2016 vers 15 pays*.</p>
+<p>Avec Colissimo Domicile vous proposez une expérience de livraison optimale grâce à une livraison à domicile (avec ou sans signature) et une information client plus riche, plus transparente et plus interactive avec le service Predict<sup>©</sup>. Cette solution de livraison « intelligente » permet à votre client de connaitre le créneau horaire d’1h de sa livraison et de reprogrammer celle-ci en cas d’absence en modifiant le jour et/ou le lieu.  Avec Colissimo Point Retrait, vous offrez une livraison en bureau de poste ou en relais Pickup dans un réseau de <strong>+ 13 000 points de contact sur nos 15 pays européens.</strong></p>
+<p>Ces 2 solutions vous permettent de <strong>livrer vos clients européens en</strong><b> J+3 sur l’Europe proche</b> et d’offrir à vos e-acheteurs européens un <strong>suivi complet</strong>, du dépôt à la livraison, en 6 langues et une indemnisation intégrée. <del cite="mailto:christelle%20pontu" datetime="2016-05-12T16:57"> </del></p>
+<p>Avec des délais rapides, des garanties de livraison et une information client transparente, vous levez tous les freins liés à l’achat dans le e-commerce transfrontalier… Alors n’hésitez plus et optez pour l’offre Europe de La Poste avec Colissimo !</p>
+<p><strong>Téléchargez dès maintenant le <a href="http://addons.prestashop.com/fr/1745-colissimo-simplicite-officiel.html" target="_blank">Module Colissimo</a> !</strong></p>
+<p><i>*Allemagne, Autriche, Belgique, Espagne, Estonie, Hongrie, Lettonie, Lituanie, Luxembourg, Pays-Bas, Portugal, République Tchèque, Royaume-Uni, Slovénie, Slovaquie. </i></p>
+<p><span style="text-decoration: underline;"><em>A propos de Colissimo </em></span></p>
+<p><em><span style="line-height: 1.5;">Leader en France, Colissimo assure la livraison des colis à domicile et en points retrait (bureaux de poste, relais et consignes Pickup Station) ainsi qu’à l’international vers plus de 220 pays. Avec plus d’1 millions de colis traités par jour, Colissimo est le spécialiste de la livraison aux entreprises et aux particuliers grâce à sa maitrise des process et son expertise du dernier kilomètre.</span></em></p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/leurope-marche-investir-nouveaux-clients-conquerir/">L’Europe, un marché à investir, de nouveaux clients à conquérir…</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/leurope-marche-investir-nouveaux-clients-conquerir/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Web design : les pratiques has-been à éviter sur votre site e-commerce</title>
+		<link>https://www.prestashop.com/blog/fr/web-design-les-pratiques-has-been-eviter-site-e-commerce/</link>
+		<comments>https://www.prestashop.com/blog/fr/web-design-les-pratiques-has-been-eviter-site-e-commerce/#comments</comments>
+		<pubDate>Thu, 30 Jun 2016 08:53:26 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
 				<category><![CDATA[Conseils E-commerce]]></category>
 
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19664</guid>
-		<description><![CDATA[<p>Les tendances vont et viennent, en particulier dans le secteur de l’e-commerce où il suffit de modifier quelques lignes de code pour changer la présentation d&#8217;une page Web. Pour vous aider à devancer les tendances, nous avons demandé à deux agences partenaires de partager leurs prévisions en matière de web design pour l&#8217;année 2016. Tendances [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commerce-les-tendances-web-design-pour-2016/">E-commerce : Les tendances web design pour 2016</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20247</guid>
+		<description><![CDATA[<p>Avant, les sites captaient l&#8217;attention des utilisateurs à l&#8217;aide d&#8217;animations et d&#8217;effets plus exubérants les uns que les autres. En 2016, c&#8217;est du passé. Dans un contexte où le rythme de vie s’accélère les utilisateurs sont distraits de plus en plus rapidement. Vous avez 15 secondes seulement pour attirer leur attention. Pour répondre à cette [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/web-design-les-pratiques-has-been-eviter-site-e-commerce/">Web design : les pratiques has-been à éviter sur votre site e-commerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></description>
-				<content:encoded><![CDATA[<p>Les tendances vont et viennent, en particulier dans le secteur de l’e-commerce où il suffit de modifier quelques lignes de code pour changer la présentation d&rsquo;une page Web. Pour vous aider à devancer les tendances, nous avons demandé à <a href="https://www.prestashop.com/fr/certification-details">deux agences partenaires</a> de partager leurs prévisions en matière de web design pour l&rsquo;année 2016.<br />
-<span id="more-19664"></span> </p>
-<h2 style="color:#1b9743">Tendances 2015</h2>
-<p>Tout d&rsquo;abord, penchons-nous sur les tendances 2015 qui n&rsquo;ont pas encore dit leur dernier mot. Si vous avez déjà intégré l&rsquo;une des approches suivantes à votre site Web, vous n&rsquo;aurez pas à effectuer de changements. Pour Armando Salvador, <strong>directeur technique</strong> chez <a href="https://www.prestashop.com/es/asociados-agencia-web/plata/ecomm360">eComm360</a> les tendances suivantes vont perdurer :</p>
-<p><strong>Le Flat Design, ou design plat</strong><br />
-Le Flat Design consiste à supprimer tout effet 3D, d&rsquo;ombre ou de profondeur, ainsi que les angles et les inclinaisons, pour une présentation simple et minimaliste. Résultat : un site Web propre et clair, parfaitement adapté au responsive design. Lancée il y a déjà quelques années, cette tendance sera toujours d&rsquo;actualité en 2016.</p>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/flat-desingquerolets-1024x506.png" alt="flat desing(querolets)" width="700" height="345" class="aligncenter size-large wp-image-21164" /></p>
-<p><a href="http://www.querolets.net/es/" target="_blank">Querolets</a></p>
-<p><strong>Le défilement, l&rsquo;outil idéal pour raconter des histoires</strong><br />
-En 2015, impossible d&rsquo;échapper au défilement. Sur certaines pages, on avait l&rsquo;impression de pouvoir faire défiler à l&rsquo;infini. Offrant de superbes résultats, le défilement permet de proposer du contenu sous la forme d&rsquo;histoires, tout en limitant le nombre de clics pour le visiteur. Compte tenu de l&rsquo;utilisation de plus en plus massive des appareils mobiles, le défilement restera l&rsquo;une des tendances phare du design en 2016. </p>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/scrolllesraffineurs.png" alt="scroll(lesraffineurs)" width="404" height="854" class="aligncenter size-full wp-image-21170" /></p>
-<p><a href="http://www.lesraffineurs.com/" target="_blank">lesraffineurs</a></p>
-<p><strong>Les animations</strong><br />
-Bien placées, les animations peuvent considérablement enrichir l&rsquo;expérience Web.<br />
-Voici quelques exemples parmi les plus populaires : </p>
-<ul style="padding-left: 30px">
-<li>Les loaders (animations de chargement) permettent à l&rsquo;utilisateur de connaître exactement la progression du processus.</li>
-<li>Les curseurs interactifs offrent une expérience utilisateur plus intuitive et génèrent un feedback sans qu&rsquo;il soit nécessaire de cliquer.</li>
-<li>Les diaporamas présentent des images et des vidéos sans surcharger la page.</li>
-</ul>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/hovercanada.png" alt="hover(canada)" width="845" height="660" class="aligncenter size-full wp-image-21167" /></p>
-<p><a href="http://www.canadahouse.es/en/" target="_blank">Canada House</a></p>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/hoverclick-and-wine-1024x479.png" alt="hover(click and wine)" width="700" height="327" class="aligncenter size-large wp-image-21168" /></p>
-<p><a href="http://www.clickandwine.es/gb/" target="_blank">Click and Wine</a></p>
-<p>À l&rsquo;inverse, en 2016, nous allons abandonner des tendances qui ont pourtant marqué l&rsquo;année 2015. Selon Mona de l’agence <a href="https://www.prestashop.com/en/web-agency-partners/bronze/nurelm">NuRelm</a>, nous dirons adieu aux phénomènes suivants : </p>
-<p><strong>Les sites flashy, mais lents</strong><br />
-En 2015, les sites flashy utilisant des modèles lourds ou volumineux étaient légion. Si leur rendu était très beau, ces sites se distinguaient avant tout par une lenteur incroyable. Aujourd&rsquo;hui, la conception d&rsquo;un site doit être propre, unique, attrayante et facilement accessible, tout en restant simple à traiter côté serveur. Le rendu visuel doit être agréable et facile à comprendre.</p>
-<h2 style="color:#1b9743">Design : les nouvelles tendances de l&rsquo;année 2016</h2>
-<p>Qui dit nouvelle année, dit nouvelles idées. Voici les tendances qu&rsquo;Armando d&rsquo;<a href="https://www.prestashop.com/es/asociados-agencia-web/plata/ecomm360">eComm360</a> a hâte de tester en 2016. </p>
-<p><strong>La typographie</strong><br />
-Les polices plus imposantes, utilisées pour mettre en avant certaines informations, seront plus fréquentes.</p>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/Tipografiacanadahouse-1024x506.png" alt="Tipografia(canadahouse)" width="700" height="345" class="aligncenter size-large wp-image-21171" /></p>
-<p><a href="http://www.canadahouse.es/en/" target="_blank">Canada House</a></p>
-<p><strong>Le plein écran</strong><br />
-Maximisez vos contenus grâce à la pleine largeur. Remplacez par exemple les diaporamas comportant plusieurs images par une seule image haute résolution. L&rsquo;amélioration des technologies et du matériel permet de mieux apprécier les conceptions plus imposantes. </p>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/fullscreentiny-cottons-1024x506.png" alt="fullscreen(tiny cottons)" width="700" height="345" class="aligncenter size-large wp-image-21165" /></p>
-<p><a href="http://tinycottons.com/" target="_blank">Tiny Cottons</a></p>
-<p><strong>Les menus façon hamburger</strong><br />
-Éléments phare du responsive design, les menus hamburger se retrouvent désormais sur tous les types de sites Web, même ceux conçus pour des dispositifs plus grands. Auparavant réservé aux mobiles, ce type de menu profite de la tendance minimaliste pour remplacer progressivement les listes déroulantes classiques. </p>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/menu-hamburguesaclick-and-wine-1024x496.png" alt="menu hamburguesa(click and wine)" width="700" height="339" class="aligncenter size-large wp-image-21169" /></p>
-<p><a href="http://www.clickandwine.es/gb/" target="_blank">Click and Wine</a></p>
-<p><strong>Les boutons fantômes</strong><br />
-Les boutons fantômes sont de plus en plus utilisés. Quasiment invisibles, ils poussent le minimalisme à l&rsquo;extrême. Activés via des animations interactives, ils attirent mieux l&rsquo;attention de l&rsquo;utilisateur et favorisent les actions secondaires.</p>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/boton-fantasmaimage-republic-1024x487.png" alt="boton fantasma(image republic)" width="700" height="332" class="aligncenter size-large wp-image-21172" /></p>
-<p><a href="http://image-republic.com/en/" target="_blank">Image Republic</a></p>
-<p><strong>Les grilles</strong><br />
-Popularisées par Pinterest, les grilles feront leur apparition dans l&rsquo;univers du web design cette année. Elles sont idéales pour combiner différents types d&rsquo;informations et assurent une navigation simple et continue.</p>
-<p><img src="https://www.prestashop.com/blog/fr/files/2016/01/gridtiny-cottons-1024x514.png" alt="grid(tiny cottons)" width="700" height="351" class="aligncenter size-large wp-image-21166" /></p>
-<p><a href="http://tinycottons.com/" target="_blank">Tiny Cottons</a></p>
-<p>Sam de <a href="https://www.prestashop.com/en/web-agency-partners/bronze/nurelm">NuRelm</a> a identifié d&rsquo;autres tendances qui vont marquer 2016 : </p>
-<p><strong>L&rsquo;accessibilité</strong><br />
-Les développeurs et designers devraient être de plus en plus nombreux à mettre en œuvre des modèles plus simples à utiliser pour les personnes qui n&rsquo;ont pas facilement accès à un ordinateur ou à Internet. Qu&rsquo;il s&rsquo;agisse de simplifier la navigation tactile ou la présentation visuelle, ils feront l&rsquo;effort de s&rsquo;adapter aux différents besoins existants. Nous pensons que chaque personne a le droit d&rsquo;accéder facilement à Internet et de profiter d&rsquo;une navigation agréable. Ainsi, les entreprises ne devraient pas négliger les personnes pour qui il est plus difficile d&rsquo;utiliser leur site.</p>
-<h2 style="color:#1b9743">Ce qu&rsquo;il faut retenir</h2>
-<p>Que vous soyez un e-commerçant envisageant de repenser son site ou un designer à la recherche de nouvelles idées pour des thèmes PrestaShop, voici quelques éléments à garder en tête. </p>
-<ol>
-<li>Réfléchissez bien avant d&rsquo;appliquer une tendance à votre boutique en ligne. Plus une mode est accrocheuse, plus elle risque d&rsquo;être courte. Si vous ne voulez pas revoir votre site avant plusieurs années, choisissez soigneusement les éléments à intégrer.</li>
-<li>Ne perdez pas de vue votre public, c&rsquo;est-à-dire vos clients. Le but de votre site n&rsquo;est pas d&rsquo;être cool, mais de convertir des clients. Veillez à ce que votre nouvelle présentation ne détourne pas leur attention, au détriment de vos produits.</li>
-<li><a href="https://www.prestashop.com/blog/en/6-ab-tests-for-optimizing-your-online-store/">Mettez si possible en place des tests A/B</a> Chaque tendance ne sera pas forcément adaptée à votre boutique en ligne. Veillez à ce que vos nouveautés de conception ne compromettent pas vos ventes. </li>
-</ol>
-<p>Vous cherchez une agence spécialisée pour offrir un look unique à votre <a href="https://www.prestashop.com/">boutique en ligne</a> ? Consultez la liste de nos <a href="https://www.prestashop.com/fr/agences-web-partenaires">agences officielles</a>. Vous pensez à d&rsquo;autres tendances phares pour 2016 ? Dites-le-nous dans les commentaires ci-dessous.</p>
-<div class="row">
-<div class="col-sm-6"><img src="https://www.prestashop.com/blog/fr/files/2016/01/ecomm360-1024x270.png" alt="ecomm360" width="700" height="184" class="aligncenter size-large wp-image-13059" /></div>
-<div class="col-sm-6"><img src="https://www.prestashop.com/blog/fr/files/2016/01/nurelm.png" alt="nurelm" width="220" height="127" class="aligncenter size-full wp-image-13054" /></div>
-</div>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/e-commerce-les-tendances-web-design-pour-2016/">E-commerce : Les tendances web design pour 2016</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+				<content:encoded><![CDATA[<p>Avant, les sites captaient l&rsquo;attention des utilisateurs à l&rsquo;aide d&rsquo;animations et d&rsquo;effets plus exubérants les uns que les autres. En 2016, c&rsquo;est du passé.</p>
+<p>Dans un contexte où le rythme de vie s’accélère les utilisateurs sont distraits de plus en plus rapidement. Vous avez 15 secondes seulement pour attirer leur attention. Pour répondre à cette nouvelle réalité, les dernières tendances en Web design visent en priorité à optimiser l&rsquo;expérience utilisateur, l&rsquo;objectif étant d&rsquo;éviter qu&rsquo;ils quittent votre site.</p>
+<p><span id="more-20247"></span></p>
+<h2 style="color: #555C8A;">1. Les photos de banques d’images pas très réalistes</h2>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/06/1-outdated.jpg"><img class="aligncenter size-full wp-image-20250" alt="1 outdated" src="https://www.prestashop.com/blog/fr/files/2016/06/1-outdated.jpg" width="568" height="370" /></a></p>
+<p>Les photos de banques d’image permettent de transmettre des idées précises, mais elles peuvent rapidement tomber dans le cliché si elles ne sont pas utilisées avec modération :</p>
+<p>vous avez certainement déjà visité des dizaines de sites regorgeant de photos d&rsquo;employés souriant benoitement et d&rsquo;opérateurs téléphonant avec un enthousiasme quelque peu exagéré.</p>
+<p>Si les images sont à la base un gage de crédibilité, ces photos font tout le contraire. Les entreprises en utilisent tellement que les utilisateurs finissent par s&rsquo;en souvenir, et à chaque fois qu&rsquo;ils tombent sur une énième photo de businessmen souriants, ils associent inconsciemment la marque à un sentiment négatif.</p>
+<p>Pour rester crédible, vous devez faire appel à un photographe professionnel, ou, si votre budget ne vous le permet pas, efforcez-vous de trouver des images de photothèques pertinentes en évitant les clichés.</p>
+<h2 style="color: #555C8A;">2. Le Flash</h2>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/06/2-outdated.jpg"><img class="aligncenter size-full wp-image-20252" alt="2 outdated" src="https://www.prestashop.com/blog/fr/files/2016/06/2-outdated.jpg" width="568" height="370" /></a></p>
+<p>La technologie Flash, très populaire il y a quelques années, est aujourd&rsquo;hui tombée en désuétude.</p>
+<p>Et pour cause : les sites Flash sont trop longs à charger, ne sont pas compatibles avec les smartphones et requièrent des configurations très précises. En bref, vos grands élans de créativité sous Flash ne manqueront pas de faire fuir vos visiteurs. Vous pouvez également dire adieu à votre stratégie de référencement, car Google ne tient plus compte des sites Flash.</p>
+<h2 style="color: #555C8A;">3. Les pop-up</h2>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/06/3-outdated.jpg"><img class="aligncenter size-full wp-image-20253" alt="3 outdated" src="https://www.prestashop.com/blog/fr/files/2016/06/3-outdated.jpg" width="568" height="370" /></a></p>
+<p>Vous les connaissez, vous les détestez : les pop-up sont le plus grand fléau du Web. Qu&rsquo;il s&rsquo;agisse de fenêtres d&rsquo;inscription, d&rsquo;abonnement à la newsletter ou de promotions, les pop-up en feront fuir plus d&rsquo;un.</p>
+<p>Certains marketeurs vous diront le contraire, mais soyons réalistes : les utilisateurs se rendent sur votre site pour obtenir des informations, et les pop-up gênent leur parcours. Dans le cas des smartphones, ces fenêtres peuvent être très difficiles à fermer.</p>
+<p>Pour faire connaître votre newsletter ou obtenir de nouveaux contacts, préférez d&rsquo;autres zones de votre site Web ou passez par des offres incitatives.</p>
+<h2 style="color: #555C8A;">4. Diaporama en carrousel</h2>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/06/4-outdated.jpg"><img class="aligncenter size-full wp-image-20254" alt="4 outdated" src="https://www.prestashop.com/blog/fr/files/2016/06/4-outdated.jpg" width="590" height="216" /></a></p>
+<p>Les diaporamas en carrousel ont fait fureur il y a quelques années, mais ce n&rsquo;est plus le cas. Comme nous l&rsquo;avons mentionné, vous n&rsquo;avez que quelques secondes pour attirer l&rsquo;attention des visiteurs : si des informations importantes sont mentionnées dans votre diapo 3, vous pouvez être sûr que personne ne les lira.</p>
+<p>Utilisez plutôt une seule image percutante assortie d&rsquo;un texte expliquant clairement votre message.</p>
+<h2 style="color: #555C8A;">5. Les polices ringardes</h2>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/06/5-outdated.jpg"><img class="aligncenter size-full wp-image-20255" alt="5 outdated" src="https://www.prestashop.com/blog/fr/files/2016/06/5-outdated.jpg" width="568" height="370" /></a></p>
+<p>&nbsp;</p>
+<p>Les polices sont aussi soumises à l&rsquo;effet de mode ! Pour ne pas vous retrouver avec un site tout droit sorti des années 1990, évitez à tout prix Comic Sans, Times New Roman et les polices cursives. Dites également adieu aux effets 3D (Word) et embossage (Photoshop) :</p>
+<p>privilégiez les designs 2D, les images vectorisées et les interfaces simples. Nous vous conseillons d&rsquo;utiliser 3 polices maximum sur l&rsquo;ensemble de votre site.</p>
+<h2 style="color: #555C8A;">6. Le skeuomorphisme</h2>
+<p><a href="https://www.prestashop.com/blog/fr/files/2016/06/6-outdated.jpg"><img class="aligncenter size-full wp-image-20256" alt="6 outdated" src="https://www.prestashop.com/blog/fr/files/2016/06/6-outdated.jpg" width="568" height="370" /></a></p>
+<p>En design, le skeuomorphisme désigne la reproduction ornementale d&rsquo;éléments réels : imaginez par exemple une librairie en ligne avec un design en forme de bibliothèque. Popularisés par l&rsquo;iPhone, les designs skeuomorphiques ne sont plus d&rsquo;actualité. Aujourd&rsquo;hui, l&rsquo;heure est aux interfaces simples et minimalistes, alors s&rsquo;il reste des ombres et des dégradés dans les coins de votre site, faites une croix dessus au plus vite.</p>
+<p>Votre site contient plus de 2 de ces éléments ? Si c&rsquo;est le cas, il est grand temps de lui donner un coup de jeune ! Pour avoir un avis extérieur, vous pouvez faire appel à l&rsquo;une de nos agences Web partenaires. Aurions-nous oublié d&rsquo;inclure d&rsquo;autres éléments de design que vous trouvez exaspérants ? Dites-nous tout dans les commentaires !</p>
+<hr />
+<strong>À propos de l&rsquo;auteur</strong></p>
+<p>SHAMLATECH est une agence de services professionnels internationale spécialiste du secteur depuis plus de 8 ans. La société propose des services de développement Web, e-commerce et mobile ainsi que de webmarketing.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/web-design-les-pratiques-has-been-eviter-site-e-commerce/">Web design : les pratiques has-been à éviter sur votre site e-commerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/e-commerce-les-tendances-web-design-pour-2016/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Sondage lecteurs : votre avis nous intéresse !</title>
-		<link>https://www.prestashop.com/blog/fr/sondage-lecteurs-avis-interesse/</link>
-		<comments>https://www.prestashop.com/blog/fr/sondage-lecteurs-avis-interesse/#comments</comments>
-		<pubDate>Thu, 28 Jan 2016 08:30:11 +0000</pubDate>
-		<dc:creator><![CDATA[Julie Liu]]></dc:creator>
-				<category><![CDATA[Actualités PrestaShop]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19651</guid>
-		<description><![CDATA[<p>Chère communauté PrestaShop, Nous organisons régulièrement des sondages pour connaître vos avis concernant notre blog. Faites-nous part de vos attentes pour 2016 et aidez-nous à nous améliorer en répondant à ce court questionnaire de 2 minutes. Participer au sondage Merci et bonnes ventes !</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/sondage-lecteurs-avis-interesse/">Sondage lecteurs : votre avis nous intéresse !</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>Chère communauté PrestaShop, </p>
-<p>Nous organisons régulièrement des sondages pour connaître vos avis concernant notre blog. </p>
-<p>Faites-nous part de vos attentes pour 2016 et aidez-nous à nous améliorer en répondant à ce court questionnaire de 2 minutes.</p>
-<div class="text-center" style="margin-bottom: 20px"><a href="https://jliu08ps.typeform.com/to/NVEZ4M" target="_blank" style="font-size:23px">Participer au sondage</a></div>
-<p>Merci et bonnes ventes !</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/sondage-lecteurs-avis-interesse/">Sondage lecteurs : votre avis nous intéresse !</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/sondage-lecteurs-avis-interesse/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Saint-Valentin : 5 étapes pour ne pas rater le coche</title>
-		<link>https://www.prestashop.com/blog/fr/saint-valentin-5-etapes-pas-rater-coche/</link>
-		<comments>https://www.prestashop.com/blog/fr/saint-valentin-5-etapes-pas-rater-coche/#comments</comments>
-		<pubDate>Tue, 26 Jan 2016 08:30:23 +0000</pubDate>
-		<dc:creator><![CDATA[Julie Liu]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=19647</guid>
-		<description><![CDATA[<p>La Saint-Valentin approche à grands pas. Selon la NRF (National Retail Association), les grands romantiques devraient à cette occasion 18,9 milliards de dollars en cadeaux, dîners, etc. Pour la Saint-Valentin, les clients amoureux ne regardent pas à la dépense, alors ne ratez pas le coche ! Appuyez-vous sur les 5 étapes présentées dans cet article [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/saint-valentin-5-etapes-pas-rater-coche/">Saint-Valentin : 5 étapes pour ne pas rater le coche</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>La Saint-Valentin approche à grands pas. Selon la NRF (National Retail Association), les grands romantiques devraient à cette occasion <a href="https://nrf.com/media/press-releases/cupid-shower-americans-jewelry-candy-this-valentines-day" target="_blank">18,9 milliards de dollars</a> en cadeaux, dîners, etc. Pour la Saint-Valentin, les clients amoureux ne regardent pas à la dépense, alors ne ratez pas le coche ! Appuyez-vous sur les 5 étapes présentées dans cet article pour booster vos ventes.<br />
-<span id="more-19647"></span></p>
-<h2 style="color:#e34894">1. Adoptez une approche mobile</h2>
-<p>Les consommateurs de marchés e-commerce de référence (tels que le Royaume-Uni et l&rsquo;Allemagne) privilégient désormais le canal mobile pour leurs achats. Sachant que <a href="http://resources.mobify.com/50-mobile-commerce-stats.html" target="_blank">30 % des clients n&rsquo;achèteront pas</a> sur un site non optimisé pour les mobiles, vous ne pouvez faire l&rsquo;impasse sur cet aspect de la conception de votre boutique, surtout à l&rsquo;approche d&rsquo;un événement aussi important que la Saint-Valentin. Assurez-vous ainsi que vos e-mails s&rsquo;affichent parfaitement sur les appareils mobiles et que la transition entre l&rsquo;e-mail, le site, puis la page de paiement se déroule sans encombre. Si votre site n&rsquo;est pas encore responsive, cette tâche est votre priorité !</p>
-<h2 style="color:#e34894">2. Proposez des offres irrésistibles</h2>
-<p>Comme pour toutes les autres périodes de promotion, l&rsquo;essentiel pour la Saint-Valentin est de se démarquer. Les commerçants qui proposent des produits phare (fleurs, chocolats, peluches et lingerie) doivent décupler leurs efforts pour sortir du lot. Évidemment, vous pouvez articuler votre stratégie autour de promotions, mais en misant tout sur le prix, vous jouez à quitte ou double. Vous pouvez aussi mettre en avant des <a href="https://www.ice-watch.com/uk-en/ice-sili/ice-love-p-26729.htm?coul_att_detailID=1266&amp;utm_source=B2C+-+Customers+-+Contacts+-+Ice-Watch&amp;utm_campaign=97b098e6ae-2016_01_14_love_teaser_ALL_ALL&amp;utm_medium=email&amp;utm_term=0_b847164ea2-97b098e6ae-273191485&amp;mc_cid=97b098e6ae&amp;mc_eid=754b62a6a1" target="_blank">articles en édition limitée</a> ou des lots de produits personnalisés qui poussent le client à acheter tout en respectant le thème du moment. </p>
-<p>Enfin, vous pouvez aussi associer prix attractifs et marketing personnalisé. La Saint-Valentin est une période stressante pour certains. Ainsi, vous serez plus à même de convaincre les consommateurs si vous offrez de la valeur ajoutée, que ce soit par le biais d&rsquo;un guide du cadeau parfait, de curation de contenu ou d&rsquo;une interface de live chat décorée. Identifiez les problèmes ou besoins auxquels répondent vos produits et faites passer le message à vos clients via votre blog, votre newsletter ou vos campagnes d&rsquo;e-mailing. </p>
-<h2 style="color:#e34894">3. Communiquez</h2>
-<p>Une fois que vous avez conçu l&rsquo;offre parfaite, faites passer le mot à votre clientèle. Pour cela, voici quelques suggestions :</p>
-<p>- <a href="https://www.prestashop.com/blog/fr/pop-ups-sur-votre-site-exemples-et-methode-pour-2015/"><strong>Pop-up et pop-in</strong></a><br />
-Les pop-up et pop-in permettent de faire la promotion de vos offres auprès des visiteurs de votre site. Ces fenêtres s&rsquo;affichant sur toute la page, vous êtes sûr de capter l&rsquo;attention des acheteurs. Néanmoins, cette méthode peut être considérée comme agressive. Veillez à ce que ces fenêtres n&rsquo;apparaissent pas trop souvent pour éviter de laisser une mauvaise impression aux visiteurs. </p>
-<p>- <a href="https://www.prestashop.com/blog/en/4-awesome-ideas-valentines-day-gift-guides/"><strong>Guides cadeaux</strong></a><br />
-Les guides cadeaux constituent une solution polyvalente pour promouvoir vos produits. Ils sont particulièrement utiles pour les acheteurs à court d&rsquo;idées ou qui s&rsquo;y prennent à la dernière minute. Un guide cadeaux bien conçu permet à chaque client de trouver le cadeau parfait, quels que soient ses besoins. Si vous avez un blog, utilisez-le pour présenter vos produits à vos lecteurs. Rédigez un article avec des astuces pour offrir de la valeur ajoutée à vos clients en plus de mettre en avant vos produits.</p>
-<p>- <a href="https://www.prestashop.com/blog/fr/les-10-etapes-pour-reussir-votre-emailing/"><strong>Marketing par e-mail</strong></a><br />
-Les e-mails restent l&rsquo;une des méthodes les plus efficaces pour communiquer. Ils atterrissent directement dans la boîte de réception de vos clients et vous offrent la possibilité de capter leur attention et de générer du trafic vers votre site Web. Utilisez un objet accrocheur et veillez à ce que la transition entre la boîte de réception et la page de destination s&rsquo;effectue sans encombre. Selon les promotions, vous pouvez également envisager une campagne par e-mail à plusieurs niveaux, qui distingue prix imbattables et offres <a href="http://www.splio4.com/mr/6fU0is7q4/3390/1877180697.html" target="_blank">à valeur ajoutée unique</a>, susceptibles de vous faire sortir du lot. Cette année, ne vous contentez pas de faire faire des économies à vos clients ; réfléchissez à des approches pour leur faire plaisir.</p>
-<p>- <a href="https://www.prestashop.com/blog/en/3-steps-launching-sem-campaign-google-adwords/"><strong>Publicités Google</strong></a><br />
-Il s&rsquo;agit de l&rsquo;outil de promotion le plus potentiellement coûteux de votre arsenal marketing. Que vous gériez directement votre campagne avec Google Adwords, ou que vous fassiez appel à un fournisseur tiers, le service sera payant. Pendant les périodes de promotion, les enchères pour des mots-clés tels que « Saint-Valentin » ou « cadeaux » ont tendance à être plus élevées. Cependant, cette méthode offre un gain de visibilité non négligeable qui peut se traduire par des revenus supplémentaires significatifs pour votre site. Évaluez vos ressources et affectez votre budget en conséquence. Les publicités Google peuvent considérablement booster vos ventes, mais si votre offre n&rsquo;est pas attrayante ou si les clients ne vous font pas confiance, aucune hausse de trafic ne vous permettra d&rsquo;atteindre vos objectifs de vente. </p>
-<p>- <strong>Bannières de site Web</strong><br />
-Tout comme les pop-up et les pop-in, les bannières font la promotion de vos offres uniquement auprès des visiteurs de votre site. Elles sont avantageuses, car elles ne sont pas intrusives et contrairement aux pop-up et aux pop-in, les clients ne peuvent les fermer et les oublier. (Découvrez comment changer votre bannière avec le <a href="https://www.prestashop.com/blog/fr/modules-prestashop-personnalisez-page-daccueil/">modèle par défaut</a>). Les bannières sont idéales pour placer des images thématiques et mettre en avant des avantages tels que l&rsquo;expédition gratuite et l&rsquo;emballage cadeau. Pensez également à ajouter un rappel concernant les limites d&rsquo;expédition. Tout ce que vous mettez en œuvre pour simplifier l&rsquo;expérience d&rsquo;achat est susceptible de se traduire par des conversions supplémentaires.</p>
-<p>- <strong>Réseaux sociaux</strong><br />
-En faisant la promotion de vos offres sur les réseaux sociaux, vous pouvez atteindre les acheteurs intéressés qui n&rsquo;ont pas encore effectué d&rsquo;achats dans votre boutique. De plus, grâce à cette méthode, les internautes peuvent partager votre publicité avec leurs amis. Vous pouvez aussi envisager de proposer des promotions spécifiques aux réseaux sociaux ou de mettre en place des concours pour attirer l&rsquo;attention.</p>
-<p>Savez-vous déjà ce que vous allez mettre en avant pour <a href="https://www.prestashop.com/blog/fr/10-idees-marketing-pour-la-saint-valentin/">la Saint-Valentin</a>? Si vous avez besoin d&rsquo;aide et de conseils, lisez notre article consacré au <a href="https://www.prestashop.com/blog/fr/10-idees-marketing-pour-la-saint-valentin/">marketing spécial Saint-Valentin</a> ! </p>
-<h2 style="color:#e34894">4. Ne négligez pas les tests</h2>
-<p>Puisque le délai pour convertir les clients est serré, il est capital de tester votre site Web et vos offres. Assurez-vous que les bons de réduction et promotions mis en place fonctionnent bien : cela semble évident, mais avec la pression, on ne peut écarter la possibilité d&rsquo;une erreur technique. N&rsquo;attendez pas le lancement de la promotion pour vous en rendre compte. </p>
-<p>Parallèlement, avant d&rsquo;aller plus loin, vous devez aussi : </p>
-<ul style="padding-left: 30px">
-<li>tester les liens de l&rsquo;ensemble de vos publicités ;</li>
-<li>essayer de passer une commande (tout particulièrement si vos clients peuvent personnaliser des produits) ; </li>
-<li>finaliser une commande en utilisant chacune des différentes options de paiement disponible. Il n&rsquo;y a rien de pire qu&rsquo;un client qui abandonne son panier, car le paiement ne fonctionne pas.</li>
-</ul>
-<p>Les achats de la Saint-Valentin se font souvent à la dernière minute : il est donc essentiel de garantir un processus de commande simple et rapide. </p>
-<h2 style="color:#e34894">5. Ne faites pas l&rsquo;impasse sur les analyses</h2>
-<p>Enfin, prenez le temps d&rsquo;effectuer des analyses après cette période de promotion. Comparez notamment les prévisions de ventes et les ventes réelles. Identifiez les best-sellers de cette année et les axes d&rsquo;amélioration. Cherchez des tendances à tester pour la prochaine période de promotion. Penchez-vous aussi sur les tendances qui méritent plus d&rsquo;attention, ainsi que sur les idées qui devraient éventuellement être abandonnées. </p>
-<p>Les conclusions de votre analyse seront indispensables pour établir vos prévisions pour la prochaine période de promotion. Il est également important d&rsquo;identifier les produits qui restent en stock et de mettre en place une autre offre pour les écouler. </p>
-<hr width="20%" align="left" />
-<p>Êtes-vous prêt pour la Saint-Valentin 2016 ? Partagez vos astuces dans les commentaires ou revenez après la Saint-Valentin pour nous dire comment nos conseils vous ont aidés à atteindre vos objectifs. </p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/saint-valentin-5-etapes-pas-rater-coche/">Saint-Valentin : 5 étapes pour ne pas rater le coche</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/saint-valentin-5-etapes-pas-rater-coche/feed/</wfw:commentRss>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/web-design-les-pratiques-has-been-eviter-site-e-commerce/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>

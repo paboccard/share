@@ -1,3 +1,4 @@
+@import url('color.css');
 /********************************************************************
 					Compare Page Styles
 ********************************************************************/
@@ -19,7 +20,7 @@ table#product_comparison tbody tr td.td_empty {
   table#product_comparison tbody tr td.td_empty > span {
     font: 600 18px/22px "Open Sans", sans-serif;
     text-transform: uppercase;
-    color: #555454; }
+    color: var(--main-color9); }
 table#product_comparison .remove {
   text-align: right;
   padding: 0 0 15px 0; }
